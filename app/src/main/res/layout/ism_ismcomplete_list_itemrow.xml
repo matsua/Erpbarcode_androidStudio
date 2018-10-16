@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+ 
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="30dp"
+	    android:orientation="horizontal">
+	 	<!-- √ -->
+	    <CheckBox
+		    android:id="@+id/ismcomplete_list_isChecked"
+		    android:layout_width="40dp"
+			android:layout_height="wrap_content"
+			android:checked="false"
+			android:padding="0dp"
+			android:focusable="false"
+			android:soundEffectsEnabled="true"
+			android:focusableInTouchMode="true" />
+	    <!-- 설비바코드 -->
+	    <TextView
+	        android:id="@+id/ismcomplete_list_newBarcode"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 자재코드 -->
+	    <TextView
+	        android:id="@+id/ismcomplete_list_itemCode"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 자재명 -->
+	    <TextView
+	        android:id="@+id/ismcomplete_list_itemName"
+	        android:layout_width="300dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 품목구분 -->
+	    <TextView
+	        android:id="@+id/ismcomplete_list_devType"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 부품종류 -->
+	    <TextView
+	        android:id="@+id/ismcomplete_list_partType"
+	        android:layout_width="60dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!--훼손바코드 -->
+	    <TextView
+	        android:id="@+id/ismcomplete_list_injuryBarcode"
+	        android:layout_width="190dp"
+	        style="@style/Form.Styled.NormalTextView" /> 
+	     <!--대체발행사유--> 
+	     <TextView
+	        android:id="@+id/ismcomplete_list_publicationWhyCode"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" /> 
+	     <!-- 위치바코드 -->
+	     <TextView
+	        android:id="@+id/ismcomplete_list_locationCode"
+	        android:layout_width="190dp"
+	     	style="@style/Form.Styled.NormalTextView" />
+	     <!-- 장치바코드 -->
+	     <TextView
+	        android:id="@+id/ismcomplete_list_deviceId"
+	        android:layout_width="190dp"
+	     	style="@style/Form.Styled.NormalTextView" />
+	     <!-- 제조자물자여부 -->
+	       <TextView
+	        android:id="@+id/ismcomplete_list_makerItemYn"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" /> 
+    </LinearLayout>
+</LinearLayout>
+    
+
+ 

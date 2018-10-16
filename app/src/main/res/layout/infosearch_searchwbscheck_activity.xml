@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<!-- 리스트 뷰 -->
+	<HorizontalScrollView
+	    android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1" >
+	    <RelativeLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    android:background="@android:color/white" >
+		    <include
+		        android:id="@+id/searchwbs_list_header"
+		        layout="@layout/infosearch_searchwbs_list_header" />
+		    <ListView 
+			    android:id="@+id/searchwbscheck_listView"
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:layout_below="@id/searchwbs_list_header"
+			    android:dividerHeight="1dp" >
+	    	</ListView>
+   		</RelativeLayout>
+	</HorizontalScrollView>
+	
+	<!-- 선택, 취소 버튼 -->
+	<LinearLayout
+	    style="@style/Form.Styled.ToolBar" >
+        <Button 
+		    android:id="@+id/searchwbscheck_choice_button" 
+			android:layout_width="140dp"            
+			android:layout_height="match_parent"
+			style="@style/Form.Styled.RedButton"
+			android:text="선택" />
+       	<Space 
+		    android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"/>
+        <Button 
+		    android:id="@+id/searchwbscheck_cancel_button" 
+			android:layout_width="140dp"            
+			android:layout_height="match_parent"
+			style="@style/Form.Styled.RedButton"
+			android:text="취소" />
+	</LinearLayout>
+</LinearLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+	<LinearLayout
+	    style="@style/Form.Styled.InputBar" >
+    	<!-- 위치바코드  -->
+    	<LinearLayout
+		    style="@style/Form.Styled.InputBox" >
+		    <TextView
+			    android:text="@string/searchloccheck_locCd_lavel"
+			    style="@style/Form.Styled.LeftLavelTextView" />
+		    <EditText
+			    android:id="@+id/searchloccheck_loc_locCd"
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			    style="@style/Form.Styled.ScannableEditText" 
+			    android:imeOptions="actionSearch" />
+		</LinearLayout>
+		<!-- 위치바코드명 -->
+		<LinearLayout
+		    style="@style/Form.Styled.InputDisplayBox" >
+		    <TextView
+			    android:id="@+id/searchloccheck_locInfo_locName"
+		        android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			    android:drawableLeft="@drawable/common_icon_currentaddress"
+			    style="@style/Form.Styled.DisplayTextView" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<!-- 리스트 뷰 -->
+	<HorizontalScrollView
+	    android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:background="@android:color/white" >
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical"
+		    android:background="@android:color/white" >
+		    <LinearLayout
+			    style="@style/Form.Styled.ListHeaderBar" >
+			    <TextView
+			        style="@style/Form.Styled.LavelTextView"
+			        android:layout_width="200dp"
+				    android:text="위치바코드" />
+			    <TextView
+			        style="@style/Form.Styled.LavelTextView"
+			        android:layout_width="400dp"
+				    android:text="위치바코드명" />
+			</LinearLayout>
+		    <ListView
+			    android:id="@+id/searchloccheck_locListView"
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+		        android:dividerHeight="1dp" >
+	    	</ListView>
+		</LinearLayout>
+	</HorizontalScrollView>
+	<!--  하단 카운트 -->
+	<LinearLayout
+		style="@style/Form.Styled.ListFooterBar" >
+	    <TextView
+		    android:id="@+id/searchloccheck_listFooter_totalCount"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</LinearLayout>

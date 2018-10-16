@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:id="@+id/fcc_list_item"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/failure_list_item1"
+	        android:layout_width="110dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <TextView
+	        android:id="@+id/failure_list_item2"
+	        android:layout_width="110dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <TextView
+	        android:id="@+id/failure_list_item3"
+	        android:layout_width="110dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <TextView
+	        android:id="@+id/failure_list_item4"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <TextView
+	        android:id="@+id/failure_list_item5"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <TextView
+	        android:id="@+id/failure_list_item6"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	</LinearLayout>
+	
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="40dp"
+	    android:id="@+id/dev_list_item"
+	    android:orientation="horizontal">
+	    <TextView
+	        android:id="@+id/failure_list_dev_item1"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <TextView
+	        android:id="@+id/failure_list_dev_item2"
+	        android:layout_width="110dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <TextView
+	        android:id="@+id/failure_list_dev_item3"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <TextView
+	        android:id="@+id/failure_list_dev_item4"
+	        android:layout_width="110dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <TextView
+	        android:id="@+id/failure_list_dev_item5"
+	        android:layout_width="110dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <TextView
+	        android:id="@+id/failure_list_dev_item6"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <TextView
+	        android:id="@+id/failure_list_dev_item7"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <TextView
+	        android:id="@+id/failure_list_dev_item8"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	</LinearLayout>
+</LinearLayout>

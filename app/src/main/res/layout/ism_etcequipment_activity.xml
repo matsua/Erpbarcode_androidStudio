@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" >
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	    <ScrollView 
+	        android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1" >
+			<!-- 입력Bar -->
+			<LinearLayout 
+		        style="@style/Form.Styled.InputBar" >
+		        <!-- 운용조직 -->
+		        <LinearLayout
+		            style="@style/Form.Styled.InputDisplayBox" >
+				    <TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_organization_orgCode_lavel" />
+				    <EditText
+				        android:id="@+id/etcequipment_organization_orgCode"
+				        android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.DisplayTextView" />
+				</LinearLayout>
+				<!-- 위치바코드  -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputBox" >
+				    <TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_loc_locCd_lavel" />
+				    <EditText
+					    android:id="@+id/etcequipment_loc_locCd"
+					    android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.ScannableEditText" />
+				</LinearLayout>
+				<!-- 위치바코드명 -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputDisplayBox" >
+				    <TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_loc_locName_lavel" />
+				    <EditText
+					    android:id="@+id/etcequipment_loc_locName"
+				        android:layout_width="233dp"
+			        	android:layout_height="wrap_content"
+			        	android:layout_weight="0.73"
+					    style="@style/Form.Styled.DisplayTextView" />
+				    
+				    <Button
+			        android:id="@+id/addInfoBtn"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/treescan_location_locCd_info" />
+				</LinearLayout>
+		
+				<!-- 자재바코드  -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputBox" >
+				    <TextView
+						style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_product_productCode_lavel" />
+				    <EditText
+					    android:id="@+id/etcequipment_product_productCode"
+					    android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.ScannableEditText" />
+				    <Button
+					    android:id="@+id/etcequipment_product_search_button"            
+						style="@style/Form.Styled.RedButton"
+						android:layout_width="60dp"
+						android:layout_marginRight="2dp"
+						android:text="@string/etcequipment_product_search_text" />
+				</LinearLayout>
+				<!-- 자재명 -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputDisplayBox" >
+				    <TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_product_productName_lavel" />
+					<EditText
+					    android:id="@+id/etcequipment_product_productName"
+					    android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.DisplayTextView" />
+				</LinearLayout>
+				<!-- 자재분류 -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputDisplayBox" >
+					<TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_product_productClass_lavel" />
+					<EditText
+					    android:id="@+id/etcequipment_product_productClass"
+				        android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.DisplayTextView" />
+				</LinearLayout>
+				<!-- 자산분류(대) -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputDisplayBox" >
+					<TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_product_assetLarge_lavel" />
+					<EditText
+					    android:id="@+id/etcequipment_product_assetLarge"
+				        android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.DisplayTextView" />
+				</LinearLayout>
+				<!-- 자산분류(중) -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputDisplayBox" >
+					<TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_product_assetMedium_lavel" />
+					<EditText
+					    android:id="@+id/etcequipment_product_assetMedium"
+				        android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.DisplayTextView" />
+				</LinearLayout>
+				<!-- 자산분류(소) -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputDisplayBox" >
+					<TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_product_assetSmall_lavel" />
+					<EditText
+					    android:id="@+id/etcequipment_product_assetSmall"
+				        android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.DisplayTextView" />
+				</LinearLayout>
+				<!-- 자산분류(세) -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputDisplayBox" >
+					<TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_product_assetDetail_lavel" />
+					<EditText
+					    android:id="@+id/etcequipment_product_assetDetail"
+				        android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.DisplayTextView" />
+				</LinearLayout>
+				<!-- 제조사 -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputDisplayBox" >
+					<TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_product_manufacturer_lavel" />
+					<EditText
+					    android:id="@+id/etcequipment_product_manufacturer"
+					    android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.DisplayTextView" />
+				</LinearLayout>
+		
+				<!-- 제조사S/N -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputBox" >
+				    <TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_product_manufacturerSN_lavel" />
+					<EditText
+					    android:id="@+id/etcequipment_product_manufacturerSN"
+					    android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.ScannableEditText" />
+				</LinearLayout>
+				
+				<!-- 품목구분 -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputDisplayBox" >
+					<TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_product_itemType_lavel" />
+					<EditText
+					    android:id="@+id/etcequipment_product_itemType"
+				        android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.DisplayTextView" />
+				</LinearLayout>
+				<!-- 부품종류 -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputDisplayBox" >
+					<TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_product_partType_lavel" />
+					<EditText
+					    android:id="@+id/etcequipment_product_partType"
+				        android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.DisplayTextView" />
+				</LinearLayout>
+				<!-- 등록일 -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputBox" >
+					<TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_regDate_lavel" />
+					<EditText
+					    android:id="@+id/etcequipment_regDate"
+				        android:layout_width="100dp"
+						android:layout_height="wrap_content"
+					    style="@style/Form.Styled.ScannableEditText" />
+				</LinearLayout>
+				<!-- 제조사물자 -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputBox" >
+					<TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_manufacturerYn_lavel" />
+					<Switch 
+						android:id="@+id/etcequipment_materialYn"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:textOn="예"
+						android:textOff="아니오"
+					/>
+				</LinearLayout>
+				<!-- 요청개수 -->
+				<LinearLayout
+		            style="@style/Form.Styled.InputBox" >
+					<TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/etcequipment_requestNumber_lavel" />
+					<EditText
+					    android:id="@+id/etcequipment_requestNumber"
+					    android:layout_width="100dp"
+						android:layout_height="wrap_content"
+					    style="@style/Form.Styled.ScannableEditText"
+					    android:inputType="number" />
+				</LinearLayout>
+		        <Space
+		            android:layout_width="match_parent"
+		            android:layout_height="20dp" />
+			</LinearLayout>        
+	    </ScrollView>
+	    
+		<!-- 버튼Bar  -->
+		<LinearLayout
+	        style="@style/Form.Styled.ToolBar" >
+			<Space
+	            android:layout_width="0dp"
+	            android:layout_height="wrap_content"
+	            android:layout_weight="1" />
+            <Button
+                android:id="@+id/etcequipment_crud_request"
+                style="@style/Form.Styled.RedButton"
+                android:text="@string/etcequipment_crud_request_lavel" />
+
+		</LinearLayout>
+	</LinearLayout>
+	<!-- barcode scan progress -->
+    <RelativeLayout
+        android:id="@+id/etcequipment_barcodeProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ProgressBar
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</merge>

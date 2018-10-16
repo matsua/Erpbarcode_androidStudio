@@ -1,0 +1,739 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<LinearLayout
+	    android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:orientation="horizontal" >
+		<Button 
+		    android:id="@+id/selectfacdetail_tab_general_button"            
+			android:layout_width="0dp"            
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			style="@style/Form.Styled.Tab.StateButton"
+			android:text="일반" />
+		<Button 
+		    android:id="@+id/selectfacdetail_tab_loc_button"
+			android:layout_width="0dp"            
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			style="@style/Form.Styled.Tab.StateButton"
+			android:text="위치" />
+		<Button 
+		    android:id="@+id/selectfacdetail_tab_org_button"
+			android:layout_width="0dp"            
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			style="@style/Form.Styled.Tab.StateButton"
+			android:text="조직" />
+		<Button 
+		    android:id="@+id/selectfacdetail_tab_network_button"
+			android:layout_width="0dp"            
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			style="@style/Form.Styled.Tab.StateButton"
+			android:text="보증" />
+		<Button 
+		    android:id="@+id/selectfacdetail_tab_failure_button"
+			android:layout_width="0dp"            
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			style="@style/Form.Styled.Tab.StateButton"
+			android:text="고장" />
+		<Button 
+		    android:id="@+id/selectfacdetail_tab_failureList_button"
+			android:layout_width="0dp"            
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			style="@style/Form.Styled.Tab.StateButton"
+			android:text="고장이력" />
+	</LinearLayout>
+	
+	<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <!-- TAB1 일반 -->
+
+        <ScrollView
+            android:id="@+id/selectfacdetail_tab1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:scrollbarAlwaysDrawVerticalTrack="true" >
+
+                <LinearLayout 
+                    style="@style/Form.Styled.InputBar" >
+
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="설비바코드" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_BARCODE"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="설비명" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_BARCODEName"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="상위바코드" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_UBARCODE"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="상위바코드명" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_UBARCODEName"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <!-- 설비상태 -->
+
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="설비상태" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZDESC"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZPSTATU"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="80dp" />
+                    </LinearLayout>
+
+                    <!-- 제조사 -->
+
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="제조사" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZCODENAME"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <!-- 제조사 S/N -->
+
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="제조사S/N" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_SERGE"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <!-- 납품일 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="납품일" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_AULDT"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <!-- 취득일 -->
+
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="취득일" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ANSDT"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <!-- 자재코드 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="자재코드" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_SUBMT"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <!-- 자재명 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="자재명" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_MAKTX"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <!-- 자산분류 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="자산분류(대)" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZATEXT01"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZEQART1"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="50dp" />
+                    </LinearLayout>
+
+                    <!-- 자산분류 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="자산분류(중)" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZATEXT02"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZEQART2"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="50dp" />
+                    </LinearLayout>
+
+                    <!-- 자산분류 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="자산분류(소)" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZATEXT03"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZEQART3"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="50dp" />
+                    </LinearLayout>
+
+                    <!-- 자산분류 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="자산분류(세)" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZATEXT04"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZEQART4"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="50dp" />
+                    </LinearLayout>
+
+                    <!-- 품목구분 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="품목구분" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_PTXT1"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZPGUBUN"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="50dp" />
+                    </LinearLayout>
+
+                    <!-- 부품종류 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="부품종류" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_PTXT2"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZPPART"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="50dp" />
+                    </LinearLayout>
+
+                    <!-- 설비처리구분 -->
+                    <!-- 품목구분 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="설비처리구분" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZKEQUI_TXT"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZKEQUI"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="50dp" />
+                    </LinearLayout>
+
+                    <!-- 자산번호 -->
+                    <!-- 품목구분 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="자산번호" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZANLN1"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <!-- 최종변경인 -->
+                    <!-- 품목구분 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="최종변경인" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZPDAUSER"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZPDAUSERNM"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="80dp" />
+                    </LinearLayout>
+
+                    <!-- 최종변경일 -->
+                    <!-- 품목구분 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="최종변경일" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_AEDAT"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <!-- 교체전 설비 -->
+                    <!-- 품목구분 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="교체전설비" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZEQBR"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+
+                    <!-- 교제후 설비 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="교체후설비" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZEQRR"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+        </ScrollView> <!-- TAB1 일반 -->
+
+
+        <!-- TAB2 위치 -->
+        <ScrollView
+            android:id="@+id/selectfacdetail_tab2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white" >
+
+                <LinearLayout style="@style/Form.Styled.InputBar" >
+                    <!-- 국사코드 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="국사코드" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZKUKCO"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+					<!-- 유무선구분 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="유무선구분" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_EQUIPGD_TXT"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+					<!-- 장치ID -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="장치ID" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZEQUIPGC"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+					<!-- 장치명 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="장치명" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_DEVICEGB"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+					<!-- 공급업체 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="공급업체" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZLIFNR"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="100dp" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZLIFNM"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+					<!-- 위치바코드 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="위치바코드" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZEQUIPLP"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+					<!-- 위치명 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="위치명" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_PLOCNAME"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+					<!-- 기능위치 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="기능위치" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_TPLNR"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+					<!-- 기능위치명 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="기능위치명" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_PLTXT"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+        </ScrollView> <!-- TAB2 위치 -->
+
+
+        <!-- TAB3 조직 -->
+        <ScrollView
+            android:id="@+id/selectfacdetail_tab3"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone" >
+
+                <LinearLayout style="@style/Form.Styled.InputBar" >
+                    <!-- 운용조직 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="운용조직" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZKTEXT"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZKOSTL"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="80dp" />
+                    </LinearLayout>
+                    <!-- WBS요소 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="WBS요소" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_PROID"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+					<!-- 유지보수센터 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="유지보수센터" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_CENTER_NAME"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZCENTER"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="80dp" />
+                    </LinearLayout>
+					<!-- 운용시스템구분 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="운용시스템구분" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ZEQUIPGL_TXT"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+        </ScrollView> <!-- TAB3 조직 -->
+
+
+        <!-- TAB4 보증 -->
+        <ScrollView
+            android:id="@+id/selectfacdetail_tab4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone" >
+
+                <LinearLayout style="@style/Form.Styled.InputBar" >
+                    <!-- 보증기준 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="보증기준" />
+                        
+                        <EditText
+                            android:id="@+id/selectfacdetail_ABCKZ"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_ABCTX"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+					<!-- 신규설비 보증기간 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="신규설비 보증기간" />
+                    </LinearLayout>
+					<!-- 보증시작일 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="보증시작일" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_GWLDT_O"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+					<!-- 보증종료일 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="보증종료일" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_GWLEN_O"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+					<!-- 개조설비 보증기간 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="개조설비 보증기간" />
+                    </LinearLayout>
+					<!-- 보증시작일 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="보증시작일" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_GWLDT_I"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>	
+					<!-- 보증종료일 -->
+                    <LinearLayout style="@style/Form.Styled.InputBox" >
+                        <TextView
+                            style="@style/Form.Styled.LeftMiddleLavelTextView"
+                            android:text="보증종료일" />
+                        <EditText
+                            android:id="@+id/selectfacdetail_GWLEN_I"
+                            style="@style/Form.Styled.DisplayBoxTextView"
+                            android:layout_width="0dp"
+							android:layout_weight="1" />
+                    </LinearLayout>
+                </LinearLayout>
+
+        </ScrollView> <!-- TAB4 보증 -->
+        
+        <!-- TAB5 고장 -->
+        <ScrollView
+            android:id="@+id/selectfacdetail_tab5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:visibility="gone" >
+
+                <LinearLayout style="@style/Form.Styled.InputBar" >
+                    <!-- 고장 -->
+                        
+                </LinearLayout>
+
+        </ScrollView> <!-- TAB5 고장 -->
+        
+        <!-- TAB6 고장수리이력 -->
+        <LinearLayout android:id="@+id/listLinear"
+		    		  android:orientation="vertical"
+		    		  android:layout_width="match_parent"
+		    		  android:layout_height="match_parent">
+			<HorizontalScrollView
+			    android:layout_width="match_parent"
+			    android:layout_height="490dp"
+			    android:layout_marginLeft="4dp"
+			    android:layout_marginRight="4dp">
+			    <LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="490dp"
+				    android:orientation="vertical">
+				    <LinearLayout
+					    android:layout_width="wrap_content"
+					    android:layout_height="40dp"
+					    android:orientation="horizontal">
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="110dp"
+						    android:text="장치바코드" />					    
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="110dp"
+						    android:text="고장등록일" />
+				        <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="110dp"
+						    android:text="수리완료일" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="200dp"
+						    android:text="고장코드명" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="수리내역" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="수리업체" />
+				    </LinearLayout>
+			        
+				    <ListView 
+					    android:id="@+id/listView"
+					    android:layout_width="match_parent"
+					    android:layout_height="450dp"
+				        android:dividerHeight="1dp" >
+					</ListView>
+				</LinearLayout>
+			</HorizontalScrollView>
+			<TextView
+		        style="@style/Form.Styled.ListHeaderBar"
+		        android:layout_width="fill_parent"
+		        android:layout_height="40dp"
+		        android:gravity="center"
+		        android:id="@+id/listCount"/>
+		</LinearLayout> <!-- TAB6 고장수리이력 -->
+
+    </LinearLayout>
+
+</LinearLayout>

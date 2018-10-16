@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white" >
+	<ListView 
+		android:id="@+id/notice_listView"
+		android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1" >
+	</ListView>
+    
+	<!--  하단 카운트 -->
+	<LinearLayout
+		style="@style/Form.Styled.ToolBar" >
+	    <CheckBox
+		    android:id="@+id/notice_notOpenCheckBox"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+		    android:textSize="14sp"
+		    android:text="@string/notice_notOpenCheckBox_text" />
+	    <Space 
+	        android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"/>
+	    <Button
+			android:id="@+id/notice_close_button"
+			style="@style/Form.Styled.RedButton"
+			android:layout_marginRight="2dp"
+			android:text="@string/notice_close_button_lavel" />
+	</LinearLayout>
+</LinearLayout>

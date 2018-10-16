@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CertificationActivity" >
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:layout_margin="20dp" >
+	    <!-- 안내메시지  -->
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical" >
+		    <TextView
+		        android:id="@+id/certification_infomation_text"
+		        android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			    style="@style/Form.Styled.NormalTextView" />
+	    </LinearLayout>
+	    <Space 
+	        android:layout_width="match_parent"
+		    android:layout_height="20dp" />
+	    <!-- 휴대전화번호  -->
+	    <LinearLayout
+		    style="@style/Form.Styled.InputDisplayBox" >
+		    <TextView
+		        android:id="@+id/certification_phoneNo_lavel"
+			    style="@style/Form.Styled.LeftLavelTextView"
+			    android:layout_width="0dp"
+				android:layout_weight="1"
+			    android:text="@string/certification_phoneNo_lavel" />
+		    <EditText
+		        android:id="@+id/certification_phoneNo"
+		        android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			    style="@style/Form.Styled.DisplayBoxTextView" />
+		    <EditText
+		        android:id="@+id/certification_seconds"
+		        android:layout_width="60dp"
+				android:layout_height="wrap_content"
+			    style="@style/Form.Styled.DisplayBoxTextView" />
+		</LinearLayout>
+		<Space 
+	        android:layout_width="match_parent"
+		    android:layout_height="20dp" />
+	    
+		<!-- 인증번호 요청  -->
+	    <LinearLayout
+		    style="@style/Form.Styled.InputDisplayBox" >
+		    <Button
+                android:id="@+id/certification_request_button"
+                style="@style/Form.Styled.RedButton"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_marginRight="4dp"
+                android:text="@string/certification_request_lavel" />
+		    <EditText
+			    android:id="@+id/certification_smsNo"
+			    android:inputType="number"
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			    style="@style/Form.Styled.NormalEditText" />
+		</LinearLayout>
+		
+	    <Space 
+	        android:layout_width="match_parent"
+		    android:layout_height="40dp" />
+		
+		<LinearLayout
+		    style="@style/Form.Styled.InputDisplayBox" >
+		    
+		    <Button
+                android:id="@+id/certification_send_button"
+                style="@style/Form.Styled.RedButton"
+                android:layout_width="0dp"
+                android:layout_weight="0.5"
+                android:text="@string/certification_send_lavel" />
+			<Space 
+			    android:layout_width="0dp"
+			    android:layout_height="wrap_content"
+                android:layout_weight="0.3" />
+            <Button
+                android:id="@+id/certification_close_button"
+                style="@style/Form.Styled.RedButton"
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:text="@string/certification_close_lavel" />
+
+		</LinearLayout>
+	</LinearLayout>
+
+</merge>

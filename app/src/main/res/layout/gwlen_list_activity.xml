@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_window"    
+	android:layout_width="match_parent"    
+	android:layout_height="match_parent"
+	android:orientation="vertical" >    
+
+	<LinearLayout
+	    android:layout_width="360dp"
+	    android:layout_height="580dp"
+	    android:orientation="vertical"
+	    android:background="@android:color/background_light">
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="35dp"
+		    android:background="@android:color/holo_red_dark" >
+
+		    <TextView
+		        android:id="@+id/title"
+		        style="@style/Form.Styled.DisplayTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_weight="0.83"
+		        android:text="무상교환/수리 확인(보증기간 내 설비)"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:textColor="@android:color/white"
+		        android:textSize="14dp"
+		        android:textStyle="bold" />
+
+		    <Button
+		        android:id="@+id/closeBtn"
+		        android:background="@android:color/holo_red_dark"
+		        android:layout_width="35dp"
+		        android:layout_height="35dp"
+		        android:layout_gravity="right"
+		        android:layout_weight="1"
+		        android:text="X"
+		        android:textColor="@android:color/white" />
+		</LinearLayout>
+	    
+	    <!-- 리스트 뷰 -->
+		<LinearLayout
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:layout_weight="1"
+		    android:orientation="vertical"
+		    android:background="@android:color/white" >
+		    <include
+		        android:id="@+id/list_header"
+		        layout="@layout/gwlen_list_header" />
+		    <ListView 
+			    android:id="@+id/listView"
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:dividerHeight="1dp" >
+	    	</ListView>
+		</LinearLayout>
+	    
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="40dp"
+		    android:background="@drawable/common_list_header_bg"
+		    android:orientation="vertical" >
+
+			<LinearLayout 
+			    android:layout_width="fill_parent"
+			    android:layout_height="40dp"
+			    android:orientation="vertical">
+			   <TextView
+			       android:layout_width="fill_parent"
+			       android:layout_height="40dp"
+			       android:gravity="center"
+			       android:visibility="gone"
+			       android:text="보증기간이 남은 설비가 존재합니다. \n 불용처리 하시겠습니까?" >
+			   </TextView>
+
+			   <TextView
+			       android:id="@+id/totalCount"
+			       android:layout_width="fill_parent"
+			       android:layout_height="40dp"
+			       android:gravity="center"
+			       android:textSize="16dp"
+			       android:textColor="@color/style_dark_gray">
+
+			   </TextView>
+			</LinearLayout>
+		   
+		   <LinearLayout
+		       android:layout_width="fill_parent"
+		       android:layout_height="40dp" 
+		       android:orientation="horizontal"
+		       android:visibility="gone">
+
+		       <Button
+		           android:id="@+id/cancelBtn"
+		           style="@style/Form.Styled.RedButton"
+		           android:layout_width="60dp"
+		           android:layout_height="34dp"
+		           android:layout_marginLeft="20dp"
+		           android:layout_marginRight="20dp"
+		           android:layout_weight="1"
+		           android:text="취소"/>
+		       <Button
+		           android:id="@+id/sendBtn"
+		           style="@style/Form.Styled.RedButton"
+		           android:layout_width="60dp"
+		           android:layout_height="34dp"
+		           android:layout_marginLeft="20dp"
+		           android:layout_marginRight="20dp"
+		           android:layout_weight="1"
+		           android:text="전송"/>
+		   </LinearLayout>
+
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

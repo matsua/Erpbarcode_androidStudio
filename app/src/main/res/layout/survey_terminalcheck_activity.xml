@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".TerminalCheckActivity" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" >
+	    <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical"
+		    android:background="@color/style_white_smoke" >
+		    <!-- 상위바코드들 입력BAR -->
+			<LinearLayout
+			    style="@style/Form.Styled.InputBar" >
+				<!--점검년월 -->
+				<LinearLayout
+				    style="@style/Form.Styled.InputBox" >
+					<TextView
+						style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/terminalcheck_yearmonth_level" />
+					<Spinner
+					    android:id="@+id/terminalcheck_year_spinner"
+					    android:layout_width="100dp"
+					    android:layout_height="match_parent"
+					    style="@style/Form.Styled.Spinner" />
+					<Space 
+					    android:layout_width="20dp"
+						android:layout_height="wrap_content"/>
+					<Spinner
+					    android:id="@+id/terminalcheck_month_spinner"
+					    android:layout_width="80dp"
+					    android:layout_height="match_parent"
+					    style="@style/Form.Styled.Spinner" />
+				</LinearLayout>
+				<!--플랜트 -->
+				<LinearLayout
+				    style="@style/Form.Styled.InputBox" >
+					<TextView
+						style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/terminalcheck_plant_level" />
+					<Spinner
+					    android:id="@+id/terminalcheck_plant_spinner"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+						style="@style/Form.Styled.Spinner" />
+				</LinearLayout>
+				<!--저장위치 -->
+				<LinearLayout
+				    style="@style/Form.Styled.InputBox" >
+					<TextView
+						style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/terminalcheck_sl_level" />
+					<Spinner
+					    android:id="@+id/terminalcheck_sl_spinner"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    style="@style/Form.Styled.Spinner" />
+				</LinearLayout>
+				<!-- 실사문서 -->
+				<LinearLayout
+				    android:id="@+id/terminalcheck_iblnr_inputbar"
+				    style="@style/Form.Styled.InputBox" >
+					<TextView
+						style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/terminalcheck_iblnr_level" />
+					<Spinner
+					    android:id="@+id/terminalcheck_iblnr_spinner"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    style="@style/Form.Styled.Spinner" />
+				</LinearLayout>
+				<!--자재 -->
+				<LinearLayout
+				    android:id="@+id/terminalcheck_materials_inputbar"
+				    style="@style/Form.Styled.InputBox" >
+					<TextView
+						style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/terminalcheck_materials_level" />
+					<EditText
+				        android:id="@+id/terminalcheck_materials_text"
+				        android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.DisplayTextView" />
+				</LinearLayout>
+				<!-- 단말바코드  -->
+				<LinearLayout
+				    android:id="@+id/terminalcheck_terminal_inputbar"
+				    style="@style/Form.Styled.InputBox" >
+				    <TextView
+				        style="@style/Form.Styled.LeftLavelTextView"
+					    android:text="@string/terminalcheck_terminalcode_lavel" />
+				    <EditText
+					    android:id="@+id/terminalcheck_terminalcode"
+					    android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+					    style="@style/Form.Styled.ScannableEditText" />
+				</LinearLayout>
+			</LinearLayout>
+	    </LinearLayout>
+	    
+		<!-- 버튼Bar  -->
+		<LinearLayout
+		    android:id="@+id/terminalcheck_crud_buttonbar"
+		    style="@style/Form.Styled.ToolBar" >
+			<Space 
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1" />
+			<Button android:id="@+id/terminalcheck_crud_init"
+				android:layout_marginRight="4dp"
+				style="@style/Form.Styled.RedButton"
+				android:text="@string/terminalcheck_crud_init_lavel" />    
+			<Button android:id="@+id/terminalcheck_crud_delete"
+				android:layout_marginRight="4dp" 
+				style="@style/Form.Styled.RedButton"
+				android:text="@string/terminalcheck_crud_delete_lavel" />
+			<Button
+			    android:id="@+id/terminalcheck_crud_save"
+			    android:layout_marginRight="4dp"
+			    style="@style/Form.Styled.RedButton"
+			    android:text="@string/terminalcheck_crud_save_lavel" />
+			<Button
+			    android:id="@+id/terminalcheck_crud_send"
+			    android:layout_marginRight="4dp" 
+			    style="@style/Form.Styled.RedButton"
+			    android:text="@string/terminalcheck_crud_send_lavel" />
+			<Button
+			    android:id="@+id/terminalcheck_crud_search"
+			    android:layout_marginRight="4dp" 
+				style="@style/Form.Styled.RedButton"
+			    android:text="@string/terminalcheck_crud_search_lavel" />
+			<Button
+			    android:id="@+id/terminalcheck_crud_close"
+				android:layout_marginRight="4dp"
+			    style="@style/Form.Styled.RedButton"
+			    android:text="@string/terminalcheck_crud_close_lavel" />
+		</LinearLayout>
+		
+		<FrameLayout
+		    android:layout_width="match_parent"
+			android:layout_height="0dp"
+		    android:layout_weight="1" >
+		    <!-- 상품단말실사 ListView -->
+			<HorizontalScrollView
+			    android:id="@+id/terminalcheck_one_scrollView"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="@android:color/white"
+			    android:visibility="gone" >
+			    <RelativeLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_marginLeft="4dp"
+				    android:layout_marginRight="4dp"
+				    android:background="@android:color/white" >
+				    <include
+				        android:id="@+id/terminalcheck_one_header"
+				        layout="@layout/survey_productsurvey_list_header" />
+				    <ListView 
+					    android:id="@+id/terminalcheck_one_listView"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:layout_below="@id/terminalcheck_one_header"
+					    android:dividerHeight="1dp" >
+			    	</ListView>
+		   		</RelativeLayout>
+		    </HorizontalScrollView>
+		    <!-- 상품단말실사 Check ListView -->
+			<HorizontalScrollView
+			    android:id="@+id/terminalcheck_two_scrollView"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="@android:color/white"
+			    android:visibility="gone" >
+			    <RelativeLayout
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:background="@android:color/white" >
+				    <include
+				        android:id="@+id/terminalcheck_two_header"
+				        android:layout_width="match_parent"
+				        layout="@layout/survey_checkterminal_list_header" />
+				    <ListView 
+					    android:id="@+id/terminalcheck_two_listView"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:layout_below="@id/terminalcheck_two_header"
+					    android:dividerHeight="1dp" >
+			    	</ListView>
+		   		</RelativeLayout>
+		    </HorizontalScrollView>
+		    <!-- 임대단말실사 TreeView -->
+			<HorizontalScrollView
+			    android:id="@+id/terminalcheck_three_scrollView"
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="@android:color/white"
+			    android:visibility="gone" >
+			    <FrameLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent" >
+				    <com.ktds.erpbarcode.common.treeview.TreeViewList
+				        android:id="@+id/terminalcheck_three_treeView"
+				        android:layout_width="1000px"
+				        android:layout_height="match_parent"
+				        android:scrollbars="vertical|horizontal"
+				        android:smoothScrollbar="true" />
+				 </FrameLayout>
+		    </HorizontalScrollView>
+		    
+		    <!-- barcode scan progress -->
+		    <RelativeLayout
+		        android:id="@+id/terminalcheck_barcodeProgress"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:visibility="gone">
+		        <ProgressBar
+		            style="?android:attr/progressBarStyleInverse"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"/>
+		    </RelativeLayout>
+		</FrameLayout>
+		
+		<!--  하단 카운트 -->
+		<LinearLayout
+			style="@style/Form.Styled.ListFooterBar" >
+	        <TextView
+			    android:id="@+id/terminalcheck_listFooter_totalCount"
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />   
+		</LinearLayout>
+	</LinearLayout>
+</merge>

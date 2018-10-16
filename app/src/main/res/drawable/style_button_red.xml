@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item 
+        android:state_enabled="true" android:state_pressed="true"
+        android:drawable="@drawable/common_button_red_up" />
+    
+    <item 
+        android:state_enabled="true"
+        android:drawable="@drawable/common_button_red" />
+    
+    <item
+        android:state_enabled="false">
+        <shape>
+			<gradient android:startColor="@color/style_grey" android:endColor="@color/style_grey" android:angle="270" />
+			<stroke android:width="0.1dp" android:color="@color/style_dark_gray"/>
+			<corners android:radius="6dp"/>
+			<padding android:left="8dp" android:right="8dp" android:top="8dp" android:bottom="8dp" />
+		</shape>
+	</item>
+</selector>

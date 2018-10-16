@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SettingActivity" >
+    
+	<ScrollView 
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@android:color/white" >
+		<LinearLayout
+		    android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:paddingTop="20dp"
+			android:paddingBottom="20dp"
+			android:paddingLeft="16dp"
+			android:paddingRight="16dp"
+			android:orientation="vertical" >
+			
+		    <!--*********************************************************************
+			**	앱 버젼 관리.
+			*********************************************************************-->
+			<LinearLayout
+			    style="@style/Setting.Styled.SetLayoutBar" >
+			    
+			    <TextView
+			        style="@style/Setting.Styled.TitleText"
+					android:text="@string/setting_appversion_title" />
+			    <LinearLayout style="@style/Setting.Styled.TitleLine" />
+			    
+			    <LinearLayout
+			        android:id="@+id/setting_appversion_update_button"
+			        style="@style/Setting.Styled.HorizontalButtonBar" >
+					<LinearLayout
+						style="@style/Setting.Styled.ExpansionInputBox" >
+					    <TextView
+					        android:id="@+id/setting_appversion_update_title"
+							style="@style/Setting.Styled.SubjectText" />
+						<TextView
+						    android:id="@+id/setting_appversion_update_summary"
+							style="@style/Setting.Styled.NormalText" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+			</LinearLayout>
+	
+			<Space 
+			    android:layout_width="match_parent"
+			    android:layout_height="20dp"/>
+			
+		    <!--*********************************************************************
+			**	자재마스터 정보 업데이트
+			*********************************************************************-->
+			<LinearLayout
+			    style="@style/Setting.Styled.SetLayoutBar" >
+			    
+			    <TextView
+			        style="@style/Setting.Styled.TitleText"
+					android:text="@string/setting_surveymaster_title" />
+			    <LinearLayout style="@style/Setting.Styled.TitleLine" />
+			    
+			    <LinearLayout
+			        android:id="@+id/setting_surveymaster_update_button"
+			        style="@style/Setting.Styled.HorizontalButtonBar" >
+					<LinearLayout
+						style="@style/Setting.Styled.ExpansionInputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_surveymaster_update_title" />
+						<TextView
+						    android:id="@+id/setting_surveymaster_update_summary"
+							style="@style/Setting.Styled.NormalText" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+			        style="@style/Setting.Styled.HorizontalButtonBar" >
+					<ProgressBar 
+					    android:id="@+id/setting_surveymaster_update_progress"
+				        style="?android:attr/progressBarStyleHorizontal"
+				        android:layout_width="match_parent"
+				        android:layout_height="wrap_content"
+				        android:max="100"
+				        android:progress="0"
+				        android:secondaryProgress="0"
+				        android:visibility="gone" />
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+			</LinearLayout>
+			
+			<Space 
+			    android:layout_width="match_parent"
+			    android:layout_height="20dp"/>
+			
+			<!--*********************************************************************
+			**	사운드 및 효과음
+			*********************************************************************-->
+			<LinearLayout 
+			    style="@style/Setting.Styled.SetLayoutBar" >
+			    <TextView
+					style="@style/Setting.Styled.TitleText"
+					android:text="@string/setting_soundeffects_title"/>
+			    <LinearLayout style="@style/Setting.Styled.TitleLine" />
+	
+				<!-- 사운드 잠금 여부 CheckBox -->
+				<LinearLayout
+			        android:id="@+id/setting_soundeffects_lock_button"
+			        style="@style/Setting.Styled.HorizontalButtonBar" >
+					<LinearLayout 
+					    style="@style/Setting.Styled.ExpansionInputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_soundeffects_lock_title"/>
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_soundeffects_lock_summary"/>
+					</LinearLayout>
+					<LinearLayout
+						style="@style/Setting.Styled.CheckInputBox" >
+						<CheckBox 
+						    android:id="@+id/setting_soundeffects_lock_checkbox"
+						    style="@style/Setting.Styled.NormalCheckBox" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+			</LinearLayout>
+	
+			<Space 
+			    android:layout_width="match_parent"
+			    android:layout_height="20dp"/>
+			
+			<!--*********************************************************************
+			**	블루투스
+			*********************************************************************-->
+			<LinearLayout 
+			    style="@style/Setting.Styled.SetLayoutBar" >
+			    <TextView
+					style="@style/Setting.Styled.TitleText"
+					android:text="@string/setting_bluetooth_title"/>
+			    <LinearLayout style="@style/Setting.Styled.TitleLine" />
+	
+				<!-- 소프트키보드 CheckBox -->
+				<LinearLayout
+			        android:id="@+id/setting_bluetooth_softkeyboard_button"
+			        style="@style/Setting.Styled.HorizontalButtonBar" >
+					<LinearLayout 
+					    style="@style/Setting.Styled.ExpansionInputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_bluetooth_softkeyboard_title"/>
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_bluetooth_softkeyboard_summary"/>
+					</LinearLayout>
+					<LinearLayout
+						style="@style/Setting.Styled.CheckInputBox" >
+						<CheckBox 
+						    android:id="@+id/setting_bluetooth_softkeyboard_checkbox"
+						    style="@style/Setting.Styled.NormalCheckBox" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+				
+				<!-- 연결 경고음 설정 -->
+				<LinearLayout
+			        android:id="@+id/setting_kdc_connect_alert"
+			        style="@style/Setting.Styled.HorizontalButtonBar" >
+					<LinearLayout 
+					    style="@style/Setting.Styled.ExpansionInputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_bluetooth_setting_connect_alert_title" />
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_bluetooth_setting_connect_alert_subtitle" />
+					</LinearLayout>
+					<LinearLayout
+						style="@style/Setting.Styled.CheckInputBox" >
+						<CheckBox 
+						    android:id="@+id/setting_kdc_connect_alert_checkbox"
+						    style="@style/Setting.Styled.NormalCheckBox" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+			</LinearLayout>
+			
+			<Space 
+			    android:layout_width="match_parent"
+			    android:layout_height="20dp"/>
+			
+			<!--*********************************************************************
+			**	스캔설정
+			*********************************************************************-->
+			<LinearLayout 
+			    style="@style/Setting.Styled.SetLayoutBar" >
+				
+				<!-- 스캔 설정 -->
+				<TextView
+					style="@style/Setting.Styled.TitleText"
+					android:text="@string/setting_scan_setting"/>
+				<LinearLayout style="@style/Setting.Styled.TitleLine" />
+				
+				<!-- 자동 스캔 설정 -->
+				<LinearLayout
+			        android:id="@+id/setting_kdc_autotrigger"
+			        style="@style/Setting.Styled.HorizontalButtonBar" >
+					<LinearLayout
+						style="@style/Setting.Styled.ExpansionInputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_scan_setting_autotrigger_title"/>
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_scan_setting_autotrigger_subtitle"/>
+					</LinearLayout>
+					<LinearLayout
+						style="@style/Setting.Styled.CheckInputBox" >
+						<CheckBox 
+						    android:id="@+id/setting_kdc_autotrigger_checkbox"
+						    style="@style/Setting.Styled.NormalCheckBox" />
+					</LinearLayout>
+				</LinearLayout>
+				
+				<!-- 자동 스캔 간격 -->
+				<LinearLayout
+				    style="@style/Setting.Styled.HorizontalButtonBar"
+				    android:clickable="false" >
+					<LinearLayout
+					    android:layout_width="100dp"
+						android:layout_height="wrap_content" >
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_scan_setting_autotrigger_delay_title"/>
+					</LinearLayout>
+					<LinearLayout
+						style="@style/Setting.Styled.ExpansionInputBox"
+						android:paddingRight="26dp" >
+						<Spinner
+						    android:id="@+id/setting_autotrigger_delay_value"
+						    android:layout_width="match_parent"
+						    android:layout_height="34dp"
+						    style="@style/Form.Styled.Spinner" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+			</LinearLayout>
+			
+			<Space 
+			    android:layout_width="match_parent"
+			    android:layout_height="20dp"/>
+			
+			<!--*********************************************************************
+			**	시스템 설정
+			*********************************************************************-->
+			<LinearLayout 
+			    style="@style/Setting.Styled.SetLayoutBar" >
+					
+				<!-- 시스템 설정 -->
+				<TextView
+					style="@style/Setting.Styled.TitleText"
+					android:text="@string/setting_system_setting" />
+				<LinearLayout style="@style/Setting.Styled.TitleLine" />
+				
+				<!-- 자동삭제 설정 -->
+				<LinearLayout
+			        android:id="@+id/setting_kdc_autoerase"
+			        style="@style/Setting.Styled.HorizontalButtonBar" >
+					<LinearLayout
+						style="@style/Setting.Styled.ExpansionInputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_system_setting_autoerase_title"/>
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_system_setting_autoerase_subtitle"/>
+					</LinearLayout>
+					<LinearLayout
+						style="@style/Setting.Styled.CheckInputBox" >
+						<CheckBox 
+						    android:id="@+id/setting_kdc_autoerase_checkbox"
+						    style="@style/Setting.Styled.NormalCheckBox" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+				
+				<!-- Beep Sound 설정 -->
+				<LinearLayout
+			        android:id="@+id/setting_kdc_beepsound"
+			        style="@style/Setting.Styled.HorizontalButtonBar" >
+					<LinearLayout
+						style="@style/Setting.Styled.ExpansionInputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_system_setting_beepsound_title"/>
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_system_setting_beepsound_subtitle"/>
+					</LinearLayout>
+					<LinearLayout
+						style="@style/Setting.Styled.CheckInputBox" >
+						<CheckBox 
+						    android:id="@+id/setting_kdc_beepsound_checkbox"
+						    style="@style/Setting.Styled.NormalCheckBox" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+				
+				<!-- Beep On Scan 설정 -->
+				<LinearLayout
+			        android:id="@+id/setting_kdc_beeponscan"
+			        style="@style/Setting.Styled.HorizontalButtonBar" >
+					<LinearLayout
+						style="@style/Setting.Styled.ExpansionInputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_system_setting_beeponscan_title"/>
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_system_setting_beeponscan_subtitle"/>
+					</LinearLayout>
+					<LinearLayout
+						style="@style/Setting.Styled.CheckInputBox" >
+						<CheckBox 
+						    android:id="@+id/setting_kdc_beeponscan_checkbox"
+						    style="@style/Setting.Styled.NormalCheckBox" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+				
+				<!-- Beep Volume High 설정 -->
+				<LinearLayout
+			        android:id="@+id/setting_kdc_beepvolumehigh"
+			        style="@style/Setting.Styled.HorizontalButtonBar" >
+					<LinearLayout
+						style="@style/Setting.Styled.ExpansionInputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_system_setting_beepvolumehigh_title"/>
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_system_setting_beepvolumehigh_subtitle"/>
+					</LinearLayout>
+					<LinearLayout
+						style="@style/Setting.Styled.CheckInputBox" >
+						<CheckBox 
+						    android:id="@+id/setting_kdc_beepvolumehigh_checkbox"
+						    style="@style/Setting.Styled.NormalCheckBox" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+				
+				<!-- Vibrator 설정 -->
+				<LinearLayout
+			        android:id="@+id/setting_kdc_vibrator"
+			        style="@style/Setting.Styled.HorizontalButtonBar" >
+					<LinearLayout
+						style="@style/Setting.Styled.ExpansionInputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_system_setting_vibrator_title"/>
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_system_setting_vibrator_subtitle"/>
+					</LinearLayout>
+					<LinearLayout
+						style="@style/Setting.Styled.CheckInputBox" >
+						<CheckBox 
+						    android:id="@+id/setting_kdc_vibrator_checkbox"
+						    style="@style/Setting.Styled.NormalCheckBox" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+				
+				<!-- KeyPad 설정 -->
+				<LinearLayout
+			        android:id="@+id/setting_kdc_keypad"
+			        style="@style/Setting.Styled.HorizontalButtonBar" >
+					<LinearLayout
+						style="@style/Setting.Styled.ExpansionInputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_system_setting_keypad_title"/>
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_system_setting_keypad_subtitle"/>
+					</LinearLayout>
+					<LinearLayout
+						style="@style/Setting.Styled.CheckInputBox" >
+						<CheckBox 
+						    android:id="@+id/setting_kdc_keypad_checkbox"
+						    style="@style/Setting.Styled.NormalCheckBox" />
+					</LinearLayout>
+				</LinearLayout>	
+				<LinearLayout style="@style/Setting.Styled.Line" />
+				
+				<!--메모리 정보 -->
+				<LinearLayout
+			        style="@style/Setting.Styled.ButtonBar"
+			        android:clickable="false" >
+					<LinearLayout
+						style="@style/Setting.Styled.InputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="메모리 정보"/>
+						<TextView
+						    android:id="@+id/setting_kdc_memoryinfo_nstored"
+							style="@style/Setting.Styled.NormalText" />
+						<TextView
+						    android:id="@+id/setting_kdc_memoryinfo_sizeleft"
+							style="@style/Setting.Styled.NormalText"/>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+				
+				<!--메모리 리셋-->
+				<LinearLayout
+			        android:id="@+id/setting_kdc_memoryreset_button"
+			        style="@style/Setting.Styled.ButtonBar" >
+					<LinearLayout
+						style="@style/Setting.Styled.InputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_memoryreset_title"/>
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_memoryreset_subtitle"/>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+				
+				<!--스캐너 정보 -->
+				<LinearLayout
+			        style="@style/Setting.Styled.ButtonBar"
+			        android:clickable="false" >
+					<LinearLayout
+						style="@style/Setting.Styled.InputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_scanner_info_title"/>
+						<TextView
+						    android:id="@+id/setting_kdc_version_firmware"
+							style="@style/Setting.Styled.NormalText" />
+						<TextView
+						    android:id="@+id/setting_kdc_version_serial"
+							style="@style/Setting.Styled.NormalText" />
+						<TextView
+						    android:id="@+id/setting_kdc_version_fccnum"
+							style="@style/Setting.Styled.NormalText" />
+						<TextView
+						    android:id="@+id/setting_kdc_bluetooth_macaddress"
+							style="@style/Setting.Styled.NormalText" />
+						<TextView
+						    android:id="@+id/setting_kdc_bluetooth_fwversion"
+							style="@style/Setting.Styled.NormalText" />
+						<TextView
+						    android:id="@+id/setting_kdc_version_batteryleft"
+							style="@style/Setting.Styled.NormalText" />
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+				
+				<!--시간 동기화-->
+				<LinearLayout
+			        android:id="@+id/setting_kdc_clocksync_button"
+			        style="@style/Setting.Styled.ButtonBar" >
+					<LinearLayout
+						style="@style/Setting.Styled.InputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_clocksync_title"/>
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_clocksync_subtitle"/>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+				
+				<!--공장 초기화-->
+				<LinearLayout
+			        android:id="@+id/setting_kdc_factorydefault_button"
+			        style="@style/Setting.Styled.ButtonBar" >
+					<LinearLayout
+						style="@style/Setting.Styled.InputBox" >
+					    <TextView
+							style="@style/Setting.Styled.SubjectText"
+							android:text="@string/setting_factorydefault_title"/>
+						<TextView
+							style="@style/Setting.Styled.NormalText"
+							android:text="@string/setting_factorydefault_subtitle"/>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout style="@style/Setting.Styled.Line" />
+				
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+	
+	<!-- barcode scan progress -->
+    <RelativeLayout
+        android:id="@+id/setting_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ProgressBar
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</merge>

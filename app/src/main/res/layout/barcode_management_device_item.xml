@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="30dp"
+	    android:orientation="horizontal">
+	    
+	 	<!-- √ -->
+	    <CheckBox
+		    android:id="@+id/device_isChecked"
+		    android:layout_width="40dp"
+			android:layout_height="wrap_content"
+			android:checked="false"
+			android:padding="0dp"
+			android:focusable="false"
+			android:soundEffectsEnabled="true"
+			android:focusableInTouchMode="true" />
+	    <!-- 장치ID -->
+	    <TextView
+	        android:id="@+id/device_item1"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 장치명 -->
+	    <TextView
+	        android:id="@+id/device_item2"
+	        android:layout_width="180dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 프로젝트번호 -->
+	    <TextView
+	        android:id="@+id/device_item3"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- WBS -->
+	    <TextView
+	        android:id="@+id/device_item4"
+	        android:layout_width="120dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 운용시스템구분자명 -->
+	    <TextView
+	        android:id="@+id/device_item5"
+	        android:layout_width="140dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 장치ID코드 -->
+	    <TextView
+	        android:id="@+id/device_item6"
+	        android:layout_width="120dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 장비ID명 -->
+	    <TextView
+	        android:id="@+id/device_item7"
+	        android:layout_width="120dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 장비ID구분자명칭 -->
+	    <TextView
+	        android:id="@+id/device_item8"
+	        android:layout_width="140dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 장치상태명 -->
+	    <TextView
+	        android:id="@+id/device_item9"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 자재코드 -->
+	    <TextView
+	        android:id="@+id/device_item10"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 인수확정여부명 -->
+	    <TextView
+	        android:id="@+id/device_item11"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 활성여부 -->
+	    <TextView
+	        android:id="@+id/device_item12"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 생성일시 -->
+	    <TextView
+	        android:id="@+id/device_item13"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 비고 -->
+	    <TextView
+	        android:id="@+id/device_item14"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 표준서비스코드상태 -->
+	    <TextView
+	        android:id="@+id/device_item15"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+    </LinearLayout>
+</LinearLayout>

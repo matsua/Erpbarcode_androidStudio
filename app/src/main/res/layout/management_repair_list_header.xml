@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/Form.Styled.ListHeaderBar" >
+
+ 	<!-- √ -->
+    <TextView
+        style="@style/Form.Styled.LavelTextView"
+        android:id="@+id/repair_checkTxt"
+        android:layout_width="40dp"
+        android:gravity="center_horizontal"
+	    android:text="√" />
+    
+    <!-- 전체선택/해제 -->
+    <CheckBox
+	    android:id="@+id/repair_checkBox"
+	    android:layout_width="40dp"
+		android:layout_height="wrap_content"
+	    android:textSize="16sp"
+	    android:checked="true" />
+    
+    <!-- 설비바코드 -->
+    <TextView
+        android:id="@+id/repair_listheader_facCd"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="160dp"
+        android:text="설비바코드" />
+    <!-- 설비S/N -->
+    <TextView
+        android:id="@+id/repair_listheader_snCd"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="160dp"
+        android:text="설비S/N" />
+    <!-- 설비상태 -->
+    <TextView
+        android:id="@+id/repair_listheader_fsStatus"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="100dp"
+        android:text="설비상태" />
+    <!-- 자재코드 -->
+    <TextView
+        android:id="@+id/repair_listheader_productCode"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="100dp"
+        android:text="자재코드" />
+    <!-- 자재명 -->
+    <TextView
+        android:id="@+id/repair_listheader_productName"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="400dp"
+        android:text="자재명" />
+    <!-- 품목구분 -->
+    <TextView
+        android:id="@+id/repair_listheader_devTypeName"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="80dp"
+        android:text="품목구분" />
+    <!-- 부품종류 -->
+    <TextView
+        android:id="@+id/repair_listheader_partType"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="80dp"
+        android:text="부품종류" />
+    
+    <!-- 장치바코드 -->
+    <TextView
+        android:id="@+id/repair_listheader_fsCd"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="100dp"
+        android:text="장치바코드" />
+    <!-- 고장등록취소/수리의뢰취소 -->
+    <!-- 설비상태 -->
+    <TextView
+        android:id="@+id/repair_listheader_facStatus"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="100dp"
+        android:text="설비상태" />
+    <!-- 고장코드 -->
+    <TextView
+        android:id="@+id/repair_listheader_failureCode"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="60dp"
+        android:text="고장코드" />
+    <!-- 고장명 -->
+    <TextView
+        android:id="@+id/repair_listheader_failureName"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="160dp"
+        android:text="고장명" />
+    <!-- 협력사코드 -->
+    <TextView
+        android:id="@+id/repair_listheader_partnerCode"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="160dp"
+        android:text="협력사코드" />
+   	<!-- 협력사명 -->
+    <TextView
+        android:id="@+id/repair_listheader_partnerName"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="260dp"
+        android:text="협력사명" />
+    <!-- 고장등록번호 -->
+    <TextView
+        android:id="@+id/repair_listheader_failureRegNo"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="140dp"
+        android:text="고장등록번호" />
+    <!-- 수리의뢰번호 -->
+    <TextView
+        android:id="@+id/repair_listheader_repairRequestNo"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="140dp"
+        android:text="수리의뢰번호" />
+    	    
+    <!-- 수리완료 -->
+    <TextView
+        android:id="@+id/repair_listheader_locCd"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="200dp"
+        android:text="위치바코드" />
+    <TextView
+        android:id="@+id/repair_listheader_locName"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="350dp"
+        android:text="위치명" />
+    <TextView
+        android:id="@+id/repair_listheader_URCODN"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="150dp"
+        android:text="원인유형" />
+	<TextView
+        android:id="@+id/repair_listheader_MNCODN"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="150dp"
+        android:text="수리유형" />
+    <TextView
+        android:id="@+id/repair_listheader_failureCode_2"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="60dp"
+        android:text="고장코드" />
+    <TextView
+        android:id="@+id/repair_listheader_repairRequestNo_2"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="140dp"
+        android:text="수리의뢰번호" />
+    <TextView
+        android:id="@+id/repair_listheader_injurybarcode"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="140dp"
+        android:text="기존바코드" />
+    <TextView
+        android:id="@+id/repair_listheader_rreason"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="140dp"
+        android:text="대체발행사유" />
+    <!-- // 수리완료 -->
+    
+    
+    <!-- // 고장등록취소/수리의뢰취소 -->
+
+   	<!--  개조개량 -->
+    <!-- 장치바코드 -->
+    <TextView
+        android:id="@+id/repair_listheader_deviceid"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="100dp"
+        android:text="장치바코드" />
+    <!-- 지시서번호 -->
+    <TextView
+        android:id="@+id/repair_listheader_upgdoc"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="100dp"
+        android:text="지시서번호" />
+    <!--  // 개조개량 -->
+
+  	<!-- 운용조직 -->
+    <TextView
+        android:id="@+id/repair_listheader_orgInfo"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="240dp"
+        android:text="운용조직" />
+
+</LinearLayout>

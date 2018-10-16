@@ -1,0 +1,552 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/treescan_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical">    
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="@color/style_white_smoke" >
+		<!-- 바코드들 입력BAR -->
+	    <LinearLayout
+		    style="@style/Form.Styled.InputBar" >
+		    <!-- 운용조직  -->
+		    <LinearLayout
+			    android:id="@+id/treescan_organization_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox" >
+			    <TextView
+			        android:id="@+id/treescan_organization_orgCode_lavel"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_organization_orgCode_lavel" />
+			    <EditText
+			        android:id="@+id/treescan_organization_orgCode"
+			        android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.DisplayTextView" />
+			</LinearLayout>
+			<!-- 접수조직  -->
+			<LinearLayout
+			    android:id="@+id/treescan_receiptOrganization_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+			        android:id="@+id/treescan_receiptOrganization_orgCode_lavel"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_receiptOrganization_orgCode_lavel" />
+			    <EditText
+			        android:id="@+id/treescan_receiptOrganization_orgCode"
+			        android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.DisplayTextView" />
+			    <Button android:id="@+id/treescan_receiptOrganization_search_button"            
+					android:layout_width="60dp"            
+					android:layout_height="wrap_content"
+					style="@style/Form.Styled.RedButton"
+					android:text="@string/treescan_receiptOrganization_search_text"
+					android:textSize="14sp" />
+			</LinearLayout>
+		    <!-- 위치바코드  -->
+		    <LinearLayout
+			    android:id="@+id/treescan_loc_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+			        android:id="@+id/treescan_location_locCd_lavel"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_location_locCd_lavel" />
+			    <EditText
+				    android:id="@+id/treescan_location_locCd"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+			</LinearLayout>
+			<!-- 위치바코드명 -->
+			<LinearLayout
+			    android:id="@+id/treescan_locInfo_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox" >
+			    <EditText
+				    android:id="@+id/treescan_locInfo_locName"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    android:drawableLeft="@drawable/common_icon_currentaddress"
+				    style="@style/Form.Styled.DisplayTextView" />
+			    <!-- 위치정보 -->
+			    <Button android:id="@+id/addInfoBtn"            
+					android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:text="@string/treescan_location_locCd_info"/>
+			</LinearLayout>
+			<!-- GPS 위치 데이타 -->
+			<LinearLayout
+			    android:id="@+id/treescan_gps_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox"
+			    android:visibility="gone" >
+				<EditText
+				    android:id="@+id/treescan_gps_currentGPS"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+				    android:drawableLeft="@drawable/common_icon_gps"
+				    style="@style/Form.Styled.DisplayTextView" />
+			</LinearLayout>
+
+			<!-- WBS 번호 -->
+			<LinearLayout
+			    android:id="@+id/treescan_wbs_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_wbs_wbsNo_lavel" />
+			    <EditText
+			        android:id="@+id/treescan_wbs_wbsNo"
+			        android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.DisplayTextView" />
+			</LinearLayout>
+			
+			<!-- 설비바코드 -->
+			<LinearLayout
+			    android:id="@+id/treescan_fac_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+			        android:id="@+id/treescan_fac_facCd_lavel"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_fac_facCd_lavel" />
+				<EditText
+				    android:id="@+id/treescan_fac_facCd"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+				<TextView
+				    android:id="@+id/treescan_fac_partType"
+				    android:layout_marginLeft="3dp"
+				    android:layout_width="20dp"
+					android:layout_height="wrap_content"
+				    style="@style/Form.Styled.DisplayTextView" />
+				<CheckBox
+				    android:id="@+id/treescan_fac_UU"
+				    android:layout_width="70dp"
+					android:layout_height="wrap_content"
+				    android:textSize="14sp"
+				    android:text="@string/treescan_fac_scanUU_lavel" />
+				<!-- 설비상세조회 -->
+				<Button 
+				    android:id="@+id/treescan_fac_search_button" 
+					android:layout_width="60dp"
+					style="@style/Form.Styled.RedButton"
+					android:text="@string/selectfac_search_text" />			    
+			</LinearLayout>
+		
+			<!-- 설비상태 -->
+			<LinearLayout
+			    android:id="@+id/treescan_zp_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+				<TextView
+					style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_zp_zpStatus_lavel" />
+				<Spinner
+				    android:id="@+id/treescan_zp_zpStatus"
+				    android:layout_width="match_parent"
+					android:layout_height="match_parent"
+				    style="@style/Form.Styled.Spinner" />
+			</LinearLayout>
+						
+			<!-- 장치바코드 -->
+			<LinearLayout
+			    android:id="@+id/treescan_device_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_device_deviceId_lavel" />
+			    <EditText
+				    android:id="@+id/treescan_device_deviceId"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+			    <!-- 무선장비아이디 -->
+			    <TextView
+				    android:id="@+id/treescan_device_oprSysCd"
+			        android:layout_width="150dp"
+					android:layout_height="wrap_content"
+					style="@style/Form.Styled.DisplayTextView"
+			        android:hint="" />
+			</LinearLayout>
+			
+			<!-- 장치바코드정보 -->
+			<LinearLayout
+			    android:id="@+id/treescan_deviceInfo_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox" >
+				<EditText
+				    android:id="@+id/treescan_deviceInfo_deviceInfo"
+				    android:drawableLeft="@drawable/common_icon_deviceid"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.DisplayTextView" />
+			    <!-- 위치정보 -->
+			    <Button android:id="@+id/addInfoBtn_deviceId"            
+					android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:text="@string/treescan_location_locCd_info"/>
+			</LinearLayout>
+
+			<!-- 상위바코드  -->
+			<LinearLayout
+			    android:id="@+id/treescan_high_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+					style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_high_highBarcode_lavel" />
+			    <EditText
+				    android:id="@+id/treescan_high_UFacCd"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+			    <TextView
+				    android:id="@+id/treescan_fac_UPartType"
+				    android:layout_marginLeft="3dp"
+				    android:layout_width="30dp"
+					android:layout_height="wrap_content"
+				    style="@style/Form.Styled.DisplayTextView" />
+			</LinearLayout>
+			
+			<!--고장코드 -->
+			<LinearLayout
+			    android:id="@+id/treescan_cboCode_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+				<TextView
+					style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_cboCode_level" />
+				<Spinner
+				    android:id="@+id/treescan_cboCode_spinner"
+				    android:layout_width="match_parent"
+					android:layout_height="match_parent"
+				    style="@style/Form.Styled.Spinner" />
+			</LinearLayout>
+			<!--  고장내역 -->
+			<LinearLayout
+			    android:id="@+id/treescan_cboReason_inputbar"
+			    style="@style/Form.Styled.InputBox"
+			    android:layout_height="64dp" >
+				<TextView
+					style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_cboReason_level" />
+				<EditText
+				    android:id="@+id/treescan_cboReason"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:maxLength="80"
+				    style="@style/Form.Styled.NormalEditText"
+					android:lines="3" />
+				
+			</LinearLayout>
+			
+			<!--  형상구성, 배송오더 -->
+			<LinearLayout
+			    android:id="@+id/treescan_Hierachy_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+			        android:id="@+id/treescan_fac_Hierachy_lavel"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_fac_Hierachy_lavel" />
+				<CheckBox
+				    android:id="@+id/treescan_crud_Hierachy"
+				    android:layout_width="180dp"
+					android:layout_height="wrap_content"
+				    android:textSize="14sp"
+				    android:text="@string/treescan_crud_Hierachy_level" />
+			</LinearLayout>			
+		</LinearLayout>
+		
+		<!-- 버튼Bar  -->
+		<LinearLayout
+		    android:id="@+id/treescan_crud_buttonbar"
+		    style="@style/Form.Styled.ToolBar" >
+			<LinearLayout
+			    android:id="@+id/treescan_crud_none_buttonbar"
+		    	android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+				<CheckBox
+				    android:id="@+id/treescan_crud_chkScan"
+				    android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+				    android:textSize="16sp"
+				    android:text="@string/treescan_crud_chkScan_lavel"
+				    android:checked="false" />
+				<Space 
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+				<Button
+	                android:id="@+id/treescan_crud_init"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="@string/treescan_crud_init_lavel" />
+				<Button
+	                android:id="@+id/treescan_crud_cancelScan"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="@string/treescan_crud_cancelScan_lavel"
+	                android:visibility="gone" />
+				<Button
+	                android:id="@+id/treescan_crud_move"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="@string/treescan_crud_move_lavel"
+	                android:visibility="gone" />
+	            <Button
+	                android:id="@+id/treescan_crud_delete"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="@string/treescan_crud_delete_lavel" />
+	            <Button
+	                android:id="@+id/treescan_crud_save"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="@string/treescan_crud_save_lavel" />
+	            <Button
+	                android:id="@+id/treescan_crud_send"
+	                style="@style/Form.Styled.RedButton"
+	                android:text="@string/treescan_crud_send_lavel" />
+	        </LinearLayout>
+	        <LinearLayout
+			    android:id="@+id/treescan_crud_editmode_buttonbar"
+		    	android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:visibility="gone" >
+				<TextView
+			        android:id="@+id/treescan_crud_editmodeComment"
+		    		android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:textSize="17sp" />
+	            <Button
+	                android:id="@+id/treescan_crud_cancelEditMode"
+	                style="@style/Form.Styled.RedButton"
+	                android:text="@string/transfer_crud_cancelEditMode_lavel" />
+			</LinearLayout>
+		</LinearLayout>
+		
+		<LinearLayout
+		    android:id="@+id/failure_fac_box"
+		    style="@style/Form.Styled.InputBar"
+		    android:orientation="vertical"
+		    android:layout_height="wrap_content"
+		    android:visibility="gone">
+			<LinearLayout
+			    android:id="@+id/treescan_fac_inputbar_failure"
+			    style="@style/Form.Styled.InputBox"
+			    >
+			    <TextView
+			        android:id="@+id/treescan_fac_facCd_lavel_failure"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_fac_facCd_lavel" />
+				<EditText 
+				    android:id="@+id/treescan_fac_facCd_failure"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+				<Button 
+				    android:id="@+id/treescan_fac_failure_button" 
+					android:layout_width="60dp"
+					style="@style/Form.Styled.RedButton"
+					android:text="@string/selectfac_search_text" />
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:id="@+id/treescan_fac_name_failure"
+			    style="@style/Form.Styled.InputBox">
+			    <TextView
+			        android:id="@+id/treescan_fac_facNm_lavel_failure"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/FailureLogging_productName_info" />
+				<EditText 
+				    android:id="@+id/treescan_fac_facNm_failure"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.DisplayBoxTextView" />
+				
+				<EditText 
+				    android:id="@+id/treescan_fac_facCode_failure"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="2"
+				    style="@style/Form.Styled.DisplayBoxTextView" />
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:id="@+id/treescan_fac_device_failure"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+			        android:id="@+id/treescan_device_cd_lavel_failure"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_device_deviceId_lavel" />
+				<EditText 
+				    android:id="@+id/treescan_device_failure"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+			</LinearLayout>
+		
+			<LinearLayout
+			    android:id="@+id/treescan_device_name_failure"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+			        android:id="@+id/treescan_device_nm_lavel_failure"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/FailureLogging_div_info" />
+				<EditText 
+				    android:id="@+id/treescan_device_nm_failure"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.DisplayBoxTextView" />
+				
+				<Button android:id="@+id/treescan_device_info_button"            
+					android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:text="@string/treescan_location_locCd_info"/>
+			</LinearLayout>
+			
+			<LinearLayout
+			    android:id="@+id/treescan_failure_init"
+			    style="@style/Form.Styled.InputBox" 
+			    android:gravity="right">
+				<Button
+	                android:id="@+id/treescan_info_init"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="@string/treescan_crud_init_lavel" />
+			</LinearLayout>
+		</LinearLayout>
+		
+		<!-- 리스트 뷰 -->
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:background="@android:color/white" >
+			<FrameLayout
+		        android:id="@+id/treescan_barcodetree_frame"
+		        android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+				android:orientation="vertical" />
+		</LinearLayout>
+		
+		<LinearLayout android:id="@+id/listLinear"
+		    		  android:orientation="vertical"
+		    		  android:layout_width="match_parent"
+		    		  android:layout_height="match_parent"
+		    		  android:visibility="gone">
+			<HorizontalScrollView
+			    android:layout_width="match_parent"
+			    android:layout_height="340dp"
+			    android:layout_marginLeft="4dp"
+				android:layout_marginRight="4dp"
+				>
+			    <LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical">
+				    <LinearLayout
+				        android:id="@+id/fcc_header"
+					    android:layout_width="wrap_content"
+					    android:layout_height="40dp"
+					    android:orientation="horizontal">
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="110dp"
+						    android:text="장치바코드" />
+				        <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="110dp"
+						    android:text="고장등록일" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="110dp"
+						    android:text="수리완료일" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="고장코드명" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="수리내역" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="수리업체" />
+				    </LinearLayout>
+				    <LinearLayout
+				        android:id="@+id/dev_header"
+					    android:layout_width="wrap_content"
+					    android:layout_height="40dp"
+					    android:orientation="horizontal">
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="설비바코드" />
+				        <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="110dp"
+						    android:text="자재코드" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="자재명" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="110dp"
+						    android:text="고장등록일" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="110dp"
+						    android:text="수리완료일" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="고장코드명" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="수리내역" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="수리업체" />
+				    </LinearLayout>
+			        
+				    <ListView 
+					    android:id="@+id/listView"
+					    android:layout_width="match_parent"
+					    android:layout_height="300dp"
+				        android:dividerHeight="1dp" >
+					</ListView>
+				</LinearLayout>
+			</HorizontalScrollView>
+			<TextView
+		        style="@style/Form.Styled.ListHeaderBar"
+		        android:layout_width="fill_parent"
+		        android:layout_height="40dp"
+		        android:gravity="center"
+		        android:id="@+id/listCount"/>
+		</LinearLayout>
+		
+	</LinearLayout>
+</FrameLayout>

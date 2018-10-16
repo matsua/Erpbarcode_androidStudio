@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".RepairActivity" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="@color/style_white_smoke" >
+	
+		<!-- 입력Bar -->
+		<LinearLayout
+		    style="@style/Form.Styled.InputBar" >
+		    <!-- 운용조직  -->
+		    <LinearLayout
+		        android:id="@+id/repair_organization_orgCode_textbar"
+			    style="@style/Form.Styled.InputDisplayBox" >
+			    <TextView
+			        style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/repair_organization_orgCode_lavel" />
+			    <EditText
+			        android:id="@+id/repair_organization_orgCode"
+			        android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.DisplayTextView" />
+			</LinearLayout>
+			<!-- 위치바코드  -->
+			<LinearLayout
+			    android:id="@+id/repair_loc_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+			        style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/repair_loc_locCd_lavel" />
+			    <EditText
+				    android:id="@+id/repair_loc_locCd"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+			</LinearLayout>
+			<!-- 위치바코드명 -->
+
+			<LinearLayout
+			    android:id="@+id/repair_locInfo_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox" >
+
+			    <EditText
+			        android:id="@+id/repair_locInfo_locName"
+			        style="@style/Form.Styled.DisplayTextView"
+			        android:layout_width="233dp"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="0.73"
+			        android:drawableLeft="@drawable/common_icon_currentaddress" />
+
+			    <Button
+			        android:id="@+id/addInfoBtn"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/treescan_location_locCd_info" />
+			</LinearLayout>
+	
+			<!-- 설비바코드 -->
+			<LinearLayout
+			    android:id="@+id/repair_fac_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+			        android:id="@+id/repair_fac_facCd_lavel"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/repair_fac_facCd_lavel" />
+				<EditText
+				    android:id="@+id/repair_fac_facCd"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+				<TextView
+				    android:id="@+id/repair_fac_partType"
+				    android:layout_marginLeft="3dp"
+				    android:layout_width="20dp"
+					android:layout_height="wrap_content"
+				    style="@style/Form.Styled.DisplayTextView" />
+			</LinearLayout>
+		
+			<!-- 설비상태 -->
+			<LinearLayout
+			    android:id="@+id/repair_zp_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+				<TextView
+					style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/repair_zp_zpStatus_lavel" />
+				<Spinner
+				    android:id="@+id/repair_zp_zpStatus"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    style="@style/Form.Styled.Spinner" />
+			</LinearLayout>
+			
+			<!-- S/N변경 -->
+			<LinearLayout
+			    android:id="@+id/repair_sn_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+			        android:id="@+id/repair_fac_sn_lavel"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/repair_fac_sn_lavel" />
+				<EditText
+				    android:id="@+id/repair_sn_facCd"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+			</LinearLayout>
+		</LinearLayout>
+		
+		<!-- 버튼Bar  -->
+		<LinearLayout
+		    android:id="@+id/repair_crud_buttonbar"
+		    style="@style/Form.Styled.ToolBar" >
+			<Space 
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"/>
+			<Button
+                android:id="@+id/repair_crud_init"
+                style="@style/Form.Styled.RedButton"
+                android:layout_marginRight="4dp"
+                android:text="@string/repair_crud_init_lavel" />
+            <Button
+                android:id="@+id/repair_crud_delete"
+                style="@style/Form.Styled.RedButton"
+                android:layout_marginRight="4dp"
+                android:text="@string/repair_crud_delete_lavel" />
+            <Button
+                android:id="@+id/repair_crud_save"
+                style="@style/Form.Styled.RedButton"
+                android:layout_marginRight="4dp"
+                android:text="@string/repair_crud_save_lavel" />
+            <Button
+                android:id="@+id/repair_crud_send"
+                style="@style/Form.Styled.RedButton"
+                android:text="@string/repair_crud_send_lavel" />
+		</LinearLayout>
+
+		<FrameLayout
+		    android:layout_width="match_parent"
+			android:layout_height="0dp"
+		    android:layout_weight="1" >
+			<!-- 리스트 뷰 -->
+			<HorizontalScrollView
+			    android:layout_width="match_parent"
+				android:layout_height="match_parent"
+			    android:background="@android:color/white" >
+				<RelativeLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="match_parent"
+				    android:background="@android:color/white" >
+				    <include
+				        android:id="@+id/repair_list_header"
+				        layout="@layout/management_repair_list_header" />
+				    <ListView 
+					    android:id="@+id/repair_listView"
+					    android:layout_width="match_parent"
+					    android:layout_height="match_parent"
+					    android:layout_below="@id/repair_list_header"
+					    android:divider="@android:color/white"
+				        android:dividerHeight="1dp" >
+			    	</ListView>
+				</RelativeLayout>
+			</HorizontalScrollView>
+			<!-- barcode scan progress -->
+		    <RelativeLayout
+		        android:id="@+id/repair_barcodeProgress"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:visibility="gone">
+		        <ProgressBar
+		            style="?android:attr/progressBarStyleInverse"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"/>
+		    </RelativeLayout>
+		</FrameLayout>
+		
+		<!--  하단 카운트 -->
+		<LinearLayout
+			style="@style/Form.Styled.ListFooterBar" >
+	        <TextView
+			    android:id="@+id/repair_listfooter_totalCount"
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />   
+		</LinearLayout>
+	</LinearLayout>
+</merge>

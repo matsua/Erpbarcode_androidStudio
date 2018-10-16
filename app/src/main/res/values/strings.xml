@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ERP Barcode</string>
+    <string name="image_description">이미지</string>
+
+    <!-- DeviceScanActivity -->
+    <string name="bluetooth_scanner_title">블루투스 스캐너 연결</string>
+    <string name="bluetooth_printer_title">블루투스 프린터 연결</string>
+    <string name="bluetooth_paired_devices_title">등록된 기기</string>
+    <string name="bluetooth_new_devices_title">사용할수 있는 기기</string>
+    <string name="bluetooth_scan_button">기기 검색</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="none_found">No devices found</string>
+
+    <!-- LogInActivity -->
+    <string name="login_title">로그인</string>
+    <string name="login_userid_lavel">아이디</string>
+    <string name="login_password_lavel">비밀번호</string>
+    <string name="login_userid">사용자ID</string>
+    <string name="login_password">비밀번호</string>
+    <string name="login_signin">로그인</string>
+    <string name="login_shadow_lavel">음영지역</string>
+    <string name="login_password_reset">비밀번호 초기화</string>
+    <string name="login_error_password_required">비밀번호를 입력하세요.</string>
+    <string name="login_error_password_length">비밀번호는 8자 이상입니다.</string>
+    <string name="login_error_password_reset">초기 비밀번호로 로그인 할 수 없습니다.\n\r\'ERP Barcode System\' Web 에서\n\r비밀번호 변경 후 이용하여 주십시오.</string>
+    <string name="login_error_userId_required">사용자ID를 입력하세요.</string>
+    <string name="login_error_userId_password">사용자ID와 비밀번호를 확인하세요.</string>
+
+    <!-- CertificationActivity -->
+    <string name="certification_title">본인인증</string>
+    <string name="certification_phoneNo_lavel">휴대전화번호</string>
+    <string name="certification_request_lavel">인증번호 발송</string>
+    <string name="certification_send_lavel">인증번호 전송</string>
+    <string name="certification_close_lavel">닫기</string>
+    
+    <string name="fingerPrint_title">지문인증</string>
+    <string name="instructions">휴대전화 홈버튼에 등록된 지문을 쓸어내려 주세요.</string>
+
+    <!-- MainActivity -->
+    <string name="main_title">ErpBarcode</string>
+    <string name="main_bottom_connectscanner_button_lavel">스캐너연결</string>
+    <string name="main_bottom_taskmanagement_button_lavel">작업관리</string>
+    <string name="main_bottom_barcodesearch_button_lavel">바코드검색</string>
+    <string name="main_bottom_setting_button_lavel">환경설정</string>
+
+    <!-- SettingActivity -->
+    <string name="setting_title">환경설정</string>
+    <string name="setting_notice_title">공지</string>
+    <string name="setting_notice_noticelist_title">공지사항</string>
+    <string name="setting_appversion_title">앱 버젼</string>
+    <string name="setting_surveymaster_title">자료 업데이트</string>
+    <string name="setting_surveymaster_update_title">자재마스터 업데이트</string>
+    <string name="setting_soundeffects_title">사운드와 효과음</string>
+    <string name="setting_soundeffects_lock_title">사운드 재생 여부</string>
+    <string name="setting_soundeffects_lock_summary">사운드와 효과음을 활성화하시면 작업에 도움이 됩니다.</string>
+    <string name="setting_bluetooth_title">블루투스 바코드 스캐너 연결</string>
+    <string name="setting_bluetooth_barcodescanner_title">바코드스케너 연결 여부</string>
+    <string name="setting_bluetooth_barcodescanner_summary">바코드스케너를 검색하여 연결하세요.</string>
+    <string name="setting_bluetooth_softkeyboard_title">소프트키보드 활성 여부</string>
+    <string name="setting_bluetooth_softkeyboard_summary">바코드스케너 사용시에는 소프트키보드를 비활성화 하세요.</string>
+
+    <!-- NoticeActivity -->
+    <string name="notice_notOpenCheckBox_text">오늘 하루동안 열리지 않기</string>
+    <string name="notice_close_button_lavel">닫기</string>
+
+    <!-- 납품/인계인수 (납품입고, 납품취소, 배송출고) -->
+    <!-- 유동관리 모두, 수리/개조관리 (고장등록) -->
+    <!-- 철거관리 모두, 설비상태변경 모두 -->
+    <!-- TreeScanActivity -->
+    <string name="treescan_organization_orgCode_lavel">운용조직</string>
+    <string name="treescan_receiptOrganization_orgCode_lavel">접수조직</string>
+    <string name="treescan_receiptOrganization_search_text">검색</string>
+    <string name="treescan_location_locCd_lavel">위치바코드</string>
+    <string name="treescan_location_locCd_info">..</string> <!-- 위치바코드정보 -->
+    <string name="treescan_wbs_wbsNo_lavel">WBS번호</string>
+    <string name="treescan_device_deviceId_lavel">장치바코드</string>
+    <string name="treescan_device_oprSysCd_lavel">무선 장비아이디</string>
+    <string name="treescan_fac_facCd_lavel">설비바코드</string>
+    <string name="treescan_fac_scanUU_lavel">U-U</string>
+    <string name="treescan_zp_zpStatus_lavel">설비상태</string>
+    <string name="treescan_ship_zdocrt_lavel">배송오더</string>
+    <string name="treescan_ship_zdocrt_text">생성</string>
+    <string name="treescan_high_highBarcode_lavel">상위바코드</string>
+    <string name="treescan_crud_chkScan_lavel">스캔필수</string>
+    <string name="treescan_crud_init_lavel">초기화</string>
+    <string name="treescan_crud_cancelScan_lavel">스캔취소</string>
+    <string name="treescan_crud_move_lavel">이동</string>
+    <string name="treescan_crud_delete_lavel">삭제</string>
+    <string name="treescan_crud_save_lavel">저장</string>
+    <string name="treescan_crud_send_lavel">전송</string>
+    <string name="treescan_cboCode_level">고장코드</string>
+    <string name="treescan_cboReason_level">고장내역</string>
+    <string name="treescan_fac_Hierachy_lavel">형상구성</string>
+    <string name="treescan_crud_Hierachy_level">형상을구성함</string>
+    <string name="image_selection_popup_preview_text">미리보기</string>
+    <string name="image_selection_popup_album_text">앨범</string>
+    <string name="image_selection_popup_shooting_text">촬영</string>
+
+    <!-- TransferActivity -->
+    <string name="transfer_organization_orgCode_lavel">운용조직</string>
+    <string name="transfer_location_locCd_lavel">위치바코드</string>
+    <string name="transfer_wbs_wbsNo_lavel">WBS번호</string>
+    <string name="transfer_device_deviceId_lavel">장치바코드</string>
+    <string name="transfer_device_oprSysCd_lavel"></string>
+    <string name="transfer_fac_facCd_lavel">설비바코드</string>
+    <string name="transfer_fac_scanUU_lavel">U-U</string>
+    <string name="transfer_crud_init_lavel">초기화</string>
+    <string name="transfer_reScanRequest_move_lavel">재스캔요청</string>
+    <string name="transfer_crud_move_lavel">이동</string>
+    <string name="transfer_crud_modify_lavel">수정</string>
+    <string name="transfer_crud_delete_lavel">삭제</string>
+    <string name="transfer_crud_save_lavel">저장</string>
+    <string name="transfer_crud_send_lavel">전송</string>
+    <string name="transfer_crud_argumentConfirm1_lavel">인수확정</string>
+    <string name="transfer_crud_argumentConfirm2_lavel">등록확정</string>
+    <string name="transfer_crud_cancelEditMode_lavel">취소</string>
+    <string name="transferargument_send_lavel">전송</string>
+    <string name="transferargument_cancel_lavel">취소</string>
+
+    <!-- RepairActivity -->
+    <string name="repair_organization_orgCode_lavel">운용조직</string>
+    <string name="repair_loc_locCd_lavel">위치바코드</string>
+    <string name="repair_loc_search_text">검색</string>
+    <string name="repair_fac_facCd_lavel">설비바코드</string>
+    <string name="repair_fac_sn_lavel">설비 S/N</string>
+    <string name="repair_zp_zpStatus_lavel">설비상태</string>
+    <string name="repair_crud_init_lavel">초기화</string>
+    <string name="repair_crud_delete_lavel">삭제</string>
+    <string name="repair_crud_save_lavel">저장</string>
+    <string name="repair_crud_send_lavel">전송</string>
+
+    <!-- ***********< 인스토어마킹 >**************** -->
+    <!-- IsmRequestActivity -->
+    <string name="ismrequest_organization_orgCode_lavel">운용조직</string>
+    <string name="ismrequest_loc_locCd_lavel">위치바코드</string>
+    <string name="ismrequest_loc_locName_lavel">위치명</string>
+    <string name="ismrequest_loc_search_text">검색</string>
+    <string name="ismrequest_device_deviceId_lavel">장치바코드</string>
+    <string name="ismrequest_product_productCode_lavel">자재코드</string>
+    <string name="ismrequest_product_productName_lavel">자재명</string>
+    <string name="ismrequest_product_search_text">검색</string>
+    <string name="ismrequest_high_UFacCd_lavel">상위바코드</string>
+    <string name="ismrequest_reqstat_requestStatus_lavel">요청사유</string>
+    <string name="ismrequest_damage_replaceFacCd_lavel">훼손바코드</string>
+    <string name="ismrequest_manu_manufacturerSN_lavel">제조사S/N</string>
+    <string name="ismrequest_crud_search_lavel">조회</string>
+    <string name="ismrequest_crud_init_lavel">초기화</string>
+    <string name="ismrequest_crud_delete_lavel">삭제</string>
+    <string name="ismrequest_crud_request_lavel">요청</string>
+
+    <!-- EtcEquipmentActivity -->
+    <string name="etcequipment_organization_orgCode_lavel">운용조직</string>
+    <string name="etcequipment_loc_locCd_lavel">위치바코드</string>
+    <string name="etcequipment_loc_search_text">검색</string>
+    <string name="etcequipment_loc_locName_lavel">위치명</string>
+    <string name="etcequipment_product_productCode_lavel">자재코드</string>
+    <string name="etcequipment_product_search_text">검색</string>
+    <string name="etcequipment_product_productName_lavel">자재명</string>
+    <string name="etcequipment_product_productClass_lavel">자재분류</string>
+    <string name="etcequipment_product_assetLarge_lavel">자산분류대</string>
+    <string name="etcequipment_product_assetMedium_lavel">자산분류중</string>
+    <string name="etcequipment_product_assetSmall_lavel">자산분류소</string>
+    <string name="etcequipment_product_assetDetail_lavel">자산분류세</string>
+    <string name="etcequipment_product_manufacturer_lavel">제조사</string>
+    <string name="etcequipment_product_manufacturerSN_lavel">제조사S/N</string>
+    <string name="etcequipment_product_itemType_lavel">품목구분</string>
+    <string name="etcequipment_product_partType_lavel">부품종류</string>
+    <string name="etcequipment_regDate_lavel">등록일</string>
+    <string name="etcequipment_manufacturerYn_lavel">제조사물자</string>
+    <string name="etcequipment_requestNumber_lavel">요청개수</string>
+    <string name="etcequipment_crud_request_lavel">요청</string>
+
+    <!-- ***********< 재물조사 >**************** -->
+    <!-- 현장점검(창고/실), 현장점검(베이) -->
+    <!-- SpotCheckActivity -->
+    <string name="spotcheck_title">현장점검</string>
+    <string name="spotcheck_organization_orgCode_lavel">운용조직</string>
+    <string name="spotcheck_organization_search_text">검색</string>
+    <string name="spotcheck_location_locCd_lavel">위치바코드</string>
+    <string name="spotcheck_location_search_text">검색</string>
+    <string name="spotcheck_device_deviceId_lavel">장치바코드</string>
+    <string name="spotcheck_device_oprSysCd_lavel"></string>
+    <string name="spotcheck_fac_facCd_lavel">설비바코드</string>
+    <string name="spotcheck_fac_scanUU_lavel">U-U</string>
+    <string name="spotcheck_chk_FacCDMatch_lavel">실물</string>
+    <string name="spotcheck_chk_UFacCdMatch_lavel">상위</string>
+    <string name="spotcheck_chk_OrgMatch_lavel">부서</string>
+    <string name="spotcheck_chk_LocMatch_lavel">위치</string>
+    <string name="spotcheck_chk_DevMatch_lavel">장치</string>
+    <string name="spotcheck_crud_scanvital_lavel">스캔필수</string>
+    <string name="spotcheck_crud_init_lavel">초기화</string>
+    <string name="spotcheck_crud_cancelScan_lavel">스캔취소</string>
+    <string name="spotcheck_crud_save_lavel">저장</string>
+    <string name="spotcheck_crud_send_lavel">전송</string>
+
+    <!-- 상품단말실사, 임대단말실사 -->
+    <!-- RentCheckActivity -->
+    <string name="terminalcheck_yearmonth_level">점검년월</string>
+    <string name="terminalcheck_year_level">년</string>
+    <string name="terminalcheck_month_level">월</string>
+    <string name="terminalcheck_plant_level">플랜트</string>
+    <string name="terminalcheck_sl_level">저장위치</string>
+    <string name="terminalcheck_iblnr_level">실사문서</string>
+    <string name="terminalcheck_materials_level">자재</string>
+    <string name="terminalcheck_terminalcode_lavel">단말바코드</string>
+    <string name="terminalcheck_crud_init_lavel">초기화</string>
+    <string name="terminalcheck_crud_delete_lavel">삭제</string>
+    <string name="terminalcheck_crud_save_lavel">저장</string>
+    <string name="terminalcheck_crud_send_lavel">전송</string>
+    <string name="terminalcheck_crud_search_lavel">조회</string>
+    <string name="terminalcheck_crud_close_lavel">닫기</string>
+
+    <!-- ***********< 정보조회 >**************** -->
+    <!-- SelectFacActivity -->
+    <string name="selectfac_facCd_lavel">설비바코드</string>
+    <string name="selectfac_search_text">상세</string>
+
+    <!-- SelectProductActivity -->
+    <string name="selectproduct_productCode_lavel">자재코드</string>
+    <string name="selectproduct_productName_lavel">자재명</string>
+    <string name="selectproduct_search_text">검색</string>
+
+    <!-- SelectLocActivity -->
+    <string name="selectloc_locCd_lavel">위치코드</string>
+    <string name="selectloc_locName_lavel">위치명</string>
+    <string name="selectloc_search_text">검색</string>
+
+    <!-- SelectDeviceActivity -->
+    <string name="selectdevice_deviceId_lavel">장치바코드</string>
+    <string name="selectdevice_locCd_lavel">위치바코드</string>
+    <string name="selectdevice_search_text">조회</string>
+
+    <!-- SearchLocCheckActivity -->
+    <string name="searchloccheck_locCd_lavel">위치바코드</string>
+    
+    <!-- FailureLoggingActivity -->
+    <string name="searchloccheck_fccCode">물품코드</string>
+    <string name="searchloccheck_fccName">물품명</string>
+    <string name="searchloccheck_deviceName">물품명</string>
+    <string name="FailureLogging_fac_date">납품일</string>
+    <string name="FailureLogging_div_info">장치정보</string>
+    <string name="FailureLogging_productName_info">장치정보</string>
+    
+    <!-- IsmManagementActivity -->
+    <string name="ism_process_status">진행상태</string>
+    <string name="ism_new_barcode">신규바코드</string>
+    <string name="ism_injury_barcode">훼손바코드</string>
+    <string name="ism_request_reason">요청사유</string>
+    <string name="ism_request_date">처리일</string>
+    <string name="ism_label_setting">라벨용지</string>
+    
+    <string name="ism_print_setting">프린트설정</string>
+    <string name="ism_print_sensor">라벨센싱</string>
+    <string name="ism_request">검색</string>
+    <string name="ism_request_cancel">요청취소</string>
+    <string name="ism_print_test">출력테스트</string>
+    <string name="ism_request_generate">발행</string>
+    <string name="ism_request_republish">재발행</string>
+    <string name="ism_print">출력</string>
+    
+    <!-- BarcodeManagementLocActivity -->
+    <string name="barcode_management_locCd">위치코드</string>
+    <string name="barcode_management_title1">시/도</string>
+    <string name="barcode_management_title2">읍/면/동</string>
+    <string name="barcode_management_title2_2">*동을 먼저 입력하시면 더욱 편리합니다.</string>
+    <string name="barcode_management_title3">시/군/구</string>
+    <string name="barcode_management_title4">번지/호</string>
+    
+
+    <!-- ***********< 작업관리 >**************** -->
+    <!-- JobMenageActivity -->
+    <string name="jobmanage_jobgubun_lavel">작업구분</string>
+    <string name="jobmanage_sendgubun_lavel">전송구분</string>
+    <string name="jobmanage_jobdate_lavel">작업일자</string>
+    <string name="jobmanage_crud_confirm_lavel">확인</string>
+    <string name="jobmanage_crud_delete_lavel">삭제</string>
+
+    <!-- ***********< KoamTac >**************** -->
+    <string name="pairing_button_delete">삭제</string>
+    <string name="setting_bluetooth_setting_connect_alert_title">미연결 경고</string>
+    <string name="setting_bluetooth_setting_connect_alert_subtitle">블루투스 연결이 끊어진 상태에서 스캔시 경고를 하여 사용자에게 알려줍니다.</string>
+    <string name="setting_scan_setting">스캔 설정</string>
+    <string name="setting_scan_setting_autotrigger_title">자동 스캔</string>
+    <string name="setting_scan_setting_autotrigger_subtitle">일정 간격마다 자동으로 스캔을 합니다. 스캔버튼을 3초 이상 누르고 있으면 자동스캔이 종료됩니다.</string>
+    <string name="setting_scan_setting_autotrigger_delay_title">자동 스캔 간격</string>
+    <string name="setting_system_setting">시스템 설정</string>
+    <string name="setting_system_setting_autoerase_title">자동 삭제</string>
+    <string name="setting_system_setting_autoerase_subtitle">메모리가 가득찰 시 전체 메모리를 자동으로 삭제합니다.</string>
+    <string name="setting_system_setting_beepsound_title">비프음</string>
+    <string name="setting_system_setting_beepsound_subtitle">전체 비프 사운드를 켜고 끌수 있습니다.</string>
+    <string name="setting_system_setting_beeponscan_title">스캔 비프음</string>
+    <string name="setting_system_setting_beeponscan_subtitle">스캔 비프음을 켜고 끌수 있습니다.</string>
+    <string name="setting_system_setting_beepvolumehigh_title">비프음 크게 하기</string>
+    <string name="setting_system_setting_beepvolumehigh_subtitle">스캐너의 비프음을 크게 합니다.</string>
+    <string name="setting_system_setting_vibrator_title">진동 모드</string>
+    <string name="setting_system_setting_vibrator_subtitle">스캐너 진동 모드를 켜고 끌수 있습니다.</string>
+    <string name="setting_system_setting_keypad_title">키패드 활성화</string>
+    <string name="setting_system_setting_keypad_subtitle">스캐너의 키패드 사용을 비활성화 합니다.</string>
+    <string name="setting_memoryreset_title">메모리 리셋</string>
+    <string name="setting_memoryreset_subtitle">터치 하면 스캐너의 메모리를 리셋합니다.</string>
+    <string name="setting_scanner_info_title">스캐너 정보</string>
+    <string name="setting_clocksync_title">시간 동기화</string>
+    <string name="setting_clocksync_subtitle">터치 하면 미니 스캐너 시간설정을 핸드폰의 시간과 동기화 시킴니다. </string>
+    <string name="setting_factorydefault_title">공장 초기화</string>
+    <string name="setting_factorydefault_subtitle">터치 하면 미니 스캐너의 설정을 공장 초기화 상태로 되돌리며 시간이 걸릴 수도 있습니다. </string>
+    <string name="dialog_string_connecting_title">연결중</string>
+    <string name="dialog_string_connecting_last_subtitle">가장 최근에 연결되었던 스캐너에 연결중입니다.</string>
+    <string name="dialog_string_connecting_subtitle">스캐너 연결중입니다.</string>
+    <string name="title_activity_addr_info">AddrInfoActivity</string>
+    <string name="title_activity_delete_why_info">DeleteWhyInfoActivity</string>
+    <string name="title_activity_find_user">사용자조회</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_change_password_popup">ChangePassword</string>
+    <string name="title_reset_password_popup">ResetPassword</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <!-- oa.oe.scan barcode lib -->
+    <string name="button_cancel">Cancel</string>
+    <string name="button_ok">OK</string>
+    <string name="button_open_mobi">Decoder</string>
+    <string name="button_open_license">Code License</string>
+    <string name="menu_about">About</string>
+    <string name="mobi_url">http://www.manateeworks.com</string>
+    <string name="msg_default_contents">Contents</string>
+    <string name="msg_default_format">Format</string>
+    <string name="msg_default_status">사각형안에 바코드를 놓아주세요.</string>
+    <string name="msg_about">Decoder based on mobiScans Native Barcode Decoders for Android. To purchase a decoder SDK for application integration, or to have us develop your app, visit www.manateeworks.com.\n</string>
+    <string name="msg_buggy">This device has known bugs that cause barcode scanning problems.</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="msg_default_type"></string>
+    <string name="title_about">Camera Demo</string>
+    <string name="license_url">http://www.apache.org/licenses/LICENSE-2.0</string>
+     <string name="alert_title">알림</string>
+     <string name="content_msg_2">설비바코드를 스캔해주세요.</string>
+     <string name="content_msg_3">위치바코드를 스캔해주세요.</string>
+     
+     <!-- oa.oe.scan -->
+    <string name="msg_scan_default_status">사각형안에 바코드를 놓아주세요.</string>
+    <string name="msg_scan_default_format">Format</string>
+    <string name="msg_scan_default_type"></string>
+    <string name="msg_scan_default_contents">Contents</string>
+   
+	
+</resources>

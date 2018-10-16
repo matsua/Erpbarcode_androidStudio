@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_window"    
+	android:layout_width="match_parent"    
+	android:layout_height="match_parent"
+	android:orientation="vertical" >    
+
+	<LinearLayout
+	    android:layout_width="300dp"
+	    android:layout_height="300dp"
+	    android:orientation="vertical"
+	    android:background="@android:color/background_light">
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="35dp"
+		    android:background="@android:color/darker_gray" >
+
+		    <TextView
+		        android:id="@+id/title"
+		        style="@style/Form.Styled.DisplayTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_weight="0.83"
+		        android:text="주소정보"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:textColor="@android:color/white"
+		        android:textSize="18dp" />
+
+		    <Button
+		        android:id="@+id/closeBtn"
+		        android:layout_width="35dp"
+		        android:layout_height="35dp"
+		        android:background="@color/style_very_dark_gray"
+		        android:text="X"
+		        android:textColor="@android:color/white" />
+		</LinearLayout>
+	    
+	    <LinearLayout 
+	        android:layout_width="fill_parent"
+	        android:layout_height="265dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:orientation="vertical"
+	        android:background="@android:color/background_light">
+	      <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="fill_parent"
+	        android:layout_height="wrap_content"
+	        style="@style/Form.Styled.DisplayTextView"
+	        android:textSize="16dp"
+	        android:text="00000000000000000"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	    
+	    <TextView
+	    	android:id="@+id/textView2"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	style="@style/Form.Styled.DisplayTextView"
+	    	android:layout_marginTop="10dp"
+	    	android:text="위치명"
+	    	android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	    <EditText
+	    	android:id="@+id/editText2"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	style="@style/Form.Styled.ScannableEditText"
+	    	android:layout_marginTop="5dp"
+	    	android:ems="10"
+	    	android:inputType="textPersonName" />
+
+	    <TextView
+	    	android:id="@+id/textView3"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	style="@style/Form.Styled.DisplayTextView"
+	    	android:layout_marginTop="20dp"
+	    	android:text="법정동주소"
+	    	android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	    <EditText
+	    	android:id="@+id/editText3"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	style="@style/Form.Styled.ScannableEditText"
+	    	android:layout_marginTop="5dp"
+	    	android:ems="10"
+	    	android:inputType="textPersonName" />
+
+	    <TextView
+	    	android:id="@+id/textView4"
+	    	android:layout_width="fill_parent"
+	    	android:layout_height="wrap_content"
+	    	style="@style/Form.Styled.DisplayTextView"
+	    	android:layout_marginTop="20dp"
+	    	android:text="도로명주소"
+	    	android:textAppearance="?android:attr/textAppearanceMedium" />
+	    
+	    <EditText
+	    	android:id="@+id/editText4"
+	    	android:layout_width="match_parent"
+	    	android:layout_height="wrap_content"
+	    	style="@style/Form.Styled.ScannableEditText"
+	    	android:layout_marginTop="5dp"
+	    	android:ems="10"
+	    	android:inputType="textPersonName" />
+	    </LinearLayout>
+	    
+	</LinearLayout>
+</LinearLayout>

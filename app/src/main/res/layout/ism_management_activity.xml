@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:id="@+id/treescan_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical">    
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="@color/style_white_smoke" >
+		<!-- 바코드들 입력BAR -->
+	    <LinearLayout
+		    style="@style/Form.Styled.InputBar" >
+		    <!-- 운용조직  -->
+		    <LinearLayout
+			    android:id="@+id/treescan_organization_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox" >
+			    <TextView
+			        android:id="@+id/treescan_organization_orgCode_lavel"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/treescan_organization_orgCode_lavel" />
+			    <EditText
+			        android:id="@+id/treescan_organization_orgCode"
+			        android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.DisplayTextView" />
+			    
+			    <Button android:id="@+id/treescan_receiptOrganization_search_button"            
+					android:layout_width="60dp"            
+					android:layout_height="wrap_content"
+					style="@style/Form.Styled.RedButton"
+					android:text="@string/treescan_receiptOrganization_search_text"
+					android:textSize="14sp" />
+			</LinearLayout>
+			<!-- 진행상태  -->
+			<LinearLayout
+			    android:id="@+id/ism_process_status_ll"
+			    style="@style/Form.Styled.InputBox" >
+				<TextView
+					style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/ism_process_status" />
+				<Spinner
+				    android:id="@+id/ism_process_status"
+				    android:layout_width="match_parent"
+					android:layout_height="match_parent"
+				    style="@style/Form.Styled.Spinner" />
+			</LinearLayout>
+		    <!-- 신규바코드  -->
+		    <LinearLayout
+			    android:id="@+id/ism_new_barcode_ll"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/ism_new_barcode" />
+
+			    <EditText
+			        android:id="@+id/ism_new_barcode"
+			        style="@style/Form.Styled.ScannableEditText"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:layout_weight="1"/>
+
+			</LinearLayout>
+		    <!-- 훼손바코드  -->
+		    <LinearLayout
+			    android:id="@+id/ism_injury_barcode_ll"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/ism_injury_barcode" />
+			    <EditText
+				    android:id="@+id/ism_injury_barcode"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+			</LinearLayout>
+			<!-- 요청사유  -->
+			<LinearLayout
+			    android:id="@+id/ism_request_reason_ll"
+			    style="@style/Form.Styled.InputBox" >
+				<TextView
+					style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/ism_request_reason" />
+				<Spinner
+				    android:id="@+id/ism_request_reason"
+				    android:layout_width="match_parent"
+					android:layout_height="match_parent"
+				    style="@style/Form.Styled.Spinner" />
+			</LinearLayout>
+			<!-- 처리일 -->
+			<LinearLayout
+	            style="@style/Form.Styled.InputBox" >
+				<TextView
+			        style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/ism_request_date" />
+				<EditText
+				    android:id="@+id/ism_request_date_start"
+			        android:layout_width="150dp"
+					android:layout_height="wrap_content"
+				    style="@style/Form.Styled.ScannableEditText" />
+				<Space 
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+				<EditText
+				    android:id="@+id/ism_request_date_end"
+			        android:layout_width="150dp"
+					android:layout_height="wrap_content"
+				    style="@style/Form.Styled.ScannableEditText" />
+			</LinearLayout>
+			<!-- 라벨용지  -->
+			<LinearLayout
+			    android:id="@+id/ism_label_setting_ll"
+			    style="@style/Form.Styled.InputBox" >
+				<TextView
+					style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/ism_label_setting" />
+
+				<Spinner
+				    android:id="@+id/ism_label_setting"
+				    style="@style/Form.Styled.Spinner"
+				    android:layout_width="0dp"
+				    android:layout_height="wrap_content"
+				    android:layout_weight="1" />
+
+				 <!--
+				<Button
+	                android:id="@+id/ism_print_setting"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="@string/ism_print_setting" />
+				-->
+				<Button
+	                android:id="@+id/ism_print_sensor"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="@string/ism_print_sensor" />
+	                 
+			</LinearLayout>
+		</LinearLayout>
+		
+	    <!-- 버튼Bar  -->
+		<LinearLayout
+		    android:id="@+id/treescan_crud_buttonbar"
+		    style="@style/Form.Styled.ToolBar" >
+			<LinearLayout
+			    android:id="@+id/treescan_crud_none_buttonbar"
+		    	android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+				<Space 
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+				<Button
+	                android:id="@+id/ism_request"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="@string/ism_request" />
+				<Button
+	                android:id="@+id/ism_request_cancel"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="@string/ism_request_cancel"/>
+				<Button
+	                android:id="@+id/ism_print_test"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="@string/ism_print_test"/>
+	            <Button
+	                android:id="@+id/ism_request_generate"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="@string/ism_request_generate" />
+	            <Button
+	                android:id="@+id/ism_request_republish"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="@string/ism_request_republish" />
+	            <Button
+	                android:id="@+id/ism_print"
+	                style="@style/Form.Styled.RedButton"
+	                android:text="@string/ism_print" />
+	        </LinearLayout>
+		</LinearLayout>
+	    
+		<!-- 리스트 뷰 -->
+		<LinearLayout android:id="@+id/listLinear"
+		    		  android:orientation="vertical"
+		    		  android:layout_width="match_parent"
+		    		  android:layout_height="match_parent">
+			<HorizontalScrollView
+			    android:layout_width="match_parent"
+			    android:layout_height="340dp"
+			    android:layout_marginLeft="4dp"
+				android:layout_marginRight="4dp"
+				>
+			    <LinearLayout
+			        android:id="@+id/linearLayout"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical">
+				    <LinearLayout
+				        android:id="@+id/dev_header"
+					    android:layout_width="wrap_content"
+					    android:layout_height="40dp"
+					    android:orientation="horizontal">
+
+					    <CheckBox
+					        android:id="@+id/repair_checkBox"
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="40dp"
+					        android:checked="false"
+					        android:textSize="16sp" />
+					    
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="신규바코드" />
+				        <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="훼손바코드" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="자재코드" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="100dp"
+						    android:text="자재명" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="100dp"
+						    android:text="품목구분" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="80dp"
+						    android:text="부품종류" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="80dp"
+						    android:text="처리일" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="80dp"
+						    android:text="처리시간" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="80dp"
+						    android:text="진행상태" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="100dp"
+						    android:text="장치바코드" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="200dp"
+						    android:text="위치코드" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="500dp"
+						    android:text="위치명" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="450dp"
+						    android:text="자재분류(대/중/소/세)" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="450dp"
+						    android:text="자산분류(대/중/소/세)" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="200dp"
+						    android:text="제조사명" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="160dp"
+						    android:text="제조사 S/N" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="80dp"
+						    android:text="처리자" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="80dp"
+						    android:text="요청사유" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="500dp"
+						    android:text="운용조직" />
+				    </LinearLayout>
+			        
+				    <ListView 
+					    android:id="@+id/ismrequest_listView"
+					    android:layout_width="match_parent"
+					    android:layout_height="230dp"
+				        android:dividerHeight="1dp" >
+					</ListView>
+				</LinearLayout>
+			</HorizontalScrollView>
+		</LinearLayout>
+		<!-- barcode scan progress -->
+	    <RelativeLayout
+	        android:id="@+id/ism_barcodeProgress"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:visibility="gone">
+	        <ProgressBar
+	            style="?android:attr/progressBarStyleInverse"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"/>
+	    </RelativeLayout>
+	</LinearLayout>
+</FrameLayout>

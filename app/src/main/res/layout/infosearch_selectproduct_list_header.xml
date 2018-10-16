@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/Form.Styled.ListHeaderBar" >
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal">
+	    <TextView
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="100dp"
+		    android:text="자재코드" />
+	    <TextView
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="400dp"
+		    android:text="자재명" />
+	    <TextView
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="100dp"
+		    android:text="품목구분" />
+	    <TextView
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="100dp"
+		    android:text="부품종류" />
+	    <TextView
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="550dp"
+		    android:text="자재분류" />
+	    <TextView
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="350dp"
+		    android:text="제조사" />
+	    <TextView
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="80dp"
+		    android:text="자재유형" />
+	    <TextView
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="120dp"
+		    android:text="바코드라벨링여부" />
+    </LinearLayout>
+</LinearLayout>

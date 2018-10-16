@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ktds.erpbarcode"
+    android:installLocation="internalOnly"
+    android:versionCode="89"
+    android:versionName="4.99" >
+
+    <uses-sdk android:targetSdkVersion="19" />
+    
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/ErpBarcodeTheme" >
+        
+        
+        <activity
+            android:name="com.ktds.erpbarcode.IntroActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.ktds.erpbarcode.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme" />
+        <activity
+            android:name="com.ktds.erpbarcode.CertificationActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme" />
+        
+        <activity
+            android:name="com.ktds.erpbarcode.UpgradeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme" />
+        
+        <activity
+            android:name="com.ktds.erpbarcode.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme" />
+        <activity
+            android:name="com.ktds.erpbarcode.env.SettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme" />
+        <activity
+            android:name="com.ktds.erpbarcode.env.NoticeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme" />
+        <activity
+            android:name="com.ktds.erpbarcode.env.bluetooth.PairingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme" />
+
+        <!-- 납품입고/납품취소/배송출고/유동관리 -->
+        <activity
+            android:name="com.ktds.erpbarcode.management.TreeScanActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 인계인수 -->
+        <activity
+            android:name="com.ktds.erpbarcode.management.TransferActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 수리/개조관리 -->
+        <activity
+            android:name="com.ktds.erpbarcode.management.RepairActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 재물조사 -->
+        <activity
+            android:name="com.ktds.erpbarcode.survey.SpotCheckActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ktds.erpbarcode.survey.TerminalCheckActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!-- ******( 인스토어마킹 )***** -->
+        <!-- 바코드대체요청 -->
+        <activity
+            android:name="com.ktds.erpbarcode.ism.IsmRequestActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 부외실물등록요청 -->
+        <activity
+            android:name="com.ktds.erpbarcode.ism.EtcEquipmentActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <!-- 인스토어마킹완료 -->
+        <activity
+            android:name="com.ktds.erpbarcode.ism.IsmCompleteActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        
+        <!-- 작업관리. -->
+        <activity
+            android:name="com.ktds.erpbarcode.job.JobMenageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        
+        <!-- 인스토어마킹관리 -->
+        <activity 
+            android:name="com.ktds.erpbarcode.ism.IsmManagementActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+            
+        <!-- ******( 정보조회 )***** -->
+        <activity
+            android:name="com.ktds.erpbarcode.infosearch.SelectOrgCodeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ktds.erpbarcode.infosearch.SelectFacDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <!-- 자재정보 조회는 SoftKeyBoard 자동으로 활성화 한다. -->
+        <activity
+            android:name="com.ktds.erpbarcode.infosearch.SelectProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme" />
+        <activity
+            android:name="com.ktds.erpbarcode.infosearch.SelectDeviceActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ktds.erpbarcode.infosearch.SelectLocActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ktds.erpbarcode.infosearch.SearchLocCheckActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ktds.erpbarcode.infosearch.SearchWbsCheckActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        <activity
+            android:name="com.ktds.erpbarcode.infosearch.ZoomImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        
+        <activity
+            android:name="com.ktds.erpbarcode.barcodeManagement.BarcodeManagementLocActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        
+        <activity
+            android:name="com.ktds.erpbarcode.management.ResetPasswordActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        
+        <activity
+            android:name="com.ktds.erpbarcode.PersonalInfoAgreeActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+          
+        <activity
+            android:name="com.ktds.erpbarcode.management.AddrInfoActivity"
+            android:theme="@android:style/Theme.Dialog"
+			android:windowSoftInputMode="stateHidden" 
+			android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_addr_info" >
+        </activity>
+        
+        <activity
+            android:name="com.ktds.erpbarcode.management.GwlenListActivity"
+            android:theme="@android:style/Theme.Dialog"
+			android:windowSoftInputMode="stateHidden" 
+			android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_addr_info" >
+        </activity>
+        
+        <activity
+            android:name="com.ktds.erpbarcode.management.DeleteWhyInfoActivity"
+            android:theme="@android:style/Theme.Dialog"
+			android:windowSoftInputMode="stateHidden" 
+			android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_delete_why_info" >
+        </activity>
+        
+        <activity
+            android:name="com.ktds.erpbarcode.barcodeManagement.FindUserActivity"
+            android:theme="@android:style/Theme.Dialog"
+			android:windowSoftInputMode="stateHidden" 
+			android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_find_user" >
+        </activity>
+        
+        <activity
+            android:name="com.ktds.erpbarcode.ChangePasswordActivity"
+            android:theme="@android:style/Theme.Dialog"
+			android:windowSoftInputMode="stateHidden" 
+            android:label="@string/title_change_password_popup" >
+        </activity>
+        
+        <activity
+            android:name="com.ktds.erpbarcode.print.zebra.PrinterSettingActivity"
+            android:theme="@android:style/Theme.Dialog"
+			android:windowSoftInputMode="stateHidden" 
+			android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_delete_why_info" >
+        </activity>
+
+        <activity
+            android:name="com.ktds.erpbarcode.base.ScanViewActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+
+        <activity
+            android:name="com.manateeworks.cameraDemo.ActivityCapture"
+            android:screenOrientation="landscape"
+            android:theme="@style/ErpBarcodeTheme"
+            android:windowSoftInputMode="stateHidden|adjustPan" />
+        
+    </application>
+
+</manifest>

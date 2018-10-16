@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<LinearLayout
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+    	<!-- 리스트 뷰 -->
+		<HorizontalScrollView
+		    android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1"
+		    android:background="@android:color/white" >
+			<RelativeLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:background="@android:color/white" >
+			    <include
+			        android:id="@+id/transferargument_list_header"
+			        layout="@layout/management_transferargument_list_header" />
+			    <ListView 
+				    android:id="@+id/transferargument_listView"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_below="@id/transferargument_list_header"
+				    android:divider="@android:color/white"
+			        android:dividerHeight="1dp" >
+		    	</ListView>
+			</RelativeLayout>
+		</HorizontalScrollView>
+        
+        <!-- 하단 확정버튼 -->
+        <LinearLayout
+            style="@style/Form.Styled.ToolBar" >
+		    <Space 
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+            <Button
+                android:id="@+id/transferargument_send_button"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                style="@style/Form.Styled.RedButton"
+                android:text="@string/transferargument_send_lavel"
+                android:layout_marginRight="4dp"
+                android:textSize="14sp" />
+            <Button
+                android:id="@+id/transferargument_cancel_button"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                style="@style/Form.Styled.RedButton"
+                android:text="@string/transferargument_cancel_lavel"
+                android:textSize="14sp" />
+        </LinearLayout>
+	</LinearLayout>
+	<!-- argument scan progress -->
+    <RelativeLayout
+        android:id="@+id/transferargument_barcodeProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ProgressBar
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

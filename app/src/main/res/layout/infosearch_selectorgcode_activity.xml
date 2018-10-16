@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"    
+	android:layout_width="match_parent"    
+	android:layout_height="match_parent"
+	android:orientation="vertical" >    
+
+	<!-- Input Bar -->
+	<LinearLayout
+	    style="@style/Form.Styled.InputBar" >
+	    <!-- 조직코드 -->
+		<LinearLayout
+		    android:id="@+id/selectorgcode_organization_inputbar"
+		    style="@style/Form.Styled.InputBox" >
+			<TextView
+			    style="@style/Form.Styled.LeftLavelTextView"
+			    android:text="조직명" />
+		    <EditText
+		        android:id="@+id/selectorgcode_orgName"
+		        android:layout_width="0dp"
+		    	android:layout_height="match_parent"
+		    	android:layout_weight="1"
+			    style="@style/Form.Styled.ScannableEditText"
+			    android:imeOptions="actionSearch" />
+		    <Button 
+			    android:id="@+id/selectorgcode_search_button" 
+				android:layout_width="60dp"
+				style="@style/Form.Styled.RedButton"
+				android:text="검색" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<FrameLayout
+	    android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1" >
+		<!-- Tree 뷰 -->
+		<HorizontalScrollView 
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:background="@android:color/white" >
+			<FrameLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent" >
+			    <com.ktds.erpbarcode.common.treeview.TreeViewList
+			        android:id="@+id/selectorgcode_treeView"
+			        android:layout_width="1000px"
+			        android:layout_height="match_parent"
+			        android:scrollbars="vertical|horizontal"
+			        android:smoothScrollbar="true" />
+			</FrameLayout>
+	    </HorizontalScrollView>
+
+	    <!-- barcode scan progress -->
+		<RelativeLayout
+		    android:id="@+id/selectorgcode_barcodeProgress"
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:visibility="gone">
+		    <ProgressBar
+		        style="?android:attr/progressBarStyleInverse"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerInParent="true"/>
+		</RelativeLayout>
+    </FrameLayout>
+	
+	<!--  하단 카운트 -->
+	<LinearLayout
+		style="@style/Form.Styled.ListFooterBar"
+		android:visibility="gone" >
+	    <TextView
+		    android:id="@+id/selectorgcode_bottom_count"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+	
+	<!-- 선택, 취소 버튼 -->
+	<LinearLayout
+	    style="@style/Form.Styled.ToolBar" >
+        <Button 
+		    android:id="@+id/selectorgcode_choice_button" 
+			android:layout_width="140dp"            
+			android:layout_height="match_parent"
+			style="@style/Form.Styled.RedButton"
+			android:text="선택" />
+       	<Space 
+		    android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"/>
+		<Button 
+		    android:id="@+id/selectorgcode_cancel_button" 
+			android:layout_width="140dp"            
+			android:layout_height="match_parent"
+			style="@style/Form.Styled.RedButton"
+			android:text="취소" />
+	</LinearLayout>
+
+</LinearLayout>

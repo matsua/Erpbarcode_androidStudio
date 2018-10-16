@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/Form.Styled.ListHeaderBar" >
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal">
+
+        <TextView
+            style="@style/Form.Styled.LavelTextView"
+            android:layout_width="230dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="설비바코드"/>
+
+	    <TextView
+	        android:id="@+id/selectwbs_header_wbsNo"
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="230dp"
+	        android:layout_weight="1"
+	        android:gravity="center"
+	        android:text="보증종료일"/>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<!-- 입력Bar -->
+	<LinearLayout
+	    style="@style/Form.Styled.InputBar" >
+	    <!-- 운용조직  -->
+	    <LinearLayout
+		    android:id="@+id/ismrequest_organization_inputbar"
+		    style="@style/Form.Styled.InputDisplayBox" >
+		    <TextView
+		        style="@style/Form.Styled.LeftLavelTextView"
+			    android:text="@string/ismrequest_organization_orgCode_lavel" />
+		    <EditText
+		        android:id="@+id/ismrequest_organization_orgCode"
+		        android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			    style="@style/Form.Styled.DisplayTextView" />
+		</LinearLayout>
+		<!-- 위치바코드  -->
+		<LinearLayout
+		    android:id="@+id/ismrequest_loc_inputbar"
+		    style="@style/Form.Styled.InputBox" >
+		    <TextView
+		        style="@style/Form.Styled.LeftLavelTextView"
+			    android:text="@string/ismrequest_loc_locCd_lavel" />
+		    <EditText
+			    android:id="@+id/ismrequest_loc_locCd"
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			    style="@style/Form.Styled.ScannableEditText" />
+		</LinearLayout>
+		<!-- 위치바코드명 -->
+		<LinearLayout style="@style/Form.Styled.InputDisplayBox" >
+		    <TextView
+		        style="@style/Form.Styled.LeftLavelTextView"
+			    android:text="@string/ismrequest_loc_locName_lavel" />
+		    <EditText
+			    android:id="@+id/ismrequest_locInfo_locName"
+		        android:layout_width="233dp"
+			    android:layout_height="wrap_content"
+			    android:layout_weight="0.73"
+			    style="@style/Form.Styled.DisplayTextView" />
+		    <Button
+			        android:id="@+id/addInfoBtn"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/treescan_location_locCd_info" />
+		</LinearLayout>
+
+		<!-- 장치바코드 -->
+		<LinearLayout
+		    android:id="@+id/ismrequest_device_inputbar"
+		    style="@style/Form.Styled.InputBox" >
+		    <TextView
+			    style="@style/Form.Styled.LeftLavelTextView"
+			    android:text="@string/ismrequest_device_deviceId_lavel" />
+		    <EditText
+			    android:id="@+id/ismrequest_device_deviceId"
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			    style="@style/Form.Styled.ScannableEditText" />
+		</LinearLayout>
+
+		<!-- 자재바코드  -->
+		<LinearLayout
+		    android:id="@+id/ismrequest_product_inputbar"
+		    style="@style/Form.Styled.InputBox" >
+		    <TextView
+				style="@style/Form.Styled.LeftLavelTextView"
+			    android:text="@string/ismrequest_product_productCode_lavel" />
+		    <EditText
+			    android:id="@+id/ismrequest_product_productCode"
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			    style="@style/Form.Styled.ScannableEditText" />
+		    <Button
+			    android:id="@+id/ismrequest_product_search_button"            
+				style="@style/Form.Styled.RedButton"
+				android:layout_width="60dp"
+				android:text="@string/ismrequest_product_search_text" />
+		</LinearLayout>
+		<!-- 자재명 -->
+		<LinearLayout
+            style="@style/Form.Styled.InputDisplayBox" >
+		    <TextView
+		        style="@style/Form.Styled.LeftLavelTextView"
+			    android:text="@string/ismrequest_product_productName_lavel" />
+			<EditText
+			    android:id="@+id/ismrequest_productinfo_productName"
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			    style="@style/Form.Styled.DisplayTextView" />
+		</LinearLayout>
+		
+		<!-- 상위바코드  -->
+		<LinearLayout
+		    android:id="@+id/ismrequest_high_inputbar"
+		    style="@style/Form.Styled.InputBox" >
+		    <TextView
+				style="@style/Form.Styled.LeftLavelTextView"
+			    android:text="@string/ismrequest_high_UFacCd_lavel" />
+		    <EditText
+			    android:id="@+id/ismrequest_high_UFacCd"
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			    style="@style/Form.Styled.ScannableEditText" />
+		    <TextView
+			    android:id="@+id/ismrequest_high_UPartType"
+			    android:layout_width="30dp"
+				android:layout_height="wrap_content"
+			    style="@style/Form.Styled.DisplayTextView" />
+		</LinearLayout>
+		
+		<!-- 요청사유 -->
+		<LinearLayout
+		    android:id="@+id/ismrequest_reqstat_inputbar"
+		    style="@style/Form.Styled.InputBox" >
+			<TextView
+				style="@style/Form.Styled.LeftLavelTextView"
+			    android:text="@string/ismrequest_reqstat_requestStatus_lavel" />
+			<Spinner
+			    android:id="@+id/ismrequest_reqstat_requestStatus"
+			    android:layout_width="match_parent"
+				android:layout_height="match_parent"
+			    style="@style/Form.Styled.Spinner" />
+		</LinearLayout>
+		
+		<!-- 훼손바코드 -->
+		<LinearLayout
+		    android:id="@+id/ismrequest_damage_inputbar"
+		    style="@style/Form.Styled.InputBox" >
+		    <TextView
+		        style="@style/Form.Styled.LeftLavelTextView"
+			    android:text="@string/ismrequest_damage_replaceFacCd_lavel" />
+			<EditText
+			    android:id="@+id/ismrequest_damage_replaceFacCd"
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			    style="@style/Form.Styled.ScannableEditText" />
+			<TextView
+			    android:id="@+id/ismrequest_damage_replacePartType"
+			    android:layout_width="20dp"
+				android:layout_height="wrap_content"
+			    style="@style/Form.Styled.DisplayTextView" />
+		</LinearLayout>
+		
+		<!-- 제조사S/N -->
+		<LinearLayout
+		    android:id="@+id/ismrequest_manu_inputbar"
+		    style="@style/Form.Styled.InputBox" >
+		    <TextView
+		        style="@style/Form.Styled.LeftLavelTextView"
+			    android:text="@string/ismrequest_manu_manufacturerSN_lavel" />
+			<EditText
+			    android:id="@+id/ismrequest_manu_manufacturerSN"
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			    style="@style/Form.Styled.ScannableEditText" />
+		</LinearLayout>
+	</LinearLayout>
+	
+	<!-- 버튼Bar  -->
+	<LinearLayout
+	    android:id="@+id/ismrequest_crud_buttonbar"
+	    style="@style/Form.Styled.ToolBar" >
+		<Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+        <Button
+            android:id="@+id/ismrequest_crud_search"
+            style="@style/Form.Styled.RedButton"
+            android:layout_marginRight="4dp"
+            android:text="@string/ismrequest_crud_search_lavel" />
+        <Button
+            android:id="@+id/ismrequest_crud_init"
+            style="@style/Form.Styled.RedButton"
+            android:layout_marginRight="4dp"
+            android:text="@string/ismrequest_crud_init_lavel" />
+        <Button
+            android:id="@+id/ismrequest_crud_delete"
+            style="@style/Form.Styled.RedButton"
+            android:layout_marginRight="4dp"
+            android:text="@string/ismrequest_crud_delete_lavel" />
+        <Button
+            android:id="@+id/ismrequest_crud_request"
+            style="@style/Form.Styled.RedButton"
+            android:text="@string/ismrequest_crud_request_lavel" />
+	</LinearLayout>
+
+	<FrameLayout
+	    android:layout_width="match_parent"
+		android:layout_height="0dp"
+	    android:layout_weight="1" >
+		<!-- 리스트 뷰 -->
+		<HorizontalScrollView
+		    android:layout_width="match_parent"
+			android:layout_height="match_parent"
+		    android:background="@android:color/white" >
+			<RelativeLayout
+			    android:layout_width="wrap_content"
+			    android:layout_height="match_parent"
+			    android:background="@android:color/white" >
+			    <include
+			        android:id="@+id/ismrequest_list_header"
+			        layout="@layout/ism_ismrequest_list_header" />
+			    <ListView 
+				    android:id="@+id/ismrequest_listView"
+				    android:layout_width="match_parent"
+				    android:layout_height="match_parent"
+				    android:layout_below="@id/ismrequest_list_header"
+				    android:divider="@android:color/white"
+			        android:dividerHeight="1dp" >
+		    	</ListView>
+			</RelativeLayout>
+		</HorizontalScrollView>
+		<!-- barcode scan progress -->
+	    <RelativeLayout
+	        android:id="@+id/ismrequest_barcodeProgress"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:visibility="gone">
+	        <ProgressBar
+	            style="?android:attr/progressBarStyleInverse"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerInParent="true"/>
+	    </RelativeLayout>
+	</FrameLayout>
+	<!--  하단 카운트 -->
+	<LinearLayout
+		style="@style/Form.Styled.ListFooterBar" >
+        <TextView
+		    android:id="@+id/ismrequest_listfooter_totalCount"
+		    android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />   
+	</LinearLayout>
+</LinearLayout>

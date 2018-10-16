@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="30dp"
+	    android:orientation="horizontal">
+	    
+	 	<!-- √ -->
+	    <CheckBox
+		    android:id="@+id/sm_isChecked"
+		    android:layout_width="40dp"
+			android:layout_height="wrap_content"
+			android:checked="false"
+			android:padding="0dp"
+			android:focusable="false"
+			android:soundEffectsEnabled="true"
+			android:focusableInTouchMode="true" />
+	    <!-- 설비바코드 -->
+	    <TextView
+	        android:id="@+id/sm_item1"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 자재코드 -->
+	    <TextView
+	        android:id="@+id/sm_item2"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 항목번호 -->
+	    <TextView
+	        android:id="@+id/sm_item3"
+	        android:layout_width="80dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 자재명 -->
+	    <TextView
+	        android:id="@+id/sm_item4"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 부품종류 -->
+	    <TextView
+	        android:id="@+id/sm_item5"
+	        android:layout_width="80dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 품목구분 -->
+	    <TextView
+	        android:id="@+id/sm_item6"
+	        android:layout_width="120dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 비고 -->
+	    <TextView
+	        android:id="@+id/sm_item7"
+	        android:layout_width="120dp"
+	        style="@style/Form.Styled.NormalTextView" />
+    </LinearLayout>
+</LinearLayout>

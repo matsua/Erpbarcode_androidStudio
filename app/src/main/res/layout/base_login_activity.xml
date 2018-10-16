@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LoginActivity" >
+
+    <!-- Login form -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#efefef" >
+        <LinearLayout
+            android:id="@+id/login_button_layout"
+            android:layout_width="match_parent"
+        	android:layout_height="wrap_content"
+        	android:orientation="vertical">
+
+	        <!-- Title ErpBarcode Image -->
+	        <LinearLayout 
+		        android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:orientation="vertical"
+	        	android:paddingTop="30dp"
+	        	android:gravity="center_horizontal" >
+		        <ImageView 
+		            android:layout_width="wrap_content"
+	        		android:layout_height="wrap_content"
+	        		android:src="@drawable/common_icon_logo1"/>
+		    </LinearLayout>
+
+		    <!-- Login Input -->
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:orientation="vertical"
+	        	android:padding="20dp" >
+		        <LinearLayout
+		            android:layout_width="match_parent"
+		        	android:layout_height="wrap_content"
+		        	android:orientation="vertical"
+		        	android:background="@drawable/common_button_bg_gray"
+		        	android:padding="20dp" >
+		        	<!-- 사용자ID -->
+				    <LinearLayout 
+				        android:layout_width="match_parent"
+			        	android:layout_height="wrap_content"
+			        	android:orientation="horizontal"
+			        	android:gravity="left">
+			        	<ImageView 
+				            android:layout_width="wrap_content"
+			        		android:layout_height="wrap_content"
+			        		android:src="@drawable/login_id_lavel"/>
+				    </LinearLayout>
+		            <EditText
+		                android:id="@+id/login_userId"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:hint="@string/login_userid"
+		                android:inputType="text"
+		                android:textSize="18sp"
+		                android:maxLines="1"
+		                android:singleLine="true" />
+		            
+		            <LinearLayout
+		                android:layout_width="match_parent"
+						android:layout_height="10dp"
+						android:orientation="vertical"
+						android:background="@android:color/transparent" />
+		            <!-- 비밀번호 -->
+		            <LinearLayout 
+				        android:layout_width="match_parent"
+			        	android:layout_height="wrap_content"
+			        	android:orientation="horizontal"
+			        	android:gravity="left" >
+			        	<ImageView 
+				            android:layout_width="wrap_content"
+			        		android:layout_height="wrap_content"
+			        		android:src="@drawable/login_password_lavel"/>
+				    </LinearLayout>
+		            <EditText
+		                android:id="@+id/login_password"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:layout_marginTop="10dp"
+		                android:hint="@string/login_password"
+		                android:inputType="textPassword"
+		                android:textSize="18sp"
+		                android:maxLines="1"
+		                android:singleLine="true" />
+		            
+		            <ImageButton
+					    android:id="@+id/login_signin"
+					    android:layout_width="wrap_content"
+					    android:layout_height="wrap_content"
+					    android:layout_marginTop="10dp"
+					    android:background="@android:color/transparent"
+					    android:src="@drawable/login_loginbutton"
+					    android:scaleType="fitCenter" />
+		            
+		            <!-- 비밀번호 초기화 버튼추가  -->
+		            <ImageButton 
+					    android:id="@+id/login_password_reset"
+					    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_marginTop="10dp"
+						android:background="@android:color/transparent"
+					    android:src="@drawable/login_pwreset_button"
+					    android:scaleType="fitCenter" />
+		        </LinearLayout>
+		        <LinearLayout
+	                android:layout_width="match_parent"
+					android:layout_height="4dp"
+					android:orientation="vertical"
+					android:background="@android:color/transparent" />
+		        <!-- 음영지역여부 -->
+		       	<RelativeLayout 
+		       	    android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:paddingLeft="10dp"
+				    android:paddingRight="10dp" >
+					<CheckBox 
+					    android:id="@+id/login_offline_checkbox"
+					    android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true"
+						android:clickable="true"
+						android:text="@string/login_shadow_lavel"
+						android:textSize="14sp"
+						android:textColor="@color/style_dark_gray" />
+		       	</RelativeLayout>
+	        </LinearLayout>
+		</LinearLayout>
+    </ScrollView>
+    
+    <!-- Login progress -->
+    <RelativeLayout
+        android:id="@+id/login_status"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <ProgressBar
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+
+</merge>

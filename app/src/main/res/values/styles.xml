@@ -1,0 +1,433 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light" >
+    </style>
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar" >
+    </style>
+
+    <!-- Application theme. -->
+    <style name="ErpBarcodeTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
+        <item name="android:buttonStyle">@style/Form.Styled.RedButton</item>
+        <item name="android:spinnerStyle">@style/Form.Styled.Spinner</item>
+    </style>
+
+    <!-- ToolBar Style -->
+    <style name="Form.Styled.ToolBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">42dp</item>
+	    <item name="android:padding">4dp</item>
+	    <item name="android:orientation">horizontal</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	    <item name="android:layout_gravity">center_vertical</item>
+	    <item name="android:background">@drawable/common_toolbar_bg</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    
+    <!-- HeaderBar Style -->
+    <style name="Form.Styled.ListHeaderBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">34dp</item>
+	    <item name="android:orientation">horizontal</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	    <item name="android:layout_gravity">center_vertical</item>
+	    <item name="android:background">@drawable/common_list_header_bg</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    
+    <!-- TreeView Style -->
+   	<style name="treeViewListStyle" parent="" >
+        <item name="android:background">@android:color/white</item>
+        <item name="android:divider">@drawable/treeview_divider</item>
+    </style>
+    
+    <!-- FooterBar Style -->
+    <style name="Form.Styled.ListFooterBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">40dp</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:gravity">center|center_vertical</item>
+	    <item name="android:layout_gravity">center_vertical</item>
+	    <item name="android:background">@drawable/common_list_footer_bg</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    
+    <!-- InputBar Style -->
+    <style name="Form.Styled.InputBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_margin">4dp</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:gravity">center_vertical</item>
+	    <!-- <item name="android:background">@drawable/common_inputbar_bg</item> -->
+	    <item name="android:background">@android:color/transparent</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    
+    <!-- InputBox Style -->
+    <style name="Form.Styled.InputBox" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">34dp</item>
+	    <item name="android:orientation">horizontal</item>
+	    <item name="android:gravity">center_vertical</item>
+	    <item name="android:background">@android:color/white</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+
+    <!-- InputDisplayBox Style -->
+    <style name="Form.Styled.InputDisplayBox" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">34dp</item>
+	    <item name="android:orientation">horizontal</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	    <item name="android:background">@color/style_white_gray</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    
+    <!-- Button Style -->
+    <style name="Form.Styled.RedButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:minWidth">44dp</item>
+	    <item name="android:minHeight">32dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/style_button_red</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    
+    <!-- Button Style -->
+    <style name="Form.Styled.ToggleButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginTop">2dp</item>
+	    <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:background">@drawable/style_togglebutton_selector</item>
+        <item name="android:textOn">@null</item>
+        <item name="android:textOff">@null</item>
+    </style>
+    
+    <style name="Form.Styled.Tab.StateButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:minWidth">50dp</item>
+	    <item name="android:minHeight">36dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/style_tab_statebutton</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <!-- End. Button Style -->
+    
+    <!--******************************************************************************
+    	여기부터는 Form Style 
+    ******************************************************************************-->
+    <!-- ** Spinner ** -->
+	<style name="Form.Styled.Spinner" parent="android:style/Widget.Holo.Light.Spinner">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginTop">2dp</item>
+	    <item name="android:layout_marginBottom">2dp</item>
+		<item name="android:background">@drawable/style_spinner_selector</item>
+	    <item name="android:clickable">true</item>
+	    <item name="android:textSize">14sp</item>
+	    <item name="android:drawSelectorOnTop">true</item>
+	    <item name="android:spinnerMode">dropdown</item>
+	    <item name="android:popupBackground">@color/style_very_dark_gray</item>
+	    <item name="android:dropDownSelector">@drawable/style_spinner_dropdown_selector</item>
+	</style>
+	
+	<!-- ** Lavel TextView ** -->
+	<style name="Form.Styled.LavelTextView" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:gravity">left</item>
+	    <item name="android:layout_gravity">center_vertical</item>
+	    <item name="android:background">@android:color/transparent</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@color/style_dark_gray</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+	
+	<!-- ** Lavel TextView ** -->
+	<style name="Form.Styled.LeftLavelTextView" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">80dp</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:paddingLeft">4dp</item>
+	    <item name="android:paddingRight">4dp</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:background">@android:color/transparent</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@color/style_dark_gray</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+	
+	<!-- ** Lavel TextView ** -->
+	<style name="Form.Styled.LeftMiddleLavelTextView" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">120dp</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:paddingLeft">4dp</item>
+	    <item name="android:paddingRight">4dp</item>
+	    <item name="android:gravity">left</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:background">@android:color/transparent</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@color/style_dark_gray</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+
+	<!-- ** Display TextView ** -->
+	<style name="Form.Styled.DisplayTextView" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:background">@android:color/transparent</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+	
+	<!-- ** Display Box TextView ** -->
+	<style name="Form.Styled.DisplayBoxTextView" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">match_parent</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:background">@drawable/style_textview_bg_display</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+
+	<!-- ** Normal TextView ** -->
+	<style name="Form.Styled.NormalTextView" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:singleLine">false</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+
+	<!-- ** Scanner EditText ** -->
+	<style name="Form.Styled.ScannableEditText" parent="@android:style/Widget.EditText">
+		<item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">match_parent</item>
+	    <item name="android:background">@drawable/style_edittext_normal</item>
+	    <item name="android:gravity">center_vertical</item>
+	    <item name="android:layout_gravity">left</item>
+		<item name="android:singleLine">true</item>
+	 	<item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:focusable">true</item>
+		<item name="android:focusableInTouchMode">true</item>
+		<item name="android:editable">true</item>
+		<item name="android:cursorVisible">true</item>
+		<item name="android:inputType">text|textCapCharacters</item>
+		<item name="android:imeOptions">actionSearch</item>
+	</style>
+	
+	<!-- ** Input EditText ** -->
+	<style name="Form.Styled.NormalEditText" parent="@android:style/Widget.EditText">
+		<item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">match_parent</item>
+	    <!-- <item name="android:layout_marginRight">2dp</item> -->
+	    <item name="android:background">@drawable/style_edittext_normal</item>
+	    <item name="android:gravity">top</item>
+	    <item name="android:layout_gravity">left</item>
+		<item name="android:singleLine">false</item>
+	 	<item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:focusable">true</item>
+		<item name="android:focusableInTouchMode">true</item>
+		<item name="android:editable">true</item>
+		<item name="android:cursorVisible">true</item>
+		<item name="android:inputType">textMultiLine</item>
+		<item name="android:imeOptions">normal</item>
+	</style>
+	
+	<!--******************************************************************************
+    	여기부터는 Setting Style
+    ******************************************************************************-->
+    <!-- Set Layout -->
+	<style name="Setting.Styled.SetLayoutBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:gravity">left|top</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+	
+	<!-- Title Line -->
+	<style name="Setting.Styled.TitleLine" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">2dp</item>
+	    <item name="android:layout_marginTop">4dp</item>
+	    <item name="android:gravity">left|top</item>
+	    <item name="android:background">@color/style_light_grey</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    
+	<!-- Line -->
+	<style name="Setting.Styled.Line" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">0.4dp</item>
+	    <item name="android:gravity">left|top</item>
+	    <item name="android:background">@color/style_light_grey</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    
+	<!-- Button Bar -->
+	<style name="Setting.Styled.ButtonBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:paddingTop">6dp</item>
+	    <item name="android:paddingBottom">6dp</item>
+	    <item name="android:minHeight">64dp</item>
+	    <item name="android:gravity">center_vertical</item>
+	    <item name="android:background">@android:drawable/list_selector_background</item>
+	 	<item name="android:clickable">true</item>
+    </style>
+    
+	<!-- Horizontal Button Bar -->
+	<style name="Setting.Styled.HorizontalButtonBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:orientation">horizontal</item>
+	    <item name="android:paddingTop">6dp</item>
+	    <item name="android:paddingBottom">6dp</item>
+	    <item name="android:gravity">center_vertical</item>
+	    <item name="android:background">@android:drawable/list_selector_background</item>
+	 	<item name="android:clickable">true</item>
+    </style>
+    
+	<!-- Input Box -->
+	<style name="Setting.Styled.InputBox" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    
+	<!-- Expansion Input Box -->
+	<style name="Setting.Styled.ExpansionInputBox" parent="">
+        <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_weight">1</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+
+	<!-- CheckBox Input Box -->
+	<style name="Setting.Styled.CheckInputBox" parent="">
+        <item name="android:layout_width">60dp</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:gravity">center_horizontal|center_vertical</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    
+	<!-- Title TextView -->
+	<style name="Setting.Styled.TitleText" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginLeft">4dp</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+	
+	<!-- Subject TextView -->
+	<style name="Setting.Styled.SubjectText" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginLeft">4dp</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">18sp</item>
+	</style>
+	
+	<!-- Normal TextView -->
+	<style name="Setting.Styled.NormalText" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginLeft">4dp</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:singleLine">false</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+	
+	<!-- Normal CheckBox -->
+	<style name="Setting.Styled.NormalCheckBox" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:text">@null</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+
+</resources>

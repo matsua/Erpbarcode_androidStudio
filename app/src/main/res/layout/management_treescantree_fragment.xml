@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+    <LinearLayout 
+        android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical" >
+		<HorizontalScrollView 
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:background="@android:color/white" >
+		    <FrameLayout
+	            android:layout_width="wrap_content"
+	            android:layout_height="match_parent" >
+			    <com.ktds.erpbarcode.common.treeview.TreeViewList
+			        android:id="@+id/treescantree_treeView"
+			        android:layout_width="4000px"
+			        android:layout_height="match_parent"
+			        android:scrollbars="vertical|horizontal"
+			        android:smoothScrollbar="true" />
+			 </FrameLayout>
+	    </HorizontalScrollView>
+		
+		<!--  하단 카운트 -->
+		<LinearLayout
+			style="@style/Form.Styled.ListFooterBar" >
+		    <TextView
+			    android:id="@+id/treescantree_totalCount"
+			    style="@style/Form.Styled.NormalTextView" />
+		</LinearLayout>
+    </LinearLayout>
+	<!-- barcode scan progress -->
+    <RelativeLayout
+        android:id="@+id/treescantree_barcodeProgress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+        <ProgressBar
+            style="?android:attr/progressBarStyleInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

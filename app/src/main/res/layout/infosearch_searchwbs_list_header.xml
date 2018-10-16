@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    style="@style/Form.Styled.ListHeaderBar" >
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="horizontal">
+        <TextView
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="160dp"
+		    android:text="시공사 정보" />
+	    <TextView
+	        android:id="@+id/selectwbs_header_wbsNo"
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="170dp"
+		    android:text="WBS 번호" />
+	    <TextView
+	        android:id="@+id/selectwbs_header_jpjtType"
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="80dp"
+		    android:text="공사 유형" />
+	    <TextView
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="300dp"
+		    android:text="WBS 내역" />
+	    <TextView
+	        android:id="@+id/selectwbs_header_wbsStatusName"
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="120dp"
+		    android:text="WBS 상태" />
+	    <TextView
+	        android:id="@+id/selectwbs_header_kostlStatus"
+	        style="@style/Form.Styled.LavelTextView"
+	        android:layout_width="140dp"
+		    android:text="코스트센터 상태" />
+    </LinearLayout>
+</LinearLayout>

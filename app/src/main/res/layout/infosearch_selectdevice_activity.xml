@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/selectdevice_frame"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+	<!-- Input Bar -->
+	<LinearLayout
+	    style="@style/Form.Styled.InputBar" >
+	    
+	    <!-- 장치바코드 -->
+		<LinearLayout
+		    style="@style/Form.Styled.InputBox" >
+		    <TextView
+			    android:text="@string/selectdevice_deviceId_lavel"
+			    style="@style/Form.Styled.LeftLavelTextView" />
+		    <EditText
+			    android:id="@+id/selectdevice_deviceId"
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			    style="@style/Form.Styled.ScannableEditText"
+			    android:imeOptions="actionSearch" />
+		</LinearLayout>
+		<!-- 위치바코드 -->
+		<LinearLayout
+		    android:id="@+id/selectdevice_loc_layout"
+		    style="@style/Form.Styled.InputBox"
+		    android:visibility="gone" >
+		    <TextView
+			    android:text="@string/selectdevice_locCd_lavel"
+			    style="@style/Form.Styled.LeftLavelTextView" />
+		    <EditText
+			    android:id="@+id/selectdevice_locCd"
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+			    style="@style/Form.Styled.ScannableEditText"
+			    android:imeOptions="actionSearch" />
+		</LinearLayout>
+		<!-- 위치바코드명 -->
+		<LinearLayout
+		    android:id="@+id/selectdevice_locinfo_layout"
+		    style="@style/Form.Styled.InputDisplayBox"
+		    android:visibility="gone" >
+		    <EditText
+			    android:id="@+id/selectdevice_locName"
+		        android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+			    android:drawableLeft="@drawable/common_icon_currentaddress"
+			    style="@style/Form.Styled.DisplayTextView" />
+		</LinearLayout>
+	</LinearLayout>
+	
+	<!-- 버튼Bar  -->
+	<LinearLayout
+	    android:id="@+id/selectdevice_crud_buttonbar"
+	    style="@style/Form.Styled.ToolBar"
+	    android:visibility="gone" >
+		<Space 
+		    android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_weight="1"/>
+		<Button
+		    android:id="@+id/selectdevice_crud_search"           
+			android:layout_width="60dp"            
+			android:layout_height="match_parent"
+			style="@style/Form.Styled.RedButton"
+			android:text="@string/selectdevice_search_text" />
+   </LinearLayout>
+
+	<!-- 리스트 뷰 -->
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="0dp"
+	    android:layout_weight="1"
+	    android:orientation="vertical" >
+		<FrameLayout
+	        android:id="@+id/selectdevice_device_frame"
+	        android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+			android:orientation="vertical" />
+		<FrameLayout
+	        android:id="@+id/selectdevice_loc_frame"
+	        android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+			android:orientation="vertical"
+			android:visibility="gone" />
+	</LinearLayout>
+
+	<!-- 하위 Tab  -->
+	<LinearLayout
+	    android:layout_width="match_parent"
+		android:layout_height="48dp"
+		android:orientation="horizontal" >
+		<Button 
+		    android:id="@+id/selectdevice_footertab_device_button"            
+			android:layout_width="0dp"
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			style="@style/Form.Styled.Tab.StateButton"
+			android:text="장치바코드 상세정보"
+			android:textSize="16sp" />
+		<Button 
+		    android:id="@+id/selectdevice_footertab_subFac_button"
+			android:layout_width="0dp"            
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			style="@style/Form.Styled.Tab.StateButton"
+			android:text="하위설비"
+			android:textSize="16sp" />
+	</LinearLayout>
+</LinearLayout>

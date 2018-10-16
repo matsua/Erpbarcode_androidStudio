@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SpotCheckActivity" >
+
+	<LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="@color/style_white_smoke" >
+	    <!-- 상위바코드들 입력BAR -->
+		<LinearLayout
+		    style="@style/Form.Styled.InputBar" >
+		    <!-- 운용조직  -->
+		    <LinearLayout
+			    android:id="@+id/spotcheck_organization_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox" >
+			    <TextView
+			        android:id="@+id/spotcheck_organization_orgCode_lavel"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/spotcheck_organization_orgCode_lavel" />
+			    <EditText
+			        android:id="@+id/spotcheck_organization_orgCode"
+			        android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.DisplayTextView" />
+			    <Button android:id="@+id/spotcheck_organization_search_button"            
+					android:layout_width="60dp"            
+					android:layout_height="wrap_content"
+					style="@style/Form.Styled.RedButton"
+					android:text="@string/spotcheck_organization_search_text"
+					android:textSize="14sp" />
+			</LinearLayout>
+			<!-- 장치바코드 -->
+			<LinearLayout
+			    android:id="@+id/spotcheck_device_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    android:id="@+id/spotcheck_device_deviceId_lavel"
+					style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/spotcheck_device_deviceId_lavel" />
+			    <EditText
+				    android:id="@+id/spotcheck_device_deviceId"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+			    <TextView
+				    android:id="@+id/spotcheck_device_oprSysCd"
+			        android:layout_width="100dp"
+					android:layout_height="wrap_content"
+					style="@style/Form.Styled.DisplayTextView"
+			        android:hint="@string/spotcheck_device_oprSysCd_lavel" />
+			</LinearLayout>
+			
+			<!-- 장치바코드정보 -->
+			<LinearLayout
+			    android:id="@+id/spotcheck_deviceInfo_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox" >
+				<EditText
+				    android:id="@+id/spotcheck_deviceInfo_deviceInfo"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.DisplayTextView"
+				    android:drawableLeft="@drawable/common_icon_deviceid"/>
+			    <!-- 위치정보 -->
+			    <Button android:id="@+id/addInfoBtn_deviceId"            
+					android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:text="@string/treescan_location_locCd_info"/>
+							</LinearLayout>
+			
+		    <!-- 위치바코드  -->
+		    <LinearLayout
+			    android:id="@+id/spotcheck_loc_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    android:id="@+id/spotcheck_location_locCd_lavel"
+				    android:text="@string/spotcheck_location_locCd_lavel"
+				    style="@style/Form.Styled.LeftLavelTextView" />
+			    <EditText
+				    android:id="@+id/spotcheck_location_locCd"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+			    <Button android:id="@+id/spotcheck_location_search_button"
+					android:layout_width="60dp"            
+					android:layout_height="wrap_content"
+					style="@style/Form.Styled.RedButton"
+					android:text="@string/spotcheck_location_search_text"
+					android:textSize="14sp" />
+			</LinearLayout>
+			<!-- 위치바코드명 -->
+			<LinearLayout
+			    android:id="@+id/spotcheck_locInfo_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox" >
+			    <EditText
+				    android:id="@+id/spotcheck_locInfo_locName"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    android:drawableLeft="@drawable/common_icon_currentaddress"
+				    style="@style/Form.Styled.DisplayTextView" />
+			    <!-- 위치정보 -->
+			    <Button android:id="@+id/addInfoBtn"            
+					android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:text="@string/treescan_location_locCd_info"/>
+			</LinearLayout>
+			<!-- GPS 위치 데이타 -->
+			<LinearLayout
+			    android:id="@+id/spotcheck_gps_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox"
+			    android:visibility="gone" >
+				<EditText
+				    android:id="@+id/spotcheck_gps_currentGPS"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+				    android:drawableLeft="@drawable/common_icon_gps"
+				    style="@style/Form.Styled.DisplayTextView" />
+			</LinearLayout>
+					
+			<!-- 설비바코드 -->
+			<LinearLayout
+			    android:id="@+id/spotcheck_fac_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    android:id="@+id/spotcheck_fac_facCd_lavel"
+					style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/spotcheck_fac_facCd_lavel" />
+				<EditText
+				    android:id="@+id/spotcheck_fac_facCd"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+				<TextView
+				    android:id="@+id/spotcheck_fac_partType"
+				    android:layout_width="30dp"
+					android:layout_height="wrap_content"
+				    style="@style/Form.Styled.DisplayTextView" />
+			</LinearLayout>
+			
+			<!-- 현장점검 체크박스 -->
+			<LinearLayout
+			    android:id="@+id/spotcheck_chk_checkbar"
+			    style="@style/Form.Styled.InputBox"
+			    android:gravity="center" >
+				<CheckBox
+				    android:id="@+id/spotcheck_chk_FacCDMatch"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:clickable="false"
+				    android:focusable="false"
+				    android:text="@string/spotcheck_chk_FacCDMatch_lavel"
+				    android:textColor="@color/style_green"
+				    android:textSize="15sp" />
+				<CheckBox
+				    android:id="@+id/spotcheck_chk_UFacCdMatch"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:clickable="false"
+				    android:focusable="false"
+				    android:text="@string/spotcheck_chk_UFacCdMatch_lavel"
+				    android:textColor="@color/style_green"
+				    android:textSize="15sp" />
+				<CheckBox
+				    android:id="@+id/spotcheck_chk_OrgMatch"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:clickable="false"
+				    android:focusable="false"
+				    android:text="@string/spotcheck_chk_OrgMatch_lavel"
+				    android:textColor="@color/style_green"
+				    android:textSize="15sp" />
+				<CheckBox
+				    android:id="@+id/spotcheck_chk_LocMatch"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:clickable="false"
+				    android:focusable="false"
+				    android:text="@string/spotcheck_chk_LocMatch_lavel" 
+				    android:textColor="@color/style_green"
+				    android:textSize="15sp" />
+				<CheckBox
+				    android:id="@+id/spotcheck_chk_DevMatch"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:clickable="false"
+				    android:focusable="false"
+				    android:text="@string/spotcheck_chk_DevMatch_lavel" 
+				    android:textColor="@color/style_green"
+				    android:textSize="15sp" />
+			</LinearLayout>
+		</LinearLayout>
+		
+		<!-- 버튼Bar  -->
+		<LinearLayout
+		    android:id="@+id/spotcheck_crud_buttonbar"
+		    style="@style/Form.Styled.ToolBar" >
+			<Space 
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"/>
+	        <Button android:id="@+id/spotcheck_crud_init"
+				android:layout_marginRight="4dp" 
+				style="@style/Form.Styled.RedButton"
+				android:text="@string/spotcheck_crud_init_lavel"  />    
+			<Button android:id="@+id/spotcheck_crud_cancelScan"
+				android:layout_marginRight="4dp" 
+				style="@style/Form.Styled.RedButton"
+				android:text="@string/spotcheck_crud_cancelScan_lavel" />
+			<Button
+			    android:id="@+id/spotcheck_crud_save"
+				android:layout_marginRight="4dp"
+			    style="@style/Form.Styled.RedButton"
+			    android:text="@string/spotcheck_crud_save_lavel" />
+			<Button
+			    android:id="@+id/spotcheck_crud_send"
+				style="@style/Form.Styled.RedButton"
+			    android:text="@string/spotcheck_crud_send_lavel" />
+		</LinearLayout>
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="0dp"
+			android:layout_weight="1" >
+			<!-- Tree 뷰 -->
+			<HorizontalScrollView 
+			    android:layout_width="match_parent"
+			    android:layout_height="match_parent"
+			    android:background="@android:color/white" >
+			    <FrameLayout
+		            android:layout_width="wrap_content"
+		            android:layout_height="match_parent" >
+				    <com.ktds.erpbarcode.common.treeview.TreeViewList
+				        android:id="@+id/spotcheck_treeView"
+				        android:layout_width="3000px"
+				        android:layout_height="match_parent"
+				        android:scrollbars="vertical|horizontal"
+				        android:smoothScrollbar="true" />
+				 </FrameLayout>
+		    </HorizontalScrollView>
+		    <!-- barcode scan progress -->
+		    <RelativeLayout
+		        android:id="@+id/spotcheck_barcodeProgress"
+		        android:layout_width="match_parent"
+		        android:layout_height="match_parent"
+		        android:visibility="gone">
+		        <ProgressBar
+		            style="?android:attr/progressBarStyleInverse"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:layout_centerInParent="true"/>
+		    </RelativeLayout>
+		</FrameLayout>
+		
+		<!--  하단 카운트 -->
+		<LinearLayout
+			style="@style/Form.Styled.ListFooterBar"
+			android:layout_height="60dp" >
+	        <TextView
+			    android:id="@+id/spotcheck_totalBar_DBCount"
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<TextView
+			    android:id="@+id/spotcheck_totalBar_ScanCount"
+			    android:textColor="@color/style_blue"
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />
+			<TextView
+			    android:id="@+id/spotcheck_totalBar_Percent"
+			    android:layout_width="wrap_content"
+				android:layout_height="wrap_content" />    
+		</LinearLayout>
+	</LinearLayout>
+</merge>

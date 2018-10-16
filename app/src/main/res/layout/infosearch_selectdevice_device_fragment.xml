@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+   	<LinearLayout
+	    android:layout_width="match_parent"
+		android:layout_height="40dp"
+		android:orientation="horizontal" >
+		<Button 
+		    android:id="@+id/selectdevice_device_tab_general_button"            
+			android:layout_width="0dp"            
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			style="@style/Form.Styled.Tab.StateButton"
+			android:text="일반" />
+		<Button 
+		    android:id="@+id/selectdevice_device_tab_loc_button"
+			android:layout_width="0dp"            
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			style="@style/Form.Styled.Tab.StateButton"
+			android:text="위치" />
+		<Button 
+		    android:id="@+id/selectdevice_device_tab_org_button"
+			android:layout_width="0dp"            
+			android:layout_height="match_parent"
+			android:layout_weight="1"
+			style="@style/Form.Styled.Tab.StateButton"
+			android:text="조직" />
+		<Button 
+		    android:id="@+id/selectdevice_device_tab_network_button"
+			android:layout_width="140dp"            
+			android:layout_height="match_parent" 
+			style="@style/Form.Styled.Tab.StateButton"
+			android:text="네트워크장비속성" />
+	</LinearLayout>
+
+   	<LinearLayout
+	    android:layout_width="match_parent"
+		android:layout_height="0dp"
+		android:layout_weight="1"
+		android:orientation="vertical" >
+	    <!-- TAB1 일반 -->
+	    <ScrollView
+	        android:id="@+id/selectdevice_device_tab1"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@android:color/white"
+	        android:scrollbarAlwaysDrawVerticalTrack="true" >
+	            <LinearLayout
+		    		style="@style/Form.Styled.InputBar" >
+		    		<LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+	                        android:text="장치바코드" />
+	                    <EditText
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:id="@+id/selectdevice_device_info_deviceId"
+	            			android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+	                        android:text="장치바코드명" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_deviceName"
+	            			style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+	                        android:text="프로젝트번호" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_projectNo"
+	            			style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+	                        android:text="WBS번호" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_wbsNo"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+	                        android:text="운용시스템 구분자" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_operationSystemToken"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+	                        android:text="운용시스템 코드" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_operationSystemCode"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+	                        android:text="위치ID 구분자" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_locationIdToken"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"																				
+	                        android:text="장치상태" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_deviceStatusName"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_deviceStatus"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="100dp" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="자재코드" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_itemCode"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="100dp" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_itemName"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="자산분류" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_assetClassificationCode"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="100dp" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_assetClassificationName"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="Migration 구분" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_migrationTypeCode"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="100dp" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_migrationTypeName"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="인수확정 여부" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_argumentDecisionName"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="표준서비스명코드" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_standardServiceCode"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="100dp" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_standardServiceName"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+	            </LinearLayout>
+	    </ScrollView> <!-- TAB1 일반 -->
+
+	    <!-- TAB2 위치 -->
+	    <ScrollView
+	        android:id="@+id/selectdevice_device_tab2"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@android:color/white"
+	        android:visibility="gone" >
+	            <LinearLayout
+		    		style="@style/Form.Styled.InputBar" >
+
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="위치바코드" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_locationCode"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox"
+					    android:layout_height="70dp" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="위치명" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_locationName"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1"
+	                        android:layout_height="70dp"
+	                        android:singleLine="false"
+	                        android:gravity="top|left"
+						    android:lines="3"
+						    android:inputType="text|textMultiLine" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox"
+					    android:layout_height="70dp" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="주소정보" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_detailAddress"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1"
+	                        android:layout_height="70dp"
+	                        android:singleLine="false"
+	                        android:gravity="top|left"
+						    android:lines="5"
+						    android:inputType="text|textMultiLine" />
+	                </LinearLayout>
+	            </LinearLayout>
+	    </ScrollView> <!-- TAB2 위치 -->
+	
+		<!-- TAB3 조직 -->
+	    <ScrollView
+	        android:id="@+id/selectdevice_device_tab3"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@android:color/white"
+	        android:visibility="gone" >
+
+	            <LinearLayout
+		    		style="@style/Form.Styled.InputBar" >
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="운용조직" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_operationOrgCode"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="80dp" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_operationOrgName"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+	
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="소유조직" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_ownOrgCode"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="80dp" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_ownOrgName"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                </LinearLayout>
+	            </LinearLayout>
+	    </ScrollView> <!-- TAB3 조직 -->	
+	
+	    <!-- TAB4 보증 -->
+	    <ScrollView
+	        android:id="@+id/selectdevice_device_tab4"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:background="@android:color/white"
+	        android:visibility="gone" >
+
+	            <LinearLayout style="@style/Form.Styled.InputBar" >
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="L1(기능)" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_level1Name"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_level1Code"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="50dp" />
+					</LinearLayout>
+	                
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="L2(계위)" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_level2Name"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_level2Code"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="50dp" />
+	                </LinearLayout>
+	                
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="L3(용도)" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_level3Name"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_level3Code"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="50dp" />
+					</LinearLayout>
+	                
+	                <LinearLayout
+					    style="@style/Form.Styled.InputBox" >
+	                    <TextView
+	                        style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="L4(구간/노드)" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_level4Name"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="0dp"
+							android:layout_weight="1" />
+	                    <EditText
+	                        android:id="@+id/selectdevice_device_info_level4Code"
+	                        style="@style/Form.Styled.DisplayBoxTextView"
+	                        android:layout_width="50dp" />
+	                </LinearLayout>
+	            </LinearLayout>
+	    </ScrollView> <!-- TAB4 보증 -->
+	</LinearLayout>
+</LinearLayout>

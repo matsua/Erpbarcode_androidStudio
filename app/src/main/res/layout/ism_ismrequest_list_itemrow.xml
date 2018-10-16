@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="30dp"
+	    android:orientation="horizontal">
+	 	<!-- √ -->
+	    <CheckBox
+		    android:id="@+id/ismrequest_list_isChecked"
+		    android:layout_width="40dp"
+			android:layout_height="wrap_content"
+			android:checked="false"
+			android:padding="0dp"
+			android:focusable="false"
+			android:soundEffectsEnabled="true"
+			android:focusableInTouchMode="true" />
+	    <!-- 설비바코드 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_facCd"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 설비상태 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_facStatus"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 자재코드 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_productCode"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 자재명 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_productName"
+	        android:layout_width="300dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 품목구분 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_devTypeName"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 부품종류 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_partType"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 위치바코드 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_locCd"
+	        android:layout_width="190dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 위치명 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_locName"
+	        android:layout_width="400dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 자산분류 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_assetClass"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 자산분류(대/중/소/세) -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_assetClassName"
+	        android:layout_width="600dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 제조사명 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_manufacturerName"
+	        android:layout_width="280dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 제조사S/N -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_manufacturerSN"
+	        android:layout_width="140dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 장치바코드 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_deviceId"
+	        android:layout_width="90dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 사용중지여부 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_useStopYn"
+	        android:layout_width="90dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 대체자재코드 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_replaceProductCode"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 기존요청상태 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_existingProductCode"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 코스트센터 -->
+	    <TextView
+	        android:id="@+id/ismrequest_list_costCenter"
+	        android:layout_width="90dp"
+	        style="@style/Form.Styled.NormalTextView" />
+    </LinearLayout>
+</LinearLayout>

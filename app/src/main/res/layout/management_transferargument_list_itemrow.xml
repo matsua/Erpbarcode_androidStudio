@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="30dp"
+	    android:orientation="horizontal">
+		<!-- 장치바코드 -->
+	    <TextView
+	        android:id="@+id/transferargument_list_deviceId"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- L1(기능) -->
+	    <TextView
+	        android:id="@+id/transferargument_list_l1"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- L2(계위) -->
+	    <TextView
+	        android:id="@+id/transferargument_list_l2"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- L3(용도) -->
+	    <TextView
+	        android:id="@+id/transferargument_list_l3"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- L4(구간/노드) -->
+	    <TextView
+	        android:id="@+id/transferargument_list_l4"
+	        android:layout_width="200dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- L1 -->
+	    <TextView
+	        android:id="@+id/transferargument_list_l11"
+	        android:layout_width="0dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- L2 -->
+	    <TextView
+	        android:id="@+id/transferargument_list_l22"
+	        android:layout_width="0dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- L3 -->
+	    <TextView
+	        android:id="@+id/transferargument_list_l33"
+	        android:layout_width="0dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- L4 -->
+	    <TextView
+	        android:id="@+id/transferargument_list_l44"
+	        android:layout_width="0dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 인수요청번호 -->
+	    <TextView
+	        android:id="@+id/transferargument_list_docNo"
+	        android:layout_width="150dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 위치바코드 -->
+	    <TextView
+	        android:id="@+id/transferargument_list_locCd"
+	        android:layout_width="200dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- DAORI -->
+	    <TextView
+	        android:id="@+id/transferargument_list_daori"
+	        android:layout_width="0dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- WBS번호 -->
+	    <TextView
+	        android:id="@+id/transferargument_list_wbsNo"
+	        android:layout_width="150dp"
+	        style="@style/Form.Styled.NormalTextView" />
+    </LinearLayout>
+</LinearLayout>

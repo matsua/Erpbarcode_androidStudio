@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="30dp"
+	    android:layout_marginLeft="30dp"
+	    android:orientation="horizontal">
+	 	<!-- √ -->
+	    <CheckBox
+		    android:id="@+id/ism_mnt_list_isChecked"
+		    android:layout_width="40dp"
+			android:layout_height="wrap_content"
+			android:checked="false"
+			android:padding="0dp"
+			android:focusable="false"
+			android:soundEffectsEnabled="true"
+			android:focusableInTouchMode="true" />
+	    <!-- + -  
+	    <Button 
+	        android:layout_width="30dp"
+	        android:layout_height="30dp"
+	        android:id="@+id/row_cell_btn_multilevel"
+	        android:background="@drawable/common_icon_collapsed"
+	        android:layout_marginLeft="5dp"/>
+	        -->
+	    <!-- 유형 -->
+	    
+	    <TextView
+	        android:id="@+id/loc_crm1"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 위치코드 -->
+	    <TextView
+	        android:id="@+id/loc_crm2"
+	        android:layout_width="250dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 위치명 -->
+	    <TextView
+	        android:id="@+id/loc_crm3"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 실유형 -->
+	    <TextView
+	        android:id="@+id/loc_crm4"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 실명칭 -->
+	    <TextView
+	        android:id="@+id/loc_crm5"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 상태 -->
+	    <TextView
+	        android:id="@+id/loc_crm6"
+	        android:layout_width="80dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 실층구분 -->
+	    <TextView
+	        android:id="@+id/loc_crm7"
+	        android:layout_width="80dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 주소 -->
+	    <TextView
+	        android:id="@+id/loc_crm8"
+	        android:layout_width="300dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 건물군여부 -->
+	    <TextView
+	        android:id="@+id/loc_crm9"
+	        android:layout_width="80dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 건물유형 -->
+	    <TextView
+	        android:id="@+id/loc_crm10"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- KT건물유형 -->
+	    <TextView
+	        android:id="@+id/loc_crm11"
+	        android:layout_width="200dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 관리국사 -->
+	    <TextView
+	        android:id="@+id/loc_crm12"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 관리국사명 -->
+	    <TextView
+	        android:id="@+id/loc_crm13"
+	        android:layout_width="100dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 설명 -->
+	    <TextView
+	        android:id="@+id/loc_crm14"
+	        android:layout_width="450dp"
+	        style="@style/Form.Styled.NormalTextView" />
+    </LinearLayout>
+</LinearLayout>

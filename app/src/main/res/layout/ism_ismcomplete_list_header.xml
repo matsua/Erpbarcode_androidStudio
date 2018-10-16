@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Form.Styled.ListHeaderBar" >
+    
+    <TextView
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="40dp"
+        android:text="√" />
+    <!-- 설비바코드 -->
+    <TextView
+        android:id="@+id/ismcomplete_listheader_newBarcode"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="160dp"
+        android:text="설비바코드" />
+    <!-- 자재코드 -->
+    <TextView
+        android:id="@+id/ismcomplete_listheader_itemCode"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="100dp"
+        android:text="자재코드" />
+    <!-- 자재명 -->
+    <TextView
+        android:id="@+id/ismcomplete_listheader_itemName"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="300dp"
+        android:text="자재명" />
+    <!-- 품목구분 -->
+    <TextView
+        android:id="@+id/ismcomplete_listheader_devType"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="100dp"
+        android:text="품목구분" />
+    <!-- 부품종류 -->
+    <TextView
+        android:id="@+id/ismcomplete_listheader_partType"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="60dp"
+        android:text="부품종류" />
+    <!-- 훼손바코드 -->
+    <TextView
+        android:id="@+id/ismcomplete_injuryBarcode"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="190dp"
+        android:text="구설비바코드" />
+    <!-- 대체발행사유 -->
+    <TextView
+        android:id="@+id/ismcomplete_publicationWhyCode"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="100dp"
+        android:text="교체사유" />
+    <!-- 위치바코드 -->
+    <TextView
+        android:id="@+id/ismcomplete_listheader_locationCode"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="190dp"
+        android:text="위치바코드" />
+    <!-- 장치바코드 -->
+    <TextView
+        android:id="@+id/ismcomplete_listheader_deviceId"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="190dp"
+        android:text="장치바코드" />
+    <!-- 제조자물자여부 -->
+    <TextView
+        android:id="@+id/ismcomplete_listheader_makerItemYn"
+        style="@style/Form.Styled.LavelTextView"
+        android:layout_width="100dp"
+        android:text="제조사물자여부" />
+
+</LinearLayout>
+    
+
+ 

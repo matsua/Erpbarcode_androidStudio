@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="status_text">#ffffffff</color>
+    <color name="status_view">#50000000</color>
+    <color name="style_blue">#0000FF</color>
+    <color name="style_bluetooth_paired_devices_deviceName">#000000</color>
+    <color name="style_dark_gray">#A9A9A9</color>
+    <color name="style_dark_red">#bd2727</color>
+    <color name="style_green">#008000</color>
+    <color name="style_grey">#808080</color>
+    <color name="style_light_green">#90EE90</color>
+    <color name="style_light_grey">#D3D3D3</color>
+    <color name="style_light_red">#d58590</color>
+    <color name="style_light_yellow">#FFFFE0</color>
+    <color name="style_navy">#000080</color>
+    <color name="style_pink">#FFC0CB</color>
+    <color name="style_silver">#C0C0C0</color>
+    <color name="style_spinner_dropdown_bg">#C25283</color>
+    <color name="style_spinner_dropdown_bg_focus">#8080FF</color>
+    <color name="style_spinner_dropdown_bg_pressed">#00FF00</color>
+    <color name="style_very_dark_gray">#222222</color>
+    <color name="style_white_gray">#E6E6E6</color>
+    <color name="style_white_smoke">#F5F5F5</color>
+    <color name="style_yellow">#FFFF00</color>
+    <color name="transparent">#00000000</color>
+    <declare-styleable name="TreeViewList">
+	    <attr format="boolean" name="collapsible"/>
+		<attr format="reference|color" name="src_expanded"/>
+		<attr format="reference|color" name="src_collapsed"/>
+        <attr format="dimension" name="indent_width"/>
+        <attr format="boolean" name="handle_trackball_press"/>
+		<attr name="indicator_gravity">
+			<!-- Push object to the top of its container, not changing its size. -->
+			<flag name="top" value="0x30"/>
+			<!-- Push object to the bottom of its container, not changing its size. -->
+			<flag name="bottom" value="0x50"/>
+			<!-- Push object to the left of its container, not changing its size. -->
+			<flag name="left" value="0x03"/>
+			<!-- Push object to the right of its container, not changing its size. -->
+			<flag name="right" value="0x05"/>
+			<!-- Place object in the vertical center of its container, not changing its size. -->
+			<flag name="center_vertical" value="0x10"/>
+			<!-- Grow the vertical size of the object if needed so it completely fills its container. -->
+			<flag name="fill_vertical" value="0x70"/>
+			<!-- Place object in the horizontal center of its container, not changing its size. -->
+			<flag name="center_horizontal" value="0x01"/>
+			<!-- Grow the horizontal size of the object if needed so it completely fills its container. -->
+			<flag name="fill_horizontal" value="0x07"/>
+			<!-- Place the object in the center of its container in both the vertical and horizontal axis, not changing its size. -->
+			<flag name="center" value="0x11"/>
+			<!-- Grow the horizontal and vertical size of the object if needed so it completely fills its container. -->
+			<flag name="fill" value="0x77"/>
+			<!-- Additional option that can be set to have the top and/or bottom edges of the child clipped to its container's bounds.
+				The clip will be based on the vertical gravity: a top gravity will clip the bottom edge, a bottom gravity will clip the top
+				edge, and neither will clip both edges. -->
+			<flag name="clip_vertical" value="0x80"/>
+			<!-- Additional option that can be set to have the left and/or right edges of the child clipped to its container's bounds.
+				The clip will be based on the horizontal gravity: a left gravity will clip the right edge, a right gravity will clip the
+				left edge, and neither will clip both edges. -->
+			<flag name="clip_horizontal" value="0x08"/>
+		</attr>
+        <attr format="reference|color" name="indicator_background"/>
+        <attr format="reference|color" name="row_background"/>
+	</declare-styleable>
+    <dimen name="font_large_size">20sp</dimen>
+    <dimen name="font_middle_size">16sp</dimen>
+    <dimen name="font_small_size">14sp</dimen>
+    <item name="auto_focus" type="id"/>
+    <item name="decode" type="id"/>
+    <item name="decode_failed" type="id"/>
+    <item name="decode_succeeded" type="id"/>
+    <item name="encode_failed" type="id"/>
+    <item name="encode_succeeded" type="id"/>
+    <item name="launch_product_query" type="id"/>
+    <item name="quit" type="id"/>
+    <item name="restart_preview" type="id"/>
+    <item name="return_scan_result" type="id"/>
+    <item name="search_book_contents_failed" type="id"/>
+    <item name="search_book_contents_succeeded" type="id"/>
+    <string name="FailureLogging_div_info">장치정보</string>
+    <string name="FailureLogging_fac_date">납품일</string>
+    <string name="FailureLogging_productName_info">장치정보</string>
+    <string name="action_settings">Settings</string>
+    <string name="alert_title">알림</string>
+    <string name="app_name">ERP Barcode</string>
+    <string name="barcode_management_locCd">위치코드</string>
+    <string name="barcode_management_title1">시/도</string>
+    <string name="barcode_management_title2">읍/면/동</string>
+    <string name="barcode_management_title2_2">*동을 먼저 입력하시면 더욱 편리합니다.</string>
+    <string name="barcode_management_title3">시/군/구</string>
+    <string name="barcode_management_title4">번지/호</string>
+    <string name="bluetooth_new_devices_title">사용할수 있는 기기</string>
+    <string name="bluetooth_paired_devices_title">등록된 기기</string>
+    <string name="bluetooth_printer_title">블루투스 프린터 연결</string>
+    <string name="bluetooth_scan_button">기기 검색</string>
+    <string name="bluetooth_scanner_title">블루투스 스캐너 연결</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_ok">OK</string>
+    <string name="button_open_license">Code License</string>
+    <string name="button_open_mobi">Decoder</string>
+    <string name="certification_close_lavel">닫기</string>
+    <string name="certification_phoneNo_lavel">휴대전화번호</string>
+    <string name="certification_request_lavel">인증번호 발송</string>
+    <string name="certification_send_lavel">인증번호 전송</string>
+    <string name="certification_title">본인인증</string>
+    <string name="content_msg_2">설비바코드를 스캔해주세요.</string>
+    <string name="content_msg_3">위치바코드를 스캔해주세요.</string>
+    <string name="dialog_string_connecting_last_subtitle">가장 최근에 연결되었던 스캐너에 연결중입니다.</string>
+    <string name="dialog_string_connecting_subtitle">스캐너 연결중입니다.</string>
+    <string name="dialog_string_connecting_title">연결중</string>
+    <string name="etcequipment_crud_request_lavel">요청</string>
+    <string name="etcequipment_loc_locCd_lavel">위치바코드</string>
+    <string name="etcequipment_loc_locName_lavel">위치명</string>
+    <string name="etcequipment_loc_search_text">검색</string>
+    <string name="etcequipment_manufacturerYn_lavel">제조사물자</string>
+    <string name="etcequipment_organization_orgCode_lavel">운용조직</string>
+    <string name="etcequipment_product_assetDetail_lavel">자산분류세</string>
+    <string name="etcequipment_product_assetLarge_lavel">자산분류대</string>
+    <string name="etcequipment_product_assetMedium_lavel">자산분류중</string>
+    <string name="etcequipment_product_assetSmall_lavel">자산분류소</string>
+    <string name="etcequipment_product_itemType_lavel">품목구분</string>
+    <string name="etcequipment_product_manufacturerSN_lavel">제조사S/N</string>
+    <string name="etcequipment_product_manufacturer_lavel">제조사</string>
+    <string name="etcequipment_product_partType_lavel">부품종류</string>
+    <string name="etcequipment_product_productClass_lavel">자재분류</string>
+    <string name="etcequipment_product_productCode_lavel">자재코드</string>
+    <string name="etcequipment_product_productName_lavel">자재명</string>
+    <string name="etcequipment_product_search_text">검색</string>
+    <string name="etcequipment_regDate_lavel">등록일</string>
+    <string name="etcequipment_requestNumber_lavel">요청개수</string>
+    <string name="fingerPrint_title">지문인증</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="image_description">이미지</string>
+    <string name="image_selection_popup_album_text">앨범</string>
+    <string name="image_selection_popup_preview_text">미리보기</string>
+    <string name="image_selection_popup_shooting_text">촬영</string>
+    <string name="instructions">휴대전화 홈버튼에 등록된 지문을 쓸어내려 주세요.</string>
+    <string name="ism_injury_barcode">훼손바코드</string>
+    <string name="ism_label_setting">라벨용지</string>
+    <string name="ism_new_barcode">신규바코드</string>
+    <string name="ism_print">출력</string>
+    <string name="ism_print_sensor">라벨센싱</string>
+    <string name="ism_print_setting">프린트설정</string>
+    <string name="ism_print_test">출력테스트</string>
+    <string name="ism_process_status">진행상태</string>
+    <string name="ism_request">검색</string>
+    <string name="ism_request_cancel">요청취소</string>
+    <string name="ism_request_date">처리일</string>
+    <string name="ism_request_generate">발행</string>
+    <string name="ism_request_reason">요청사유</string>
+    <string name="ism_request_republish">재발행</string>
+    <string name="ismrequest_crud_delete_lavel">삭제</string>
+    <string name="ismrequest_crud_init_lavel">초기화</string>
+    <string name="ismrequest_crud_request_lavel">요청</string>
+    <string name="ismrequest_crud_search_lavel">조회</string>
+    <string name="ismrequest_damage_replaceFacCd_lavel">훼손바코드</string>
+    <string name="ismrequest_device_deviceId_lavel">장치바코드</string>
+    <string name="ismrequest_high_UFacCd_lavel">상위바코드</string>
+    <string name="ismrequest_loc_locCd_lavel">위치바코드</string>
+    <string name="ismrequest_loc_locName_lavel">위치명</string>
+    <string name="ismrequest_loc_search_text">검색</string>
+    <string name="ismrequest_manu_manufacturerSN_lavel">제조사S/N</string>
+    <string name="ismrequest_organization_orgCode_lavel">운용조직</string>
+    <string name="ismrequest_product_productCode_lavel">자재코드</string>
+    <string name="ismrequest_product_productName_lavel">자재명</string>
+    <string name="ismrequest_product_search_text">검색</string>
+    <string name="ismrequest_reqstat_requestStatus_lavel">요청사유</string>
+    <string name="jobmanage_crud_confirm_lavel">확인</string>
+    <string name="jobmanage_crud_delete_lavel">삭제</string>
+    <string name="jobmanage_jobdate_lavel">작업일자</string>
+    <string name="jobmanage_jobgubun_lavel">작업구분</string>
+    <string name="jobmanage_sendgubun_lavel">전송구분</string>
+    <string name="license_url">http://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="login_error_password_length">비밀번호는 8자 이상입니다.</string>
+    <string name="login_error_password_required">비밀번호를 입력하세요.</string>
+    <string name="login_error_password_reset">초기 비밀번호로 로그인 할 수 없습니다.\n\r\'ERP Barcode System\' Web 에서\n\r비밀번호 변경 후 이용하여 주십시오.</string>
+    <string name="login_error_userId_password">사용자ID와 비밀번호를 확인하세요.</string>
+    <string name="login_error_userId_required">사용자ID를 입력하세요.</string>
+    <string name="login_password">비밀번호</string>
+    <string name="login_password_lavel">비밀번호</string>
+    <string name="login_password_reset">비밀번호 초기화</string>
+    <string name="login_shadow_lavel">음영지역</string>
+    <string name="login_signin">로그인</string>
+    <string name="login_title">로그인</string>
+    <string name="login_userid">사용자ID</string>
+    <string name="login_userid_lavel">아이디</string>
+    <string name="main_bottom_barcodesearch_button_lavel">바코드검색</string>
+    <string name="main_bottom_connectscanner_button_lavel">스캐너연결</string>
+    <string name="main_bottom_setting_button_lavel">환경설정</string>
+    <string name="main_bottom_taskmanagement_button_lavel">작업관리</string>
+    <string name="main_title">ErpBarcode</string>
+    <string name="menu_about">About</string>
+    <string name="mobi_url">http://www.manateeworks.com</string>
+    <string name="msg_about">Decoder based on mobiScans Native Barcode Decoders for Android. To purchase a decoder SDK for application integration, or to have us develop your app, visit www.manateeworks.com.\n</string>
+    <string name="msg_buggy">This device has known bugs that cause barcode scanning problems.</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="msg_default_contents">Contents</string>
+    <string name="msg_default_format">Format</string>
+    <string name="msg_default_status">사각형안에 바코드를 놓아주세요.</string>
+    <string name="msg_default_type"/>
+    <string name="msg_scan_default_contents">Contents</string>
+    <string name="msg_scan_default_format">Format</string>
+    <string name="msg_scan_default_status">사각형안에 바코드를 놓아주세요.</string>
+    <string name="msg_scan_default_type"/>
+    <string name="none_found">No devices found</string>
+    <string name="notice_close_button_lavel">닫기</string>
+    <string name="notice_notOpenCheckBox_text">오늘 하루동안 열리지 않기</string>
+    <string name="pairing_button_delete">삭제</string>
+    <string name="repair_crud_delete_lavel">삭제</string>
+    <string name="repair_crud_init_lavel">초기화</string>
+    <string name="repair_crud_save_lavel">저장</string>
+    <string name="repair_crud_send_lavel">전송</string>
+    <string name="repair_fac_facCd_lavel">설비바코드</string>
+    <string name="repair_fac_sn_lavel">설비 S/N</string>
+    <string name="repair_loc_locCd_lavel">위치바코드</string>
+    <string name="repair_loc_search_text">검색</string>
+    <string name="repair_organization_orgCode_lavel">운용조직</string>
+    <string name="repair_zp_zpStatus_lavel">설비상태</string>
+    <string name="searchloccheck_deviceName">물품명</string>
+    <string name="searchloccheck_fccCode">물품코드</string>
+    <string name="searchloccheck_fccName">물품명</string>
+    <string name="searchloccheck_locCd_lavel">위치바코드</string>
+    <string name="select_device">select a device to connect</string>
+    <string name="selectdevice_deviceId_lavel">장치바코드</string>
+    <string name="selectdevice_locCd_lavel">위치바코드</string>
+    <string name="selectdevice_search_text">조회</string>
+    <string name="selectfac_facCd_lavel">설비바코드</string>
+    <string name="selectfac_search_text">상세</string>
+    <string name="selectloc_locCd_lavel">위치코드</string>
+    <string name="selectloc_locName_lavel">위치명</string>
+    <string name="selectloc_search_text">검색</string>
+    <string name="selectproduct_productCode_lavel">자재코드</string>
+    <string name="selectproduct_productName_lavel">자재명</string>
+    <string name="selectproduct_search_text">검색</string>
+    <string name="setting_appversion_title">앱 버젼</string>
+    <string name="setting_bluetooth_barcodescanner_summary">바코드스케너를 검색하여 연결하세요.</string>
+    <string name="setting_bluetooth_barcodescanner_title">바코드스케너 연결 여부</string>
+    <string name="setting_bluetooth_setting_connect_alert_subtitle">블루투스 연결이 끊어진 상태에서 스캔시 경고를 하여 사용자에게 알려줍니다.</string>
+    <string name="setting_bluetooth_setting_connect_alert_title">미연결 경고</string>
+    <string name="setting_bluetooth_softkeyboard_summary">바코드스케너 사용시에는 소프트키보드를 비활성화 하세요.</string>
+    <string name="setting_bluetooth_softkeyboard_title">소프트키보드 활성 여부</string>
+    <string name="setting_bluetooth_title">블루투스 바코드 스캐너 연결</string>
+    <string name="setting_clocksync_subtitle">터치 하면 미니 스캐너 시간설정을 핸드폰의 시간과 동기화 시킴니다. </string>
+    <string name="setting_clocksync_title">시간 동기화</string>
+    <string name="setting_factorydefault_subtitle">터치 하면 미니 스캐너의 설정을 공장 초기화 상태로 되돌리며 시간이 걸릴 수도 있습니다. </string>
+    <string name="setting_factorydefault_title">공장 초기화</string>
+    <string name="setting_memoryreset_subtitle">터치 하면 스캐너의 메모리를 리셋합니다.</string>
+    <string name="setting_memoryreset_title">메모리 리셋</string>
+    <string name="setting_notice_noticelist_title">공지사항</string>
+    <string name="setting_notice_title">공지</string>
+    <string name="setting_scan_setting">스캔 설정</string>
+    <string name="setting_scan_setting_autotrigger_delay_title">자동 스캔 간격</string>
+    <string name="setting_scan_setting_autotrigger_subtitle">일정 간격마다 자동으로 스캔을 합니다. 스캔버튼을 3초 이상 누르고 있으면 자동스캔이 종료됩니다.</string>
+    <string name="setting_scan_setting_autotrigger_title">자동 스캔</string>
+    <string name="setting_scanner_info_title">스캐너 정보</string>
+    <string name="setting_soundeffects_lock_summary">사운드와 효과음을 활성화하시면 작업에 도움이 됩니다.</string>
+    <string name="setting_soundeffects_lock_title">사운드 재생 여부</string>
+    <string name="setting_soundeffects_title">사운드와 효과음</string>
+    <string name="setting_surveymaster_title">자료 업데이트</string>
+    <string name="setting_surveymaster_update_title">자재마스터 업데이트</string>
+    <string name="setting_system_setting">시스템 설정</string>
+    <string name="setting_system_setting_autoerase_subtitle">메모리가 가득찰 시 전체 메모리를 자동으로 삭제합니다.</string>
+    <string name="setting_system_setting_autoerase_title">자동 삭제</string>
+    <string name="setting_system_setting_beeponscan_subtitle">스캔 비프음을 켜고 끌수 있습니다.</string>
+    <string name="setting_system_setting_beeponscan_title">스캔 비프음</string>
+    <string name="setting_system_setting_beepsound_subtitle">전체 비프 사운드를 켜고 끌수 있습니다.</string>
+    <string name="setting_system_setting_beepsound_title">비프음</string>
+    <string name="setting_system_setting_beepvolumehigh_subtitle">스캐너의 비프음을 크게 합니다.</string>
+    <string name="setting_system_setting_beepvolumehigh_title">비프음 크게 하기</string>
+    <string name="setting_system_setting_keypad_subtitle">스캐너의 키패드 사용을 비활성화 합니다.</string>
+    <string name="setting_system_setting_keypad_title">키패드 활성화</string>
+    <string name="setting_system_setting_vibrator_subtitle">스캐너 진동 모드를 켜고 끌수 있습니다.</string>
+    <string name="setting_system_setting_vibrator_title">진동 모드</string>
+    <string name="setting_title">환경설정</string>
+    <string name="spotcheck_chk_DevMatch_lavel">장치</string>
+    <string name="spotcheck_chk_FacCDMatch_lavel">실물</string>
+    <string name="spotcheck_chk_LocMatch_lavel">위치</string>
+    <string name="spotcheck_chk_OrgMatch_lavel">부서</string>
+    <string name="spotcheck_chk_UFacCdMatch_lavel">상위</string>
+    <string name="spotcheck_crud_cancelScan_lavel">스캔취소</string>
+    <string name="spotcheck_crud_init_lavel">초기화</string>
+    <string name="spotcheck_crud_save_lavel">저장</string>
+    <string name="spotcheck_crud_scanvital_lavel">스캔필수</string>
+    <string name="spotcheck_crud_send_lavel">전송</string>
+    <string name="spotcheck_device_deviceId_lavel">장치바코드</string>
+    <string name="spotcheck_device_oprSysCd_lavel"/>
+    <string name="spotcheck_fac_facCd_lavel">설비바코드</string>
+    <string name="spotcheck_fac_scanUU_lavel">U-U</string>
+    <string name="spotcheck_location_locCd_lavel">위치바코드</string>
+    <string name="spotcheck_location_search_text">검색</string>
+    <string name="spotcheck_organization_orgCode_lavel">운용조직</string>
+    <string name="spotcheck_organization_search_text">검색</string>
+    <string name="spotcheck_title">현장점검</string>
+    <string name="terminalcheck_crud_close_lavel">닫기</string>
+    <string name="terminalcheck_crud_delete_lavel">삭제</string>
+    <string name="terminalcheck_crud_init_lavel">초기화</string>
+    <string name="terminalcheck_crud_save_lavel">저장</string>
+    <string name="terminalcheck_crud_search_lavel">조회</string>
+    <string name="terminalcheck_crud_send_lavel">전송</string>
+    <string name="terminalcheck_iblnr_level">실사문서</string>
+    <string name="terminalcheck_materials_level">자재</string>
+    <string name="terminalcheck_month_level">월</string>
+    <string name="terminalcheck_plant_level">플랜트</string>
+    <string name="terminalcheck_sl_level">저장위치</string>
+    <string name="terminalcheck_terminalcode_lavel">단말바코드</string>
+    <string name="terminalcheck_year_level">년</string>
+    <string name="terminalcheck_yearmonth_level">점검년월</string>
+    <string name="title_about">Camera Demo</string>
+    <string name="title_activity_addr_info">AddrInfoActivity</string>
+    <string name="title_activity_delete_why_info">DeleteWhyInfoActivity</string>
+    <string name="title_activity_find_user">사용자조회</string>
+    <string name="title_change_password_popup">ChangePassword</string>
+    <string name="title_reset_password_popup">ResetPassword</string>
+    <string name="transfer_crud_argumentConfirm1_lavel">인수확정</string>
+    <string name="transfer_crud_argumentConfirm2_lavel">등록확정</string>
+    <string name="transfer_crud_cancelEditMode_lavel">취소</string>
+    <string name="transfer_crud_delete_lavel">삭제</string>
+    <string name="transfer_crud_init_lavel">초기화</string>
+    <string name="transfer_crud_modify_lavel">수정</string>
+    <string name="transfer_crud_move_lavel">이동</string>
+    <string name="transfer_crud_save_lavel">저장</string>
+    <string name="transfer_crud_send_lavel">전송</string>
+    <string name="transfer_device_deviceId_lavel">장치바코드</string>
+    <string name="transfer_device_oprSysCd_lavel"/>
+    <string name="transfer_fac_facCd_lavel">설비바코드</string>
+    <string name="transfer_fac_scanUU_lavel">U-U</string>
+    <string name="transfer_location_locCd_lavel">위치바코드</string>
+    <string name="transfer_organization_orgCode_lavel">운용조직</string>
+    <string name="transfer_reScanRequest_move_lavel">재스캔요청</string>
+    <string name="transfer_wbs_wbsNo_lavel">WBS번호</string>
+    <string name="transferargument_cancel_lavel">취소</string>
+    <string name="transferargument_send_lavel">전송</string>
+    <string name="treescan_cboCode_level">고장코드</string>
+    <string name="treescan_cboReason_level">고장내역</string>
+    <string name="treescan_crud_Hierachy_level">형상을구성함</string>
+    <string name="treescan_crud_cancelScan_lavel">스캔취소</string>
+    <string name="treescan_crud_chkScan_lavel">스캔필수</string>
+    <string name="treescan_crud_delete_lavel">삭제</string>
+    <string name="treescan_crud_init_lavel">초기화</string>
+    <string name="treescan_crud_move_lavel">이동</string>
+    <string name="treescan_crud_save_lavel">저장</string>
+    <string name="treescan_crud_send_lavel">전송</string>
+    <string name="treescan_device_deviceId_lavel">장치바코드</string>
+    <string name="treescan_device_oprSysCd_lavel">무선 장비아이디</string>
+    <string name="treescan_fac_Hierachy_lavel">형상구성</string>
+    <string name="treescan_fac_facCd_lavel">설비바코드</string>
+    <string name="treescan_fac_scanUU_lavel">U-U</string>
+    <string name="treescan_high_highBarcode_lavel">상위바코드</string>
+    <string name="treescan_location_locCd_info">..</string>
+    <string name="treescan_location_locCd_lavel">위치바코드</string>
+    <string name="treescan_organization_orgCode_lavel">운용조직</string>
+    <string name="treescan_receiptOrganization_orgCode_lavel">접수조직</string>
+    <string name="treescan_receiptOrganization_search_text">검색</string>
+    <string name="treescan_ship_zdocrt_lavel">배송오더</string>
+    <string name="treescan_ship_zdocrt_text">생성</string>
+    <string name="treescan_wbs_wbsNo_lavel">WBS번호</string>
+    <string name="treescan_zp_zpStatus_lavel">설비상태</string>
+    <style name="AppBaseTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+    </style>
+    <style name="ErpBarcodeTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
+        <item name="android:buttonStyle">@style/Form.Styled.RedButton</item>
+        <item name="android:spinnerStyle">@style/Form.Styled.Spinner</item>
+    </style>
+    <style name="Form.Styled.DisplayBoxTextView" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">match_parent</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:background">@drawable/style_textview_bg_display</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+    <style name="Form.Styled.DisplayTextView" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:background">@android:color/transparent</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+    <style name="Form.Styled.InputBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_margin">4dp</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:gravity">center_vertical</item>
+	    <!-- <item name="android:background">@drawable/common_inputbar_bg</item> -->
+	    <item name="android:background">@android:color/transparent</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    <style name="Form.Styled.InputBox" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">34dp</item>
+	    <item name="android:orientation">horizontal</item>
+	    <item name="android:gravity">center_vertical</item>
+	    <item name="android:background">@android:color/white</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    <style name="Form.Styled.InputDisplayBox" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">34dp</item>
+	    <item name="android:orientation">horizontal</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	    <item name="android:background">@color/style_white_gray</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    <style name="Form.Styled.LavelTextView" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:gravity">left</item>
+	    <item name="android:layout_gravity">center_vertical</item>
+	    <item name="android:background">@android:color/transparent</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@color/style_dark_gray</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+    <style name="Form.Styled.LeftLavelTextView" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">80dp</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:paddingLeft">4dp</item>
+	    <item name="android:paddingRight">4dp</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:background">@android:color/transparent</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@color/style_dark_gray</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+    <style name="Form.Styled.LeftMiddleLavelTextView" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">120dp</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:paddingLeft">4dp</item>
+	    <item name="android:paddingRight">4dp</item>
+	    <item name="android:gravity">left</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:background">@android:color/transparent</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@color/style_dark_gray</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">14sp</item>
+		<item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+    <style name="Form.Styled.ListFooterBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">40dp</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:gravity">center|center_vertical</item>
+	    <item name="android:layout_gravity">center_vertical</item>
+	    <item name="android:background">@drawable/common_list_footer_bg</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    <style name="Form.Styled.ListHeaderBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">34dp</item>
+	    <item name="android:orientation">horizontal</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	    <item name="android:layout_gravity">center_vertical</item>
+	    <item name="android:background">@drawable/common_list_header_bg</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    <style name="Form.Styled.NormalEditText" parent="@android:style/Widget.EditText">
+		<item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">match_parent</item>
+	    <!-- <item name="android:layout_marginRight">2dp</item> -->
+	    <item name="android:background">@drawable/style_edittext_normal</item>
+	    <item name="android:gravity">top</item>
+	    <item name="android:layout_gravity">left</item>
+		<item name="android:singleLine">false</item>
+	 	<item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textStyle">normal</item>
+		<item name="android:focusable">true</item>
+		<item name="android:focusableInTouchMode">true</item>
+		<item name="android:editable">true</item>
+		<item name="android:cursorVisible">true</item>
+		<item name="android:inputType">textMultiLine</item>
+		<item name="android:imeOptions">normal</item>
+	</style>
+    <style name="Form.Styled.NormalTextView" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:singleLine">false</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+    <style name="Form.Styled.RedButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:minWidth">44dp</item>
+	    <item name="android:minHeight">32dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/style_button_red</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Form.Styled.ScannableEditText" parent="@android:style/Widget.EditText">
+		<item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">match_parent</item>
+	    <item name="android:background">@drawable/style_edittext_normal</item>
+	    <item name="android:gravity">center_vertical</item>
+	    <item name="android:layout_gravity">left</item>
+		<item name="android:singleLine">true</item>
+	 	<item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:textSize">15sp</item>
+		<item name="android:textStyle">bold</item>
+		<item name="android:focusable">true</item>
+		<item name="android:focusableInTouchMode">true</item>
+		<item name="android:editable">true</item>
+		<item name="android:cursorVisible">true</item>
+		<item name="android:inputType">text|textCapCharacters</item>
+		<item name="android:imeOptions">actionSearch</item>
+	</style>
+    <style name="Form.Styled.Spinner" parent="android:style/Widget.Holo.Light.Spinner">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginTop">2dp</item>
+	    <item name="android:layout_marginBottom">2dp</item>
+		<item name="android:background">@drawable/style_spinner_selector</item>
+	    <item name="android:clickable">true</item>
+	    <item name="android:textSize">14sp</item>
+	    <item name="android:drawSelectorOnTop">true</item>
+	    <item name="android:spinnerMode">dropdown</item>
+	    <item name="android:popupBackground">@color/style_very_dark_gray</item>
+	    <item name="android:dropDownSelector">@drawable/style_spinner_dropdown_selector</item>
+	</style>
+    <style name="Form.Styled.Tab.StateButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:minWidth">50dp</item>
+	    <item name="android:minHeight">36dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/style_tab_statebutton</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+    <style name="Form.Styled.ToggleButton" parent="@android:style/Widget.Button">
+        <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginTop">2dp</item>
+	    <item name="android:layout_marginBottom">2dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:background">@drawable/style_togglebutton_selector</item>
+        <item name="android:textOn">@null</item>
+        <item name="android:textOff">@null</item>
+    </style>
+    <style name="Form.Styled.ToolBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">42dp</item>
+	    <item name="android:padding">4dp</item>
+	    <item name="android:orientation">horizontal</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	    <item name="android:layout_gravity">center_vertical</item>
+	    <item name="android:background">@drawable/common_toolbar_bg</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    <style name="Setting.Styled.ButtonBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:paddingTop">6dp</item>
+	    <item name="android:paddingBottom">6dp</item>
+	    <item name="android:minHeight">64dp</item>
+	    <item name="android:gravity">center_vertical</item>
+	    <item name="android:background">@android:drawable/list_selector_background</item>
+	 	<item name="android:clickable">true</item>
+    </style>
+    <style name="Setting.Styled.CheckInputBox" parent="">
+        <item name="android:layout_width">60dp</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:gravity">center_horizontal|center_vertical</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    <style name="Setting.Styled.ExpansionInputBox" parent="">
+        <item name="android:layout_width">0dp</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_weight">1</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    <style name="Setting.Styled.HorizontalButtonBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:orientation">horizontal</item>
+	    <item name="android:paddingTop">6dp</item>
+	    <item name="android:paddingBottom">6dp</item>
+	    <item name="android:gravity">center_vertical</item>
+	    <item name="android:background">@android:drawable/list_selector_background</item>
+	 	<item name="android:clickable">true</item>
+    </style>
+    <style name="Setting.Styled.InputBox" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:gravity">left|center_vertical</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    <style name="Setting.Styled.Line" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">0.4dp</item>
+	    <item name="android:gravity">left|top</item>
+	    <item name="android:background">@color/style_light_grey</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    <style name="Setting.Styled.NormalCheckBox" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_gravity">center</item>
+	    <item name="android:text">@null</item>
+	 	<item name="android:clickable">false</item>
+	</style>
+    <style name="Setting.Styled.NormalText" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginLeft">4dp</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:singleLine">false</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+    <style name="Setting.Styled.SetLayoutBar" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:gravity">left|top</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    <style name="Setting.Styled.SubjectText" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginLeft">4dp</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">18sp</item>
+	</style>
+    <style name="Setting.Styled.TitleLine" parent="">
+        <item name="android:layout_width">match_parent</item>
+	    <item name="android:layout_height">2dp</item>
+	    <item name="android:layout_marginTop">4dp</item>
+	    <item name="android:gravity">left|top</item>
+	    <item name="android:background">@color/style_light_grey</item>
+	    <item name="android:focusable">false</item>
+	 	<item name="android:focusableInTouchMode">false</item>
+	 	<item name="android:clickable">false</item>
+    </style>
+    <style name="Setting.Styled.TitleText" parent="@android:style/Widget.TextView">
+	    <item name="android:layout_width">wrap_content</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:layout_marginLeft">4dp</item>
+	    <item name="android:typeface">sans</item>
+		<item name="android:textColor">@android:color/black</item>
+		<item name="android:singleLine">true</item>
+		<item name="android:textSize">14sp</item>
+	</style>
+    <style name="treeViewListStyle" parent="">
+        <item name="android:background">@android:color/white</item>
+        <item name="android:divider">@drawable/treeview_divider</item>
+    </style>
+</resources>

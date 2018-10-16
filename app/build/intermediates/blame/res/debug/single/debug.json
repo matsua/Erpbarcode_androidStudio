@@ -1,0 +1,1890 @@
+[
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_spinner_bg_selected.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_spinner_bg_selected.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_tab_bg_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_tab_bg_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_g2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_g2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_d1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_d1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_b.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/b.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_ism_etcequipment_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/ism_etcequipment_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_n9.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/n9.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_b_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_b_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_q.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/q.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_login_pwreset_button.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/login_pwreset_button.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_e2_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_e2_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_g4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_g4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_b5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_b5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_h3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_h3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_scanner_status_connecting.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_scanner_status_connecting.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_i3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_i3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_scanview_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/scanview_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_login_pwreset_button.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/login_pwreset_button.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_intro_bg_header_image.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/intro_bg_header_image.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_c_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_c_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_a3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_a3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_b_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_b_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infoagree_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infoagree_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_spinner_bg_press.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_spinner_bg_press.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_d.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_d.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_base_upgrade_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/base_upgrade_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_button_red.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_button_red.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_c2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_c2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_a_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_a_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_button_bg_gray.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_button_bg_gray.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_icon_collapsed.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_icon_collapsed.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_scanner_status_fail.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_scanner_status_fail.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_b2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_b2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_login_loginbutton.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/login_loginbutton.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_toolbar_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_toolbar_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_d7.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_d7.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_d3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_d3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_inputbar_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_inputbar_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_logo_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_logo_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_d.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/d.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_intro_bg_header_image.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/intro_bg_header_image.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_list_footer_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_list_footer_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_management_transferargument_fragment.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/management_transferargument_fragment.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_selectproduct_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_selectproduct_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_env_notice_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/env_notice_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_a_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_a_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_failure_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_failure_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_h4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_h4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_env_bluetooth_devicelist.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/env_bluetooth_devicelist.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_c_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_c_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_2_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_2_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_a.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_a.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_a5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_a5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_image_print_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/image_print_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_intro_bg_gradient.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/intro_bg_gradient.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_s.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/s.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_zoomimage_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_zoomimage_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_barcode_barcodelist_fragment.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/barcode_barcodelist_fragment.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_login_password_lavel.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/login_password_lavel.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_e2_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_e2_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_b.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_b.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_ism_management_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/ism_management_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_i1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_i1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_h1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_h1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_a1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_a1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_c3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_c3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_m.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/m.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_a5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_a5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_a.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_a.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_h.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_h.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_logo_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_logo_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_button_red_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_button_red_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_icon_alert.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_icon_alert.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_inputbar_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_inputbar_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_d_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_d_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_button_toggle_on.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_button_toggle_on.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_e2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_e2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_c1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_c1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_barcode_barcodetree_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/barcode_barcodetree_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_1.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_1.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_e_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_e_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_b6.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_b6.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_d_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_d_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_intro_bg_gradient.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/intro_bg_gradient.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_b3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_b3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_a_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_a_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_treeview_sbt.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/treeview_sbt.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_3.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_3.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_list_header_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_list_header_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_b9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_b9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_a6.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_a6.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_login_password_lavel.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/login_password_lavel.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_b2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_b2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_b_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_b_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_c_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_c_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_b9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_b9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_d5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_d5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_h3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_h3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_notexists.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/notexists.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_1_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_1_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_ism_ismrequest_list_header.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/ism_ismrequest_list_header.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_logo_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_logo_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_n3.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/n3.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_loc_barcodemanagement_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/loc_barcodemanagement_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_login_id_lavel.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/login_id_lavel.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_selectorgcode_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_selectorgcode_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_d2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_d2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_d7.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_d7.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_inputbar_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_inputbar_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_w.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/w.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_selectproduct_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_selectproduct_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_management_treescan_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/management_treescan_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_1_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_1_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_f.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_f.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_e.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_e.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_base_main_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/base_main_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_survey_spotcheck_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/survey_spotcheck_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_icon_arrow.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_icon_arrow.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_ism_ismcomplete_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/ism_ismcomplete_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_toolbar_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_toolbar_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_f.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/f.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_icon_collapsed.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_icon_collapsed.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_d3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_d3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_login_password_lavel.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/login_password_lavel.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_button_red_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_button_red_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_e2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_e2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_ic_launcher.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_style_expander_group.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/style_expander_group.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_x.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/x.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_b6.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_b6.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_base_finger_certification_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/base_finger_certification_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_intro_bg_footer_version.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/intro_bg_footer_version.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_style_tab_statebutton.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/style_tab_statebutton.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_d2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_d2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_button_bg_red.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_button_bg_red.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_n1.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/n1.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_scanner_status_none.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_scanner_status_none.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_f_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_f_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_2_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_2_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_intro_bg_body_image.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/intro_bg_body_image.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_find_user_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/find_user_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_e2_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_e2_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_y.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/y.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_d1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_d1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_tab_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_tab_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_i3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_i3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_xml_border.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/xml_border.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_e_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_e_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_scan.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/scan.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_d_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_d_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_n0.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/n0.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_button_red.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_button_red.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_icon_gps.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_icon_gps.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_spinner_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_spinner_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_base_certification_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/base_certification_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_list_header_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_list_header_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_4_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_4_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_d.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_d.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_button_toggle_on.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_button_toggle_on.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_i2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_i2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_management_repair_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/management_repair_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_d6.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_d6.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_g3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_g3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_list_header_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_list_header_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_g_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_g_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_style_spinner_selector.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/style_spinner_selector.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_b7.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_b7.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_e2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_e2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_barcode.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/barcode.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_ic_launcher.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_n2.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/n2.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_login_id_lavel.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/login_id_lavel.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_alert.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/alert.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_button_bg_gray.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_button_bg_gray.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_n99.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/n99.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_jk2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_jk2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_b4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_b4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_icon_gps.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_icon_gps.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_survey_checkterminal_list_header.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/survey_checkterminal_list_header.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_intro_bg_footer_image.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/intro_bg_footer_image.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_jk1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_jk1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_b2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_b2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_b5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_b5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_icon_currentaddress.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_icon_currentaddress.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/menu_image_selection_popup.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/menu/image_selection_popup.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_3_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_3_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_management_transfer_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/management_transfer_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_intro_bg_header_image.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/intro_bg_header_image.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_h.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_h.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_f1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_f1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_i.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_i.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_c.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_c.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_style_spinner_dropdown_selector.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/style_spinner_dropdown_selector.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_g4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_g4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_2.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_2.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_spinner_press_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_spinner_press_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_n.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/n.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_ism_ismmanegement_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/ism_ismmanegement_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_user_info_item.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/user_info_item.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_selectloc_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_selectloc_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_style_button_bg_submenu.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/style_button_bg_submenu.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_treeview_divider.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/treeview_divider.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_a3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_a3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_o.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/o.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_k5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_k5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_h1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_h1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_button_toggle_off.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_button_toggle_off.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_printersetting_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/printersetting_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_f2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_f2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_barcode_management_sm_item.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/barcode_management_sm_item.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_tab_bg_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_tab_bg_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_treeview_sb.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/treeview_sb.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_b5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_b5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_2.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_2.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_spinner_selected_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_spinner_selected_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_j.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_j.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_intro_bg_body_image.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/intro_bg_body_image.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_loc_barcodemanagement_list_third_row.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/loc_barcodemanagement_list_third_row.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_login_loginbutton.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/login_loginbutton.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_toolbar_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_toolbar_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_management_treescantree_fragment.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/management_treescantree_fragment.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_c.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/c.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_login_pwreset_button.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/login_pwreset_button.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_3_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_3_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_jinwoo_slow.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/jinwoo_slow.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_tab_bg_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_tab_bg_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_button_toggle_off.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_button_toggle_off.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_z.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/z.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_d7.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_d7.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_b4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_b4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_notify.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/notify.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_intro_bg_footer_version.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/intro_bg_footer_version.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_a1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_a1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_i4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_i4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_selectdevice_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_selectdevice_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_selectorgcode_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_selectorgcode_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_b1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_b1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_icon_currentaddress.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_icon_currentaddress.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_b.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_b.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_i.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_i.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_i4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_i4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_button_toggle_on.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_button_toggle_on.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_a4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_a4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_z.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_z.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_icon_deviceid.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_icon_deviceid.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_jung.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/jung.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_selectproduct_list_header.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_selectproduct_list_header.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_finger_print_icon.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/finger_print_icon.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_spinner_selected_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_spinner_selected_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_h_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_h_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_c3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_c3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_e.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_e.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_management_repair_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/management_repair_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_a2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_a2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_barcode_barcodelist_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/barcode_barcodelist_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_g1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_g1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_h2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_h2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_always_on_top_view_touch.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/always_on_top_view_touch.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_env_setting_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/env_setting_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_g3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_g3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_d2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_d2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_icon_arrow.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_icon_arrow.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_r.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/r.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_g3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_g3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_a.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/a.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_b6.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_b6.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_h4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_h4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_g.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_g.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_a6.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_a6.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_3.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_3.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_i_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_i_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_icon_logo1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_icon_logo1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_button_bg_gray.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_button_bg_gray.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_button_bg_red.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_button_bg_red.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_4.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_4.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_g_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_g_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_a2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_a2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_b1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_b1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_b8.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_b8.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_b3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_b3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_list_footer_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_list_footer_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_button_toggle_off.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_button_toggle_off.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_ism_ismrequest_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/ism_ismrequest_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_style_togglebutton_selector.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/style_togglebutton_selector.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_gwlen_list_header.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/gwlen_list_header.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_a4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_a4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_i_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_i_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_k_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_k_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_h2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_h2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_management_transferargument_list_header.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/management_transferargument_list_header.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_z.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_z.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_survey_checkterminal_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/survey_checkterminal_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_spinner_press_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_spinner_press_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_n8.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/n8.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_intro_bg_body_image.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/intro_bg_body_image.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_a5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_a5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_f2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_f2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_2.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_2.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_p.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/p.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_1.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_1.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_k.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_k.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_4_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_4_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_treeview_sbl.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/treeview_sbl.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_icon_logo1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_icon_logo1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_intro_bg_gradient.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/intro_bg_gradient.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_h_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_h_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_icon_expanded.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_icon_expanded.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_f_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_f_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_treeview_sbf.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/treeview_sbf.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_treeview_sbd.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/treeview_sbd.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_selectfacdetail_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_selectfacdetail_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_b3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_b3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_login_id_lavel.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/login_id_lavel.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_deletewhyinfo_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/deletewhyinfo_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_icon_expanded.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_icon_expanded.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_j5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_j5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_icon_deviceid.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_icon_deviceid.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_h_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_h_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_e.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/e.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_jk8.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_jk8.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_3_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_3_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_button_red.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_button_red.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_style_button_red.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/style_button_red.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_n4.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/n4.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_barcode_management_device_item.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/barcode_management_device_item.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_g.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/g.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_a.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_a.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_b.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_b.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_loc_barcodemanagement_list_child_row.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/loc_barcodemanagement_list_child_row.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_job_jobmanage_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/job_jobmanage_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_duplication.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/duplication.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_searchwbs_list_header.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_searchwbs_list_header.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_a6.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_a6.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_d1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_d1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_searchwbscheck_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_searchwbscheck_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_tab_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_tab_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_button_red_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_button_red_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_jk3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_jk3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_b4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_b4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_b8.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_b8.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_scanner_status_connected.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_scanner_status_connected.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_4_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_4_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_intro_bg_footer_version.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/intro_bg_footer_version.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_style_main_button_1.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/style_main_button_1.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_login_loginbutton.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/login_loginbutton.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_1.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_1.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_tab_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_tab_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_i2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_i2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_3.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_3.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_capture.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/capture.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_survey_productsurvey_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/survey_productsurvey_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_h4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_h4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_l.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/l.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_d4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_d4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_b1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_b1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_g.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_g.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_c1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_c1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_h5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_h5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_i1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_i1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_ism_ismcomplete_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/ism_ismcomplete_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_b7.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_b7.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_g2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_g2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_f2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_f2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_a1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_a1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_d4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_d4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_g1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_g1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_j.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/j.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_style_main_button_3.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/style_main_button_3.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_f.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_f.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_env_bluetooth_devicelist_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/env_bluetooth_devicelist_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_f_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_f_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_intro_bg_footer_image.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/intro_bg_footer_image.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_addinfo_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/addinfo_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_e.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_e.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_job_jobmanage_list_header.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/job_jobmanage_list_header.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_intro_bg_footer_image.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/intro_bg_footer_image.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_jk4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_jk4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_list_footer_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_list_footer_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_spinner_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_spinner_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_d5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_d5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_g.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_g.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_ism_ismrequest_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/ism_ismrequest_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_gwlen_list_iemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/gwlen_list_iemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_k.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/k.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_f.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_f.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_style_main_button_2.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/style_main_button_2.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_common_icon_arrow.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/common_icon_arrow.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_h1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_h1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_management_repair_list_header.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/management_repair_list_header.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_c2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_c2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_d6.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_d6.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_h5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_h5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_selectloc_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_selectloc_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_h.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/h.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_f1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_f1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_c.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_c.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_d4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_d4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_g_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_g_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_style_edittext_normal.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/style_edittext_normal.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_a2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_a2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_reset_password_popup.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/reset_password_popup.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_v.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/v.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_e_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_e_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_env_notice_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/env_notice_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_base_intro_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/base_intro_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_barcode_tree_wrapper.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/barcode_tree_wrapper.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_icon_logo1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_icon_logo1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_management_transfertree_fragment.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/management_transfertree_fragment.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_management_transferargument_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/management_transferargument_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_survey_productsurvey_list_header.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/survey_productsurvey_list_header.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_d3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_d3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_sendquestion.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/sendquestion.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_1_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_1_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_treeview_sbp.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/treeview_sbp.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_n5.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/n5.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_job_jobmanage_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/job_jobmanage_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_d5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_d5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_selectdevice_device_fragment.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_selectdevice_device_fragment.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_style_textview_bg_display.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/style_textview_bg_display.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_ism_ismcomplete_list_header.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/ism_ismcomplete_list_header.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_t.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/t.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_g1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_g1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_f1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_f1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_a4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_a4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-mdpi_common_button_bg_red.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-mdpi/common_button_bg_red.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_4.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_4.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_u.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/u.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_base_login_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/base_login_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_icon_gps.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_icon_gps.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_barcode_management_loc_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/barcode_management_loc_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_c2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_c2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_scanbelow.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/scanbelow.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_ic_launcher.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_jk7.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_jk7.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_h3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_h3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_spinner_bg.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_spinner_bg.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_a3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_a3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_change_password_popup.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/change_password_popup.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_asterisk.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/asterisk.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_searchwbs_list_itemrow.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_searchwbs_list_itemrow.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_c1.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_c1.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_n7.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/n7.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable_style_main_button_4.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable/style_main_button_4.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_survey_terminalcheck_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/survey_terminalcheck_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_icon_lock.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_icon_lock.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_2_up.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_2_up.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_icon_expanded.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_icon_expanded.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_g4.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_g4.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_icon_deviceid.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_icon_deviceid.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-mdpi_common_button_bg_gray.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-mdpi/common_button_bg_gray.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_common_button_bg_red.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/common_button_bg_red.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_gwlen_list_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/gwlen_list_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_n6.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/n6.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_h.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_h.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_c.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_c.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_4.9.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_4.9.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_d6.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_d6.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_c3.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_c3.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_h5.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_h5.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_j_up.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_j_up.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_icon_currentaddress.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_icon_currentaddress.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_b7.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_b7.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_main_button_menu_g2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/main_button_menu_g2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_jk6.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_jk6.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_h2.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_h2.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xxhdpi_common_icon_collapsed.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xxhdpi/common_icon_collapsed.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_selectdevice_loc_fragment.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_selectdevice_loc_fragment.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_notlocation.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/notlocation.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/raw_i.wav.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/raw/i.wav"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-hdpi_main_button_menu_d.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-hdpi/main_button_menu_d.png"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/layout_infosearch_searchloccheck_activity.xml.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/layout/infosearch_searchloccheck_activity.xml"
+    },
+    {
+        "merged": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/res/merged/debug/drawable-xhdpi_main_button_menu_z.png.flat",
+        "source": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/res/drawable-xhdpi/main_button_menu_z.png"
+    }
+]

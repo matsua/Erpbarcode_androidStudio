@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/popup_window"    
+	android:layout_width="match_parent"    
+	android:layout_height="match_parent"
+	android:orientation="vertical" >    
+
+	<LinearLayout
+	    android:layout_width="300dp"
+	    android:layout_height="415dp"
+	    android:orientation="vertical"
+	    android:background="@android:color/background_light">
+
+		<LinearLayout
+		    android:layout_width="fill_parent"
+		    android:layout_height="35dp"
+		    android:background="@android:color/darker_gray" >
+
+		    <TextView
+		        android:id="@+id/title"
+		        style="@style/Form.Styled.DisplayTextView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_marginLeft="10dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_weight="0.83"
+		        android:text="사용자조회"
+		        android:textAppearance="?android:attr/textAppearanceLarge"
+		        android:textColor="@android:color/white"
+		        android:textSize="18dp" />
+
+		    <Button
+		        android:id="@+id/closeBtn"
+		        android:layout_width="35dp"
+		        android:layout_height="35dp"
+		        android:background="@color/style_very_dark_gray"
+		        android:text="X"
+		        android:textColor="@android:color/white" />
+		</LinearLayout>
+	    
+	    <LinearLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="265dp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_marginRight="10dp"
+	        android:background="@android:color/background_light"
+	        android:orientation="vertical" >
+
+		    <LinearLayout
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="사용자명" />
+			    <EditText
+			        android:id="@+id/barcode_userNm"
+			        style="@style/Form.Styled.ScannableEditText"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:imeOptions="actionDone"
+			        android:layout_weight="1"/>
+			</LinearLayout>
+			
+		    <LinearLayout
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="사용자ID" />
+			    <EditText
+			        android:id="@+id/barcode_userId"
+			        style="@style/Form.Styled.ScannableEditText"
+			        android:layout_width="0dp"
+			        android:layout_height="wrap_content"
+			        android:imeOptions="actionDone"
+			        android:layout_weight="1"/>
+			</LinearLayout>
+			
+		    <LinearLayout
+		    	android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:layout_marginTop="5dp"
+			    android:orientation="horizontal" >
+				<Space 
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+				<Button
+	                android:id="@+id/searchBtn"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="검색" />
+				<Button
+	                android:id="@+id/selectBtn"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="4dp"
+	                android:text="선택"/>
+	        </LinearLayout>
+	        
+		    
+		    <HorizontalScrollView
+			    android:id="@+id/uf_header"
+			    android:layout_width="match_parent"
+			    android:layout_height="380dp"
+			    android:layout_marginLeft="4dp"
+				android:layout_marginRight="4dp">
+			    <LinearLayout
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:orientation="vertical">
+				    <LinearLayout
+					    android:layout_width="wrap_content"
+					    android:layout_height="40dp"
+					    android:orientation="horizontal">
+					    <CheckBox
+					        android:id="@+id/repair_checkBox2"
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="40dp"
+					        android:checked="false"
+					        android:textSize="16sp" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="80dp"
+						    android:text="사용자ID" />
+				        <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="80dp"
+						    android:text="사용자명" />
+					    <TextView
+					        style="@style/Form.Styled.ListHeaderBar"
+					        android:layout_width="450dp"
+						    android:text="소속부서" />
+				    </LinearLayout>
+			        
+				    <ListView 
+					    android:id="@+id/listView"
+					    android:layout_width="match_parent"
+					    android:layout_height="260dp"
+				        android:dividerHeight="1dp" >
+					</ListView>
+				</LinearLayout>
+			</HorizontalScrollView>
+	    </LinearLayout>
+	</LinearLayout>
+</LinearLayout>

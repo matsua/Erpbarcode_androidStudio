@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >    
+
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"
+	    android:background="@color/style_white_smoke" >
+		<!-- 바코드들 입력BAR -->
+	    <LinearLayout
+		    style="@style/Form.Styled.InputBar" >
+		    <!-- 운용조직  -->
+		    <LinearLayout
+			    android:id="@+id/transfer_organization_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox" >
+			    <TextView
+			        android:id="@+id/transfer_organization_orgCode_lavel"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/transfer_organization_orgCode_lavel" />
+			    <EditText
+			        android:id="@+id/transfer_organization_orgCode"
+			        android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.DisplayTextView" />
+			</LinearLayout>
+		    <!-- 위치바코드  -->
+		    <LinearLayout
+			    android:id="@+id/transfer_loc_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+			        android:id="@+id/transfer_location_locCd_lavel"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/transfer_location_locCd_lavel" />
+			    <EditText
+				    android:id="@+id/transfer_location_locCd"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+			</LinearLayout>
+			<!-- 위치바코드명 -->
+			<LinearLayout
+			    android:id="@+id/transfer_locInfo_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox" >
+			    <EditText
+				    android:id="@+id/transfer_locInfo_locName"
+			        android:layout_height="wrap_content"
+			        android:layout_width="0dp"
+			        android:layout_weight="1"
+				    android:drawableLeft="@drawable/common_icon_currentaddress"
+				    style="@style/Form.Styled.DisplayTextView" />
+			    <Button
+			        android:id="@+id/addInfoBtn"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:text="@string/treescan_location_locCd_info" />
+			</LinearLayout>
+			<!-- GPS 위치 데이타 -->
+			<LinearLayout
+			    android:id="@+id/transfer_gps_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox"
+			    android:visibility="gone" >
+				<EditText
+				    android:id="@+id/transfer_gps_currentGPS"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+				    android:drawableLeft="@drawable/common_icon_gps"
+				    style="@style/Form.Styled.DisplayTextView" />
+			</LinearLayout>
+
+			<!-- WBS 번호 -->
+			<LinearLayout
+			    android:id="@+id/transfer_wbs_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/transfer_wbs_wbsNo_lavel" />
+			    <EditText
+			        android:id="@+id/transfer_wbs_wbsNo"
+			        android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.DisplayTextView" />
+			</LinearLayout>
+
+			<!-- 장치바코드 -->
+			<LinearLayout
+			    android:id="@+id/transfer_device_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/transfer_device_deviceId_lavel" />
+			    <EditText
+				    android:id="@+id/transfer_device_deviceId"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+			    <TextView
+				    android:id="@+id/transfer_device_oprSysCd"
+			        android:layout_width="130dp"
+					android:layout_height="wrap_content"
+					style="@style/Form.Styled.DisplayTextView"
+			        android:hint="@string/transfer_device_oprSysCd_lavel" />
+			</LinearLayout>
+			
+			<!-- 장치바코드정보 -->
+			<LinearLayout
+			    android:id="@+id/transfer_deviceInfo_inputbar"
+			    style="@style/Form.Styled.InputDisplayBox" >
+				<EditText
+				    android:id="@+id/transfer_deviceInfo_deviceInfo"
+				    android:drawableLeft="@drawable/common_icon_deviceid"
+			        android:layout_width="0dp"
+			        android:layout_weight="1"
+			        android:layout_height="wrap_content"
+				    style="@style/Form.Styled.DisplayTextView" />
+			    <!-- 위치정보 -->
+			    <Button android:id="@+id/addInfoBtn_deviceId"            
+					android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+					android:text="@string/treescan_location_locCd_info"/>
+				</LinearLayout>
+			
+			<!-- 설비바코드 -->
+			<LinearLayout
+			    android:id="@+id/transfer_fac_inputbar"
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+			        android:id="@+id/transfer_fac_facCd_lavel"
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="@string/transfer_fac_facCd_lavel" />
+				<EditText
+				    android:id="@+id/transfer_fac_facCd"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+				    style="@style/Form.Styled.ScannableEditText" />
+				<TextView
+				    android:id="@+id/transfer_fac_partType"
+				    android:layout_marginLeft="3dp"
+				    android:layout_width="20dp"
+					android:layout_height="wrap_content"
+				    style="@style/Form.Styled.DisplayTextView" />
+				<CheckBox
+				    android:id="@+id/transfer_fac_UU"
+				    android:layout_width="70dp"
+					android:layout_height="wrap_content"
+				    android:textSize="14sp"
+				    android:text="@string/transfer_fac_scanUU_lavel" />
+			</LinearLayout>
+		</LinearLayout>
+
+		<!-- 버튼Bar  -->
+		<LinearLayout
+		    android:id="@+id/transfer_crud_buttonbar"
+		    style="@style/Form.Styled.ToolBar" >
+			<LinearLayout
+			    android:id="@+id/transfer_crud_none_buttonbar"
+		    	android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal" >
+				<Space 
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"/>
+				<Button
+	                android:id="@+id/transfer_crud_init"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="2dp"
+	                android:text="@string/transfer_crud_init_lavel" />
+				<Button
+	                android:id="@+id/transfer_crud_reScanRequest"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="2dp"
+	                android:text="@string/transfer_reScanRequest_move_lavel" />
+				<Button
+	                android:id="@+id/transfer_crud_move"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="2dp"
+	                android:text="@string/transfer_crud_move_lavel" />
+				<Button
+	                android:id="@+id/transfer_crud_modify"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="2dp"
+	                android:text="@string/transfer_crud_modify_lavel" />
+	            <Button
+	                android:id="@+id/transfer_crud_delete"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="2dp"
+	                android:text="@string/transfer_crud_delete_lavel" />
+	            <Button
+	                android:id="@+id/transfer_crud_save"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="2dp"
+	                android:text="@string/transfer_crud_save_lavel" />
+	            <Button
+	                android:id="@+id/transfer_crud_send"
+	                style="@style/Form.Styled.RedButton"
+	                android:layout_marginRight="2dp"
+	                android:text="@string/transfer_crud_send_lavel" />
+	            <Button
+	                android:id="@+id/transfer_crud_argumentConfirm"
+	                style="@style/Form.Styled.RedButton"
+	                android:text="@string/transfer_crud_argumentConfirm1_lavel" />
+			</LinearLayout>
+			<LinearLayout
+			    android:id="@+id/transfer_crud_editmode_buttonbar"
+		    	android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    android:orientation="horizontal"
+			    android:visibility="gone" >
+				<TextView
+			        android:id="@+id/transfer_crud_editmodeComment"
+		    		android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:textSize="12sp" />
+	            <Button
+	                android:id="@+id/transfer_crud_cancelEditMode"
+	                style="@style/Form.Styled.RedButton"
+	                android:text="@string/transfer_crud_cancelEditMode_lavel" />
+			</LinearLayout>
+		</LinearLayout>
+		
+		<!-- 리스트 뷰 -->
+		<LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="0dp"
+		    android:layout_weight="1"
+		    android:background="@android:color/white" >
+			<FrameLayout
+		        android:id="@+id/transfer_barcodetree_frame"
+		        android:layout_width="match_parent"
+			    android:layout_height="match_parent" />
+		</LinearLayout>
+	</LinearLayout>
+	
+	<FrameLayout
+        android:id="@+id/transfer_argument_frame"
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:visibility="gone" >
+	</FrameLayout>
+</FrameLayout>

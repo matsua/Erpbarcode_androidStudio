@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+        android:layout_width="match_parent"
+	    android:layout_height="30dp"
+	    android:orientation="horizontal">
+	 	<!-- 시공사정보 -->
+	    <TextView
+	        android:id="@+id/selectwbs_list_contractorName"
+	        android:layout_width="160dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- WBS번호 -->
+	    <TextView
+	        android:id="@+id/selectwbs_list_wbsNo"
+	        android:layout_width="170dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 공사유형 -->
+	    <TextView
+	        android:id="@+id/selectwbs_list_jpjtType"
+	        android:layout_width="80dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- WBS내역 -->
+	    <TextView
+	        android:id="@+id/selectwbs_list_wbsHistory"
+	        android:layout_width="300dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- WBS상태 -->
+	    <TextView
+	        android:id="@+id/selectwbs_list_wbsStatusName"
+	        android:layout_width="120dp"
+	        style="@style/Form.Styled.NormalTextView" />
+	    <!-- 코스트센터상태 -->
+	    <TextView
+	        android:id="@+id/selectwbs_list_kostlStatus"
+	        android:layout_width="140dp"
+	        style="@style/Form.Styled.NormalTextView" />
+    </LinearLayout>
+</LinearLayout>

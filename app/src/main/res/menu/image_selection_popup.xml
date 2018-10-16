@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/image_selection_popup_preview"
+          android:icon="@android:drawable/ic_menu_view"
+          android:title="@string/image_selection_popup_preview_text" />
+
+    <item android:id="@+id/image_selection_popup_album"
+          android:icon="@android:drawable/ic_menu_gallery"
+          android:title="@string/image_selection_popup_album_text" />
+    
+    <item android:id="@+id/image_selection_popup_shooting"
+          android:icon="@android:drawable/ic_menu_camera"
+          android:title="@string/image_selection_popup_shooting_text">
+    </item>
+</menu>
