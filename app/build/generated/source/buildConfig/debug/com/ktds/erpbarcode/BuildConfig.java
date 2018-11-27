@@ -8,6 +8,6 @@ public final class BuildConfig {
   public static final String APPLICATION_ID = "com.ktds.erpbarcode";
   public static final String BUILD_TYPE = "debug";
   public static final String FLAVOR = "";
-  public static final int VERSION_CODE = 89;
-  public static final String VERSION_NAME = "4.99";
+  public static final int VERSION_CODE = 91;
+  public static final String VERSION_NAME = "5.01";
 }

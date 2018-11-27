@@ -4,6 +4,7 @@ ADDED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/
 INJECTED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:2:1-257:12
 INJECTED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:2:1-257:12
 INJECTED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:2:1-257:12
+MERGED from [com.android.support:appcompat-v7:19.1.0] /Users/skidrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-19.1.0.aar/80306f265589a1c72489e75e97deb6cd/AndroidManifest.xml:16:1-20:12
 INJECTED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:2:1-257:12
 INJECTED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:2:1-257:12
 INJECTED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:2:1-257:12
@@ -27,6 +28,8 @@ uses-sdk
 ADDED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:8:5-47
 INJECTED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:8:5-47
 INJECTED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:8:5-47
+MERGED from [com.android.support:appcompat-v7:19.1.0] /Users/skidrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-19.1.0.aar/80306f265589a1c72489e75e97deb6cd/AndroidManifest.xml:18:5-42
+MERGED from [com.android.support:appcompat-v7:19.1.0] /Users/skidrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-19.1.0.aar/80306f265589a1c72489e75e97deb6cd/AndroidManifest.xml:18:5-42
 INJECTED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:8:5-47
 INJECTED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:8:5-47
 	android:targetSdkVersion
@@ -87,6 +90,8 @@ ADDED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/
 		ADDED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:21:22-62
 application
 ADDED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:23:5-255:19
+MERGED from [com.android.support:appcompat-v7:19.1.0] /Users/skidrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-19.1.0.aar/80306f265589a1c72489e75e97deb6cd/AndroidManifest.xml:19:5-20
+MERGED from [com.android.support:appcompat-v7:19.1.0] /Users/skidrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-19.1.0.aar/80306f265589a1c72489e75e97deb6cd/AndroidManifest.xml:19:5-20
 	android:label
 		ADDED from /Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/src/main/AndroidManifest.xml:26:9-41
 	android:icon

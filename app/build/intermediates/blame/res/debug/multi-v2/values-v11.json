@@ -1,0 +1,28 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+            "map": [
+                {
+                    "source": "/Users/skidrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-19.1.0.aar/80306f265589a1c72489e75e97deb6cd/res/values-v11/values.xml",
+                    "from": {
+                        "startLines": "6,23,36,49,68,70,72,74",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "283,1126,1939,2764,3845,3966,4069,4194",
+                        "endLines": "21,34,47,64,68,70,72,74",
+                        "endColumns": "12,12,12,12,119,101,123,131",
+                        "endOffsets": "1120,1933,2758,3613,3960,4063,4188,4321"
+                    },
+                    "to": {
+                        "startLines": "2,18,30,42,58,59,60,61",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,897,1709,2533,3387,3500,3595,3712",
+                        "endLines": "17,29,41,57,58,59,60,61",
+                        "endColumns": "12,12,12,12,112,94,116,124",
+                        "endOffsets": "892,1704,2528,3382,3495,3590,3707,3832"
+                    }
+                }
+            ]
+        }
+    ]
+}

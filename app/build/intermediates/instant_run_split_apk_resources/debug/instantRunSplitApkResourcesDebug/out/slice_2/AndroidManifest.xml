@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android"
-      package="com.ktds.erpbarcode"
-      android:versionCode="89"
-      android:versionName="4.99"
-      split="lib_slice_2_apk">
-</manifest>

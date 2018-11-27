@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.ktds.erpbarcode"
     android:installLocation="internalOnly"
-    android:versionCode="89"
-    android:versionName="4.99" >
+    android:versionCode="91"
+    android:versionName="5.01" >
 
     <uses-sdk android:targetSdkVersion="19" />
     
