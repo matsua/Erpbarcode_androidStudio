@@ -4,20 +4,20 @@
             "outputFile": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-ko/values-ko.xml",
             "map": [
                 {
-                    "source": "/Users/skidrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-19.1.0.aar/80306f265589a1c72489e75e97deb6cd/res/values-ko/values.xml",
+                    "source": "/Users/skidrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/32bfe80cc8a77a1326b47d9a73601e94/res/values-ko/values.xml",
                     "from": {
-                        "startLines": "6,7,8,9,10,11,12,13,14,15,16,17,18",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "278,373,467,569,651,749,855,953,1048,1143,1243,1339,1438",
-                        "endColumns": "94,93,101,81,97,105,97,94,94,99,95,98,114",
-                        "endOffsets": "368,462,564,646,744,850,948,1043,1138,1238,1334,1433,1548"
+                        "startLines": "3,4,5,6,7,8,9,10,11,12,13,14,15,16,17",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "56,151,259,382,476,578,660,758,864,962,1057,1152,1252,1348,1447",
+                        "endColumns": "94,107,122,93,101,81,97,105,97,94,94,99,95,98,114",
+                        "endOffsets": "146,254,377,471,573,655,753,859,957,1052,1147,1247,1343,1442,1557"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,150,244,346,428,526,632,730,825,920,1020,1116,1215",
-                        "endColumns": "94,93,101,81,97,105,97,94,94,99,95,98,114",
-                        "endOffsets": "145,239,341,423,521,627,725,820,915,1015,1111,1210,1325"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,150,258,381,475,577,659,757,863,961,1056,1151,1251,1347,1446",
+                        "endColumns": "94,107,122,93,101,81,97,105,97,94,94,99,95,98,114",
+                        "endOffsets": "145,253,376,470,572,654,752,858,956,1051,1146,1246,1342,1441,1556"
                     }
                 }
             ]

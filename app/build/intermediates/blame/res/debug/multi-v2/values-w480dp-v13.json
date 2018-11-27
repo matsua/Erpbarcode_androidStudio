@@ -4,20 +4,20 @@
             "outputFile": "/Users/skidrow/Documents/workspace/mobile/erpbarcode_android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w480dp-v13/values-w480dp-v13.xml",
             "map": [
                 {
-                    "source": "/Users/skidrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-19.1.0.aar/80306f265589a1c72489e75e97deb6cd/res/values-w480dp/values.xml",
+                    "source": "/Users/skidrow/.gradle/caches/transforms-1/files-1.1/appcompat-v7-21.0.3.aar/32bfe80cc8a77a1326b47d9a73601e94/res/values-w480dp/values.xml",
                     "from": {
-                        "startLines": "6,10,14",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "280,567,863",
-                        "endColumns": "61,71,60",
-                        "endOffsets": "337,634,919"
+                        "startLines": "3,4",
+                        "startColumns": "4,4",
+                        "startOffsets": "56,118",
+                        "endColumns": "61,71",
+                        "endOffsets": "113,185"
                     },
                     "to": {
-                        "startLines": "2,3,4",
-                        "startColumns": "4,4,4",
-                        "startOffsets": "55,117,189",
-                        "endColumns": "61,71,60",
-                        "endOffsets": "112,184,245"
+                        "startLines": "2,3",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,117",
+                        "endColumns": "61,71",
+                        "endOffsets": "112,184"
                     }
                 }
             ]

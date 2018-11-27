@@ -1,27 +1,27 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
+    compileSdkVersion 21
     buildToolsVersion "28.0.3"
 
     defaultConfig {
         applicationId "com.ktds.erpbarcode"
         minSdkVersion 14
-        targetSdkVersion 19
+        targetSdkVersion 21
     }
 
     lintOptions {
         checkReleaseBuilds false
     }
 
-    /*
+
     applicationVariants.all { variant ->
         variant.javaCompile.doLast {
             runAllatori(variant)
         }
     }
-    */
-/*
+
+    /*
     libraryVariants.all { variant ->
         variant.javaCompile.doLast {
             runAllatori(variant)
@@ -38,28 +38,29 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:19.1.0'
-    compile 'com.android.support:support-v4:19.1.0'
-    compile 'com.google.code.gson:gson:2.2.4'
-    compile files('libs/ZSDK_ANDROID_API.jar')
-    compile files('libs/commons-codec-1.6.jar')
-    compile files('libs/commons-io-2.2.jar')
-    compile files('libs/commons-net-3.1.jar')
-    compile files('libs/commons-validator-1.4.0.jar')
-    compile files('libs/httpclient-4.2.5.jar')
-    compile files('libs/httpclient-cache-4.2.5.jar')
-    compile files('libs/httpcore-4.2.4.jar')
-    compile files('libs/httpmime-4.2.5.jar')
-    compile files('libs/jackson-annotations-2.2.3.jar')
-    compile files('libs/jackson-core-2.2.3.jar')
-    compile files('libs/jackson-databind-2.2.3.jar')
-    compile files('libs/opencsv-2.2.jar')
-    compile files('libs/snmp6_1.jar')
-    compile files('libs/zxing-2.1.jar')
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:21.0.3'
+    implementation 'com.android.support:support-v4:21.0.3'
+    implementation 'com.google.code.gson:gson:2.8.2'
+    implementation files('libs/ZSDK_ANDROID_API.jar')
+    implementation files('libs/commons-codec-1.6.jar')
+    implementation files('libs/commons-io-2.2.jar')
+    implementation files('libs/commons-net-3.1.jar')
+    implementation files('libs/commons-validator-1.4.0.jar')
+    implementation files('libs/httpclient-4.2.5.jar')
+    implementation files('libs/httpclient-cache-4.2.5.jar')
+    implementation files('libs/httpcore-4.2.4.jar')
+    implementation files('libs/httpmime-4.2.5.jar')
+    implementation files('libs/jackson-annotations-2.2.3.jar')
+    implementation files('libs/jackson-core-2.2.3.jar')
+    implementation files('libs/jackson-databind-2.2.3.jar')
+    implementation files('libs/opencsv-2.2.jar')
+    implementation files('libs/snmp6_1.jar')
+    implementation files('libs/zxing-2.1.jar')
 }
 
-/*
+
+
 def runAllatori(variant) {
     copy {
         from "$projectDir/allatori.xml"
@@ -80,4 +81,3 @@ def runAllatori(variant) {
     new File("${variant.javaCompile.destinationDir}").deleteDir()
     new File("${variant.javaCompile.destinationDir}-obfuscated").renameTo(new File("${variant.javaCompile.destinationDir}"))
 }
-*/
