@@ -363,8 +363,66 @@
 	                 
 			</LinearLayout>
 		</LinearLayout>
-		
-	    
+
+		<!-- 기지국/중계기 위치바코드 -->
+		<LinearLayout
+			android:id="@+id/mns_loc_view"
+			style="@style/Form.Styled.InputBar" >
+			<!-- 장치ID -->
+			<LinearLayout
+				android:id="@+id/barcode_management_mns_deviceIdLb"
+				style="@style/Form.Styled.InputBox" >
+				<TextView
+					style="@style/Form.Styled.LeftLavelTextView"
+					android:text="장치ID" />
+				<EditText
+					android:id="@+id/barcode_management_mns_deviceId"
+					style="@style/Form.Styled.ScannableEditText"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:imeOptions="actionDone"
+					android:layout_weight="1"/>
+			</LinearLayout>
+
+			<!-- "장비ID" -->
+			<LinearLayout
+				android:id="@+id/barcode_management_mns_deviceICodeLb"
+				style="@style/Form.Styled.InputBox" >
+				<TextView
+					style="@style/Form.Styled.LeftLavelTextView"
+					android:text="장비ID" />
+				<EditText
+					android:id="@+id/barcode_management_mns_deviceIdCode"
+					style="@style/Form.Styled.ScannableEditText"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:imeOptions="actionDone"
+					android:textAllCaps="true"
+					android:layout_weight="1"/>
+			</LinearLayout>
+
+			<!-- 라벨용지  -->
+			<LinearLayout
+				android:id="@+id/ism_label_setting_ll4"
+				style="@style/Form.Styled.InputBox" >
+				<TextView
+					style="@style/Form.Styled.LeftLavelTextView"
+					android:text="@string/ism_label_setting" />
+
+				<Spinner
+					android:id="@+id/ism_label_setting4"
+					style="@style/Form.Styled.Spinner"
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1" />
+				<Button
+					android:id="@+id/ism_print_sensor4"
+					style="@style/Form.Styled.RedButton"
+					android:layout_marginRight="4dp"
+					android:text="@string/ism_print_sensor" />
+
+			</LinearLayout>
+		</LinearLayout>
 		
 	    <!-- 버튼Bar  -->
 		<LinearLayout
@@ -441,6 +499,14 @@
 					        style="@style/Form.Styled.ListHeaderBar"
 					        android:layout_width="160dp"
 						    android:text="위치명" />
+						<TextView
+							style="@style/Form.Styled.ListHeaderBar"
+							android:layout_width="250dp"
+							android:text="대표위치코드" />
+						<TextView
+							style="@style/Form.Styled.ListHeaderBar"
+							android:layout_width="160dp"
+							android:text="대표주소명" />
 					    <TextView
 					        style="@style/Form.Styled.ListHeaderBar"
 					        android:layout_width="100dp"
@@ -650,6 +716,72 @@
 					    android:layout_height="260dp"
 				        android:dividerHeight="1dp" >
 					</ListView>
+				</LinearLayout>
+			</HorizontalScrollView>
+			<HorizontalScrollView
+				android:id="@+id/mns_loc_header"
+				android:layout_width="match_parent"
+				android:layout_height="340dp"
+				android:layout_marginLeft="4dp"
+				android:layout_marginRight="4dp"
+				>
+				<LinearLayout
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<LinearLayout
+						android:layout_width="wrap_content"
+						android:layout_height="40dp"
+						android:orientation="horizontal">
+
+						<TextView
+							style="@style/Form.Styled.ListHeaderBar"
+							android:layout_width="30dp"
+							android:text="" />
+
+						<CheckBox
+							android:id="@+id/repair_checkBox4"
+							style="@style/Form.Styled.ListHeaderBar"
+							android:layout_width="40dp"
+							android:checked="false"
+							android:textSize="16sp" />
+						<TextView
+							style="@style/Form.Styled.ListHeaderBar"
+							android:layout_width="250dp"
+							android:text="위치코드" />
+						<TextView
+							style="@style/Form.Styled.ListHeaderBar"
+							android:layout_width="160dp"
+							android:text="위치명" />
+						<TextView
+							style="@style/Form.Styled.ListHeaderBar"
+							android:layout_width="250dp"
+							android:text="대표위치코드" />
+						<TextView
+							style="@style/Form.Styled.ListHeaderBar"
+							android:layout_width="160dp"
+							android:text="대표주소명" />
+						<TextView
+							style="@style/Form.Styled.ListHeaderBar"
+							android:layout_width="120dp"
+							android:text="장비ID" />
+						<TextView
+							style="@style/Form.Styled.ListHeaderBar"
+							android:layout_width="100dp"
+							android:text="장치ID" />
+						<TextView
+							style="@style/Form.Styled.ListHeaderBar"
+							android:layout_width="180dp"
+							android:text="장비(장치)명" />
+					</LinearLayout>
+
+					<ExpandableListView
+						android:id="@+id/ExpandableListView02"
+						android:layout_width="match_parent"
+						android:groupIndicator="@drawable/style_expander_group"
+						android:layout_height="230dp"
+						android:dividerHeight="1dp" >
+					</ExpandableListView>
 				</LinearLayout>
 			</HorizontalScrollView>
 		</LinearLayout>

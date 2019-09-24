@@ -619,7 +619,12 @@ public class IsmHttpController {
 		barcodeInfo.setSilKTBulType(jsonobj.getString("ktBuildingTypeName").trim());	//KT건물유형
 		barcodeInfo.setSilKuksa(jsonobj.getString("mnofiId").trim());					//관리국사
 		barcodeInfo.setSilKuksaName(jsonobj.getString("mnofiName").trim());				//관리국사명 
-		barcodeInfo.setComment(jsonobj.getString("description").trim());				//설명 
+		barcodeInfo.setComment(jsonobj.getString("description").trim());				//설명
+
+		// sesang 20190910 대표위치 정보 추가
+		if (jsonobj.has("repLocCd")) barcodeInfo.setRepLocCd(jsonobj.getString("repLocCd").trim());					//대표주소코드
+		if (jsonobj.has("repLocNm")) barcodeInfo.setRepLocNm(jsonobj.getString("repLocNm").trim());					//대표주소명
+		// end sesang
 		return barcodeInfo;
 	}
 	

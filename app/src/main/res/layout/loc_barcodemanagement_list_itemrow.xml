@@ -42,6 +42,16 @@
 	        android:id="@+id/loc_crm3"
 	        android:layout_width="160dp"
 	        style="@style/Form.Styled.NormalTextView" />
+		<!-- 위치코드 -->
+		<TextView
+			android:id="@+id/loc_crm15"
+			android:layout_width="250dp"
+			style="@style/Form.Styled.NormalTextView" />
+		<!-- 위치명 -->
+		<TextView
+			android:id="@+id/loc_crm16"
+			android:layout_width="160dp"
+			style="@style/Form.Styled.NormalTextView" />
 	    <!-- 실유형 -->
 	    <TextView
 	        android:id="@+id/loc_crm4"

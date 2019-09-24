@@ -52,6 +52,7 @@ import com.ktds.erpbarcode.R;
 import com.ktds.erpbarcode.SessionUserData;
 import com.ktds.erpbarcode.SystemInfo;
 import com.ktds.erpbarcode.barcode.BarcodeTreeAdapter;
+import com.ktds.erpbarcode.barcode.ConsistencyService;
 import com.ktds.erpbarcode.barcode.DeviceBarcodeService;
 import com.ktds.erpbarcode.barcode.LocBarcodeService;
 import com.ktds.erpbarcode.barcode.PDABarcodeService;
@@ -478,7 +479,7 @@ public class TreeScanActivity extends Activity {
 							Log.i(TAG, "장치바코드 Chang Event  barcode==>" + barcode);
 							if (barcode.isEmpty()) return;
 							// 바코드정보는 Enter값이 추가되어 있다. 꼭 절사바람.
-							changeDeviceId(barcode);
+							changeDeviceId(barcode, true);
 						}
 					}
 				});
@@ -489,7 +490,7 @@ public class TreeScanActivity extends Activity {
                 	String barcode = v.getText().toString().trim();
                 	Log.i(TAG, "IME_ACTION_SEARCH   barcode==>" + barcode);
                 	if (barcode.isEmpty()) return true;
-                	changeDeviceId(barcode);
+                	changeDeviceId(barcode, true);
                     return true;
                 }
                 return false;
@@ -1700,7 +1701,7 @@ public class TreeScanActivity extends Activity {
     /**
      * 장치ID 변경시 장치바코드 조회.
      */
-    public void changeDeviceId(String barcode) {
+    public void changeDeviceId(String barcode, boolean check) {
     	barcode = barcode.toUpperCase();
     	
 		initScreen("device");
@@ -1719,7 +1720,7 @@ public class TreeScanActivity extends Activity {
     		getOfflineDeviceBarcodeData(barcode);
     		
     	} else {
-    		getDeviceBarcodeData(barcode);
+    		getDeviceBarcodeData(barcode, check);
     	}
     }
     
@@ -1932,7 +1933,7 @@ public class TreeScanActivity extends Activity {
 				mDeviceIdText.setText(mFacJsonResult.getString("ZEQUIPGC"));
 				if (mJobGubun.equals("고장수리이력")){
 					isFacQuMode = true;
-					getDeviceBarcodeData(mFacJsonResult.getString("ZEQUIPGC"));
+					getDeviceBarcodeData(mFacJsonResult.getString("ZEQUIPGC"), false);
 				}
 			}else{
 				getFailureListData();
@@ -2852,7 +2853,7 @@ public class TreeScanActivity extends Activity {
        	} else if (workItem.getJobType().equals(JobActionStepManager.JOBTYPE_DEVICE)) {
     		String deviceId = GlobalData.getInstance().getJobActionManager().getJsonStepValue(workItem.getJobData(), "deviceId");
     		Log.i(TAG, "startStepWorkItem JOBTYPE_DEVICE==>"+deviceId);
-    		changeDeviceId(deviceId);   	
+    		changeDeviceId(deviceId, false);
     	} else if (workItem.getJobType().equals(JobActionStepManager.JOBTYPE_FAC)) {
     		String facCd = GlobalData.getInstance().getJobActionManager().getJsonStepValue(workItem.getJobData(), "facCd");
     		Log.i(TAG, "startStepWorkItem JOBTYPE_FAC==>"+facCd);
@@ -4498,7 +4499,7 @@ public class TreeScanActivity extends Activity {
 		if (mDeviceInputbar.getVisibility() == View.VISIBLE) {
 			// 위치바코드에 장치바코드로 조회한 경우 장치바코드를 조회한다.
 			if (!mThisLocCodeInfo.getDeviceId().isEmpty()) {
-				changeDeviceId(mThisLocCodeInfo.getDeviceId());
+				changeDeviceId(mThisLocCodeInfo.getDeviceId(), false);
 				return;
 			}
 		}
@@ -4583,13 +4584,61 @@ public class TreeScanActivity extends Activity {
 	/**
 	 * 장치바코드 정보 조회.
 	 */
-	private void getDeviceBarcodeData(String deviceId) {
+	private void getDeviceBarcodeData(String deviceId, boolean check) {
 		if (isBarcodeProgressVisibility()) return;
     	setBarcodeProgressVisibility(true);
-    	
-		DeviceBarcodeService devicebarcodeService = new DeviceBarcodeService(mDeviceBarcodeHandler);
-		devicebarcodeService.search(deviceId);
+
+    	if (check && mJobGubun.equals("실장")) {
+			ConsistencyService consistencyService = new ConsistencyService(new CheckConsistencyHandler(deviceId));
+			consistencyService.search(mThisLocCodeInfo.getLocCd(), deviceId);
+		} else {
+			DeviceBarcodeService devicebarcodeService = new DeviceBarcodeService(mDeviceBarcodeHandler);
+			devicebarcodeService.search(deviceId);
+		}
 	}
+
+	// sesang 20190910 장치 아이디 정합성 체크
+	private class CheckConsistencyHandler extends Handler {
+		private String mDeviceId;
+
+		public CheckConsistencyHandler(String deviceId) {
+			mDeviceId = deviceId;
+		}
+
+		@Override
+		public void handleMessage(Message msg) {
+			setBarcodeProgressVisibility(false);
+
+			switch (msg.what) {
+				case ConsistencyService.STATE_SUCCESS:
+
+					DeviceBarcodeService devicebarcodeService = new DeviceBarcodeService(mDeviceBarcodeHandler);
+					devicebarcodeService.search(mDeviceId);
+					break;
+				case ConsistencyService.STATE_NOT_FOUND:
+					mScannerHelper.focusEditText(mDeviceIdText);
+
+					// String notfoundMessage = msg.getData().getString("message");
+					GlobalData.getInstance().showMessageDialog(
+							new ErpBarcodeException(-1, "유효하지 않은 장치바코드입니다."));
+					break;
+				case ConsistencyService.STATE_ERROR:
+					mScannerHelper.focusEditText(mDeviceIdText);
+
+					String errorMessage = msg.getData().getString("message");
+					ErpBarcodeException erpbarException = ErpBarcodeExceptionConvert.jsonStringToErpBarcodeException(errorMessage);
+					GlobalData.getInstance().showMessageDialog(erpbarException, new DialogInterface.OnClickListener() {
+						@Override
+						public void onClick(DialogInterface dialogInterface, int i) {
+							DeviceBarcodeService devicebarcodeService = new DeviceBarcodeService(mDeviceBarcodeHandler);
+							devicebarcodeService.search(mDeviceId);
+						}
+					});
+					break;
+			}
+		}
+	};
+	// end sesang
 	/**
 	 * DeviceBarcodeInfo정보 조회 결과 Handler
 	 */

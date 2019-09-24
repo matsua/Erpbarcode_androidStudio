@@ -96,6 +96,12 @@ public class LocationHttpController {
 			locinfo.setLocationShortName(jsonresult.getString("locationShortName").trim());
 			locinfo.setLocationTypeCode(jsonresult.getString("locationTypeCode").trim());
 			locinfo.setLocationTypeName(jsonresult.getString("locationTypeName").trim());
+
+			// sesang 20190910 대표위치 정보 추가
+			if (jsonresult.has("repLocCd")) locinfo.setRepLocCd(jsonresult.getString("repLocCd").trim());					//대표주소코드
+			if (jsonresult.has("repLocNm")) locinfo.setRepLocNm(jsonresult.getString("repLocNm").trim());					//대표주소명
+			// end sesang
+
 		} catch (JSONException e) {
 			Log.d(TAG, "위치바코드 결과정보 대입중 오류가 발생했습니다. JSONException==>"+e.getMessage());
 			throw new ErpBarcodeException(-1, "위치바코드 결과정보 대입중 오류가 발생했습니다. ");

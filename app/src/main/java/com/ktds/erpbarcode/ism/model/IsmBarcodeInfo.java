@@ -78,7 +78,12 @@ public class IsmBarcodeInfo {
 	private String silKuksaName;	//관리국사명 
 	private String comment;			//설명 
 	private int position;			//position
-	
+
+	// sesang 20190910 대표위치 정보 추가
+	private String repLocCd;                 // 대표주소코드
+	private String repLocNm;                 // 대표위치명
+	// end sesang
+
 	public boolean isChecked() {
 		return isChecked;
 	}
@@ -511,4 +516,20 @@ public class IsmBarcodeInfo {
 	public void setConditions(String conditions){
 		this.conditions = conditions;
 	}
+
+	// sesang 20190910 대표위치 정보 추가
+	public String getRepLocCd() {
+		return repLocCd;
+	}
+	public void setRepLocCd(String locCd) {
+		this.repLocCd = repLocCd;
+	}
+	public String getRepLocNm() {
+		return repLocNm;
+	}
+	public void setRepLocNm(String locName) {
+		this.repLocNm = repLocNm;
+	}
+	// end sesang
+
 }

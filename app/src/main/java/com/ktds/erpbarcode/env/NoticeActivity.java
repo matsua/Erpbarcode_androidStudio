@@ -41,7 +41,12 @@ import com.ktds.erpbarcode.env.model.NoticeInfo;
 public class NoticeActivity extends Activity {
 	
 	private static final String TAG = "NoticeActivity";
-	
+
+	//Add by sesang 20190819 정합성 작업대상 수량 체크
+	public static final String INPUT_CONSISTENCY_COUNT = "consistencyCount";
+	public int p_consistencyCount = 0;
+	// end sesang
+
 	//---------------------------------------------------------------
 	// Input Parameter
 	//---------------------------------------------------------------
@@ -76,7 +81,11 @@ public class NoticeActivity extends Activity {
 		
 		setMenuLayout();
 		setContentView(R.layout.env_notice_activity);
-		
+
+		//Add by sesang 20190819 정합성 작업대상 수량 체크
+		p_consistencyCount = getIntent().getIntExtra(INPUT_CONSISTENCY_COUNT, 0);
+		// end
+
 		setLayout();
 		
 		initScreen();
@@ -121,7 +130,11 @@ public class NoticeActivity extends Activity {
 					@Override
 					public void onClick(View view) {
 						Intent intent = new Intent();
+						// Add by sesang 20190819 정합성 작업대상 수량 체크
+						intent.putExtra(INPUT_CONSISTENCY_COUNT, p_consistencyCount);
+						// end
 						setResult(Activity.RESULT_OK, intent);
+
 						finish();
 					}
 				});
@@ -160,6 +173,9 @@ public class NoticeActivity extends Activity {
     @Override
 	public void onBackPressed() {
     	Intent intent = new Intent();
+		// Add by sesang 20190819 정합성 작업대상 수량 체크
+		intent.putExtra(INPUT_CONSISTENCY_COUNT, p_consistencyCount);
+		// end
 		setResult(Activity.RESULT_OK, intent);
 		finish();
     	

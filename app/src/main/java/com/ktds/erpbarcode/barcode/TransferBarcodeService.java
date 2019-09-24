@@ -29,6 +29,7 @@ public class TransferBarcodeService {
 	public static final int STATE_NOT_FOUND = 1;   // 조회건수 0건..
     public static final int STATE_SUCCESS = 2;     // 조회 성공..
     public static final int STATE_ERROR = -1;      // 오류발생..
+    public static final int STATE_ERROR_2 = -2;    // 오류발생..
     
     private final Handler mHandler;
     private TransferBarcodeThread mTransferBarcodeThread;
@@ -95,7 +96,7 @@ public class TransferBarcodeService {
     	
     	public TransferBarcodeThread(String locCd, String wbsNo) {
     		_locCd = locCd;
-    		_wbsNo = wbsNo;
+    		_wbsNo = wbsNo;    		
     	}
         public void run() {
             Log.i(TAG, "TransferBarcodeThread  Start...");
@@ -146,13 +147,29 @@ public class TransferBarcodeService {
 	                    	deviceInfo = barcodehttp.getDeviceBarcodeData(barcodeInfo.getDeviceId());
 	        			} catch (ErpBarcodeException e) {
 	        				Log.e(TAG, "DeviceUpdateInTask  서버로 장치바코드 조회 요청중 오류가 발생했습니다.==>" + e.getErrMessage());
-	        				handlerSendMessage(STATE_ERROR, "'" + GlobalData.getInstance().getJobGubun() + "' 장치바코드 조회 요청중 오류가 발생했습니다." );
-	        				return;
+	        				//Modify by sesang 20190425 리스 자산 처리 : 위치 바코드 비 활성화 시 오류 메시지 수정 및 break -> continue
+	        				if (GlobalData.getInstance().getJobGubun() != null && GlobalData.getInstance().getJobGubun().equals("시설등록")) {
+	        					String message = e.getErrMessage();
+	        					if (message != null && message.contains("활성화 되어 있지 않아 스캔이 불가합니다.")) {	        						
+	        						handlerSendMessage(STATE_ERROR_2, message);
+	        					} else {
+	        						handlerSendMessage(STATE_ERROR, "'" + GlobalData.getInstance().getJobGubun() + "' 장치바코드 조회 요청중 오류가 발생했습니다." );
+	        					}
+	        					continue;
+	        				} else {	        					
+	    	        			handlerSendMessage(STATE_ERROR, "'" + GlobalData.getInstance().getJobGubun() + "' 장치바코드 조회 요청중 오류가 발생했습니다." );
+	    	        			break;
+	        				}
 	        			}
-	                    
+	                    // Modify by sesang 20190425 리스 자산 처리 : 위치 바코드 비 활성화 시 오류 메시지 수정 및 break -> continue
 	                    if (deviceInfo == null) {
-        					handlerSendMessage(STATE_ERROR, "'" + GlobalData.getInstance().getJobGubun() + "' 장치바코드 조회 결과가 없습니다." );
-        					return;
+	                    	if (GlobalData.getInstance().getJobGubun().equals("시설등록")) {
+	                    		handlerSendMessage(STATE_ERROR, "'" + GlobalData.getInstance().getJobGubun() + "' 장치바코드 조회 결과가 없습니다." );
+	        					continue;
+	        				} else {
+	        					handlerSendMessage(STATE_ERROR, "'" + GlobalData.getInstance().getJobGubun() + "' 장치바코드 조회 결과가 없습니다." );
+	        					continue;
+	        				}        					
         				}
 	                    
 	                    String UFacBarcode = _locCd;

@@ -20,13 +20,42 @@
     xmlns:app="http://schemas.android.com/apk/res/com.manateeworks.cameraDemo"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
-
+    
     <SurfaceView
         android:id="@+id/preview_view"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_centerInParent="true" />
-
+    
+    <LinearLayout
+        android:layout_gravity="right"
+        android:layout_width="24dp"
+        android:layout_height="fill_parent"
+        android:background="#82000000">
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_gravity="left"
+        android:layout_width="24dp"
+        android:layout_height="fill_parent"
+        android:background="#82000000">
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_gravity="top"
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:background="#82000000">
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_gravity="bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="24dp"
+        android:background="#82000000">
+    </LinearLayout>
+    
+    
     <LinearLayout
         android:id="@+id/result_view"
         android:layout_width="fill_parent"
@@ -132,7 +161,7 @@
         android:layout_marginLeft="24dp"
         android:layout_marginRight="24dp"
         android:layout_marginTop="24dp"
-        android:background="@color/status_view" >
+        android:background="@color/transparent" >
 
 
         <LinearLayout

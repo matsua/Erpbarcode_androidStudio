@@ -976,12 +976,12 @@ public class SpotCheckActivity extends Activity {
     	
     	System.out.println("mJobGubun ::: SpotCheckActivity :: " + GlobalData.getInstance().getJobGubun());
 
-    	String locCd = mLocCdText.getText().toString().trim();
-    	String locName = mLocNameText.getText().toString().trim();
-    	String deviceId = mDeviceIdText.getText().toString().trim();
-    	int recordCount = mBarcodeTreeAdapter.getCount();
-    	String offlineYn = (SessionUserData.getInstance().isOffline() ? "Y" : "N");
-    	
+		String locCd = mLocCdText.getText().toString().trim();
+		String locName = mLocNameText.getText().toString().trim();
+		String deviceId = mDeviceIdText.getText().toString().trim();
+		int recordCount = mBarcodeTreeAdapter.getCount();
+		String offlineYn = (SessionUserData.getInstance().isOffline() ? "Y" : "N");
+
     	//-------------------------------------------------------------
     	// 단계별 작업을 저장한다.
     	//-------------------------------------------------------------
@@ -1015,15 +1015,16 @@ public class SpotCheckActivity extends Activity {
     	
     	//if (GlobalData.getInstance().getJobActionManager().getWorkStatus() == JobActionManager.JOB_GENERAL) 
     	//	return;
-    	
-    	if (GlobalData.getInstance().getJobActionManager().getWorkStatus() != JobActionManager.JOB_WORKING) {
-    		String locCd = mLocCdText.getText().toString().trim();
-        	String locName = mLocNameText.getText().toString().trim();
-        	String wbsNo = "";
-        	String deviceId = mDeviceIdText.getText().toString().trim();
-        	int recordCount = mBarcodeTreeAdapter.getCount();
-        	String offlineYn = (SessionUserData.getInstance().isOffline() ? "Y" : "N");
-
+		
+		if (GlobalData.getInstance().getJobActionManager().getWorkStatus() != JobActionManager.JOB_WORKING) {
+			
+			String locCd = mLocCdText.getText().toString().trim();
+			String locName = mLocNameText.getText().toString().trim();
+			String wbsNo = "";
+			String deviceId = mDeviceIdText.getText().toString().trim();
+			int recordCount = mBarcodeTreeAdapter.getCount();
+			String offlineYn = (SessionUserData.getInstance().isOffline() ? "Y" : "N");
+			
         	try {
         		GlobalData.getInstance().getJobActionManager().saveWorkData(locCd, locName, wbsNo, deviceId, recordCount, offlineYn);
         	} catch (ErpBarcodeException e) {
@@ -1038,8 +1039,8 @@ public class SpotCheckActivity extends Activity {
 			GlobalData.getInstance().getJobActionManager().saveSendData("Y",  sendMessage);
 		} catch (ErpBarcodeException e) {
 			e.printStackTrace();
-		}
-		
+		}		
+
 		//-----------------------------------------------------------
     	// 전송후에는 JOB_GENERAL 모드로 전환한다.
     	//-----------------------------------------------------------
@@ -1981,34 +1982,39 @@ public class SpotCheckActivity extends Activity {
 				//-----------------------------------------------------------
 				// Yes/No Dialog
 				//-----------------------------------------------------------
+				// Modify by sesang 20190429 중복 스캔 메세지 박스 제거 
 				if (GlobalData.getInstance().isGlobalAlertDialog()) return;
-				GlobalData.getInstance().setGlobalAlertDialog(true);
-				
+				//GlobalData.getInstance().setGlobalAlertDialog(true);
+								
 				GlobalData.getInstance().soundPlay(BarcodeSoundPlay.SOUND_DUPLICATION);
-				String message = "중복 스캔입니다.\n\r\n\r" + agoCheck.barcodeItem.getBarcode();
-	    		final Builder builder = new AlertDialog.Builder(this); 
-	    		builder.setIcon(android.R.drawable.ic_menu_info_details);
-	    		builder.setTitle("알림");
-	    		TextView msgText = new TextView(this);
-	    		msgText.setPadding(10, 30, 10, 30);
-	    		msgText.setText(message);
-	    		msgText.setGravity(Gravity.CENTER);
-	    		msgText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
-	    		msgText.setTextColor(Color.BLACK);
-	    		builder.setView(msgText);
-	    		builder.setCancelable(false);
-	    		builder.setNegativeButton("닫기", new DialogInterface.OnClickListener() {
-	                public void onClick(DialogInterface dialog, int which) {
-	                	GlobalData.getInstance().setGlobalAlertDialog(false);
-	            	
-	                	agoCheck.duplicate_check_yn = "Y";
-	                	agoBarcodeInfoListView(agoCheck);
-	                	return;
-	                }
-	            });
-	            AlertDialog dialog = builder.create();
-	            dialog.show();
-	            return;
+				agoCheck.duplicate_check_yn = "Y";
+            	agoBarcodeInfoListView(agoCheck);
+            	return;
+//				String message = "중복 스캔입니다.\n\r\n\r" + agoCheck.barcodeItem.getBarcode();
+//	    		final Builder builder = new AlertDialog.Builder(this); 
+//	    		builder.setIcon(android.R.drawable.ic_menu_info_details);
+//	    		builder.setTitle("알림");
+//	    		TextView msgText = new TextView(this);
+//	    		msgText.setPadding(10, 30, 10, 30);
+//	    		msgText.setText(message);
+//	    		msgText.setGravity(Gravity.CENTER);
+//	    		msgText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
+//	    		msgText.setTextColor(Color.BLACK);
+//	    		builder.setView(msgText);
+//	    		builder.setCancelable(false);
+//	    		builder.setNegativeButton("닫기", new DialogInterface.OnClickListener() {
+//	                public void onClick(DialogInterface dialog, int which) {
+//	                	GlobalData.getInstance().setGlobalAlertDialog(false);
+//	            	
+//	                	agoCheck.duplicate_check_yn = "Y";
+//	                	agoBarcodeInfoListView(agoCheck);
+//	                	return;
+//	                }
+//	            });
+//	            AlertDialog dialog = builder.create();
+//	            dialog.show();
+//	            return;
+            	// end            	
 			}
 
 		} else if (agoCheck.barcodeItem.getScanValue().equals("5") || agoCheck.barcodeItem.getScanValue().equals("6")) {
@@ -2747,7 +2753,6 @@ public class SpotCheckActivity extends Activity {
 			mSendButton.setEnabled(true);
 			
 			if (result) {
-				initScreen();
 				String message = "# 전송건수 : " + _SendCount + "건\n\n" + _OutputParameter.getStatus() + "-" + _OutputParameter.getOutMessage();
 				GlobalData.getInstance().showMessageDialog(new ErpBarcodeMessage(ErpBarcodeMessage.NORMAL_PROGRESS_MESSAGE_CODE, message));
 				
@@ -2756,6 +2761,9 @@ public class SpotCheckActivity extends Activity {
 				//-----------------------------------------------------------
 				String sendMessage = _OutputParameter.getOutMessage();
 				sendWorkResult(sendMessage);
+				// Modify by sesang 20190620 전송 결과 저장 수정
+				initScreen();
+				// end sesang
 				
 			} else {
 				GlobalData.getInstance().showMessageDialog(_ErpBarException);

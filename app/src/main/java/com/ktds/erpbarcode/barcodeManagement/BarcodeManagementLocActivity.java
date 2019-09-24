@@ -94,7 +94,6 @@ public class BarcodeManagementLocActivity extends Activity {
 	private Spinner mSpinnerSigoonCode;
 	private String mTouchSigoonCode = "";
 	private BasicSpinnerAdapter mSigoonCodeAdapter;
-	
 	private EditText mSpinnerLbtCode;
 	private String mTouchLbtCode = "";
 //	private BasicSpinnerAdapter mLbtCodeAdapter;
@@ -200,19 +199,23 @@ public class BarcodeManagementLocActivity extends Activity {
         LinearLayout locView = (LinearLayout) findViewById(R.id.loc_view);
         LinearLayout smView = (LinearLayout) findViewById(R.id.sm_view);
         LinearLayout deviceView = (LinearLayout) findViewById(R.id.device_view);
-        
-        HorizontalScrollView locHeader = (HorizontalScrollView) findViewById(R.id.loc_header);
+		LinearLayout mnsLocView = (LinearLayout) findViewById(R.id.mns_loc_view);
+
+		HorizontalScrollView locHeader = (HorizontalScrollView) findViewById(R.id.loc_header);
         HorizontalScrollView deviceHeader = (HorizontalScrollView) findViewById(R.id.device_header);
         HorizontalScrollView smHeader = (HorizontalScrollView) findViewById(R.id.sm_header);
-        
-        if(mJobGubun.equals("위치바코드")){
+		HorizontalScrollView mnsLocHeader = (HorizontalScrollView) findViewById(R.id.mns_loc_header);
+
+		if(mJobGubun.equals("위치바코드")){
         	locView.setVisibility(View.VISIBLE);
         	locHeader.setVisibility(View.VISIBLE);
         	deviceView.setVisibility(View.GONE);
         	smView.setVisibility(View.GONE);
         	deviceHeader.setVisibility(View.GONE);
         	smHeader.setVisibility(View.GONE);
-        	
+			mnsLocView.setVisibility(View.GONE);
+			mnsLocHeader.setVisibility(View.GONE);
+
         	// 위치코드        
         	mLocCdText = (EditText) findViewById(R.id.barcode_management_locCd);
         	mLocCdText.setTag(ScannerConnectHelper.SOFT_KEY_BOARD_OPEN);
@@ -320,7 +323,9 @@ public class BarcodeManagementLocActivity extends Activity {
 			smView.setVisibility(View.GONE);
 			locHeader.setVisibility(View.GONE);
         	smHeader.setVisibility(View.GONE);
-			
+			mnsLocView.setVisibility(View.GONE);
+			mnsLocHeader.setVisibility(View.GONE);
+
 			// 장치ID         
 			mDeviceIdText = (EditText) findViewById(R.id.barcode_management_deviceId);
 			mDeviceIdText.setTag(ScannerConnectHelper.SOFT_KEY_BOARD_OPEN);
@@ -568,7 +573,8 @@ public class BarcodeManagementLocActivity extends Activity {
 			deviceHeader.setVisibility(View.GONE);
 			locHeader.setVisibility(View.GONE);
         	smHeader.setVisibility(View.VISIBLE);
-			
+			mnsLocView.setVisibility(View.GONE);
+			mnsLocHeader.setVisibility(View.GONE);
 			// PO번호         
 			mSmPoNum = (EditText) findViewById(R.id.barcode_management_smPoNum);
 			mSmPoNum.setTag(ScannerConnectHelper.SOFT_KEY_BOARD_OPEN);
@@ -821,6 +827,184 @@ public class BarcodeManagementLocActivity extends Activity {
         			});
             
 		}
+		// sesang 20190910 기지국/중계기 위치바코드
+        else if(mJobGubun.equals("기지국/중계기 위치바코드")){
+			deviceView.setVisibility(View.GONE);
+			deviceHeader.setVisibility(View.GONE);
+			locView.setVisibility(View.GONE);
+			smView.setVisibility(View.GONE);
+			locHeader.setVisibility(View.GONE);
+			smHeader.setVisibility(View.GONE);
+			mnsLocView.setVisibility(View.VISIBLE);
+			mnsLocHeader.setVisibility(View.VISIBLE);
+
+			// 장치ID
+			mDeviceIdText = (EditText) findViewById(R.id.barcode_management_mns_deviceId);
+			mDeviceIdText.setTag(ScannerConnectHelper.SOFT_KEY_BOARD_OPEN);
+			mDeviceIdText.setOnTouchListener(
+					new OnTouchListener() {
+						@Override
+						public boolean onTouch(View v, MotionEvent event) {
+							switch(event.getAction()) {
+								case MotionEvent.ACTION_DOWN:
+									mScannerHelper.focusEditText(mDeviceIdText);
+									return false;
+							}
+							return false;
+						}
+					});
+			mDeviceIdText.addTextChangedListener(
+					new TextWatcher() {
+						public void afterTextChanged(Editable s) { }
+						@Override
+						public void beforeTextChanged(CharSequence s, int start, int before, int count) { }
+						@Override
+						public void onTextChanged(CharSequence s, int start, int before, int count) {
+							String barcode = s.toString();
+							if (barcode.indexOf("\n") > 0 || barcode.indexOf("\r") > 0) {
+								barcode = barcode.trim();
+								if (barcode.isEmpty()) return;
+							}
+						}
+					});
+			mDeviceIdText.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+				@Override
+				public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+					if (actionId == EditorInfo.IME_ACTION_SEARCH || actionId == EditorInfo.IME_ACTION_DONE) {
+						return true;
+					}
+					return false;
+				}
+			});
+
+			// 장비ID
+			mDeviceIdCode = (EditText) findViewById(R.id.barcode_management_mns_deviceIdCode);
+			mDeviceIdCode.setTag(ScannerConnectHelper.SOFT_KEY_BOARD_OPEN);
+			mDeviceIdCode.setOnTouchListener(
+					new OnTouchListener() {
+						@Override
+						public boolean onTouch(View v, MotionEvent event) {
+							switch(event.getAction()) {
+								case MotionEvent.ACTION_DOWN:
+									mScannerHelper.focusEditText(mDeviceIdCode);
+									return false;
+							}
+							return false;
+						}
+					});
+			mDeviceIdCode.addTextChangedListener(
+					new TextWatcher() {
+						public void afterTextChanged(Editable s) { }
+						@Override
+						public void beforeTextChanged(CharSequence s, int start, int before, int count) { }
+						@Override
+						public void onTextChanged(CharSequence s, int start, int before, int count) {
+							String barcode = s.toString();
+							if (barcode.indexOf("\n") > 0 || barcode.indexOf("\r") > 0) {
+								barcode = barcode.trim();
+								if (barcode.isEmpty()) return;
+							}
+						}
+					});
+			mDeviceIdCode.setOnEditorActionListener(new TextView.OnEditorActionListener() {
+				@Override
+				public boolean onEditorAction(TextView v, int actionId, KeyEvent event) {
+					if (actionId == EditorInfo.IME_ACTION_SEARCH || actionId == EditorInfo.IME_ACTION_DONE) {
+						String deviceId = v.getText().toString().trim().toUpperCase();
+						mDeviceIdCode.setText(deviceId);
+						return true;
+					}
+					return false;
+				}
+			});
+
+			//라벨용지
+			mSpinnerLbCode = (Spinner) findViewById(R.id.ism_label_setting4);
+			List<SpinnerInfo> lbtspinneritems2 = new ArrayList<SpinnerInfo>();
+			lbtspinneritems2.add(new SpinnerInfo("","선택하세요."));
+			lbtspinneritems2.add(new SpinnerInfo("1", "6x35mm"));
+			lbtspinneritems2.add(new SpinnerInfo("2", "20x45mm"));
+			lbtspinneritems2.add(new SpinnerInfo("3", "30x80mm"));
+
+			mLbCodeAdapter = new BasicSpinnerAdapter(getApplicationContext(), lbtspinneritems2);
+			mSpinnerLbCode.setAdapter(mLbCodeAdapter);
+			mSpinnerLbCode.setOnItemSelectedListener(new OnItemSelectedListener() {
+				public void onItemSelected(AdapterView<?> arg0, View view, int position, long id) {
+					SpinnerInfo LbCodeSpinnerInfo = (SpinnerInfo) mLbCodeAdapter.getItem(position);
+					mSpinnerLbCode.setSelection(mLbCodeAdapter.getPosition(LbCodeSpinnerInfo.getCode()));
+					mTouchLbtCode = LbCodeSpinnerInfo.getCode();
+				}
+				public void onNothingSelected(AdapterView<?> arg0) {
+
+				}
+			});
+
+			//프린트 보정
+			Button mPrintSensor = (Button) findViewById(R.id.ism_print_sensor4);
+			mPrintSensor.setOnClickListener(
+					new View.OnClickListener() {
+						@Override
+						public void onClick(View view) {
+							int rscode = barcodePrintSensor();
+							switch (rscode) {
+								case 1:
+									break;
+								case -1:
+									GlobalData.getInstance().showMessageDialog(new ErpBarcodeException(-1, "블루투스 연결에\n\r실패 했습니다.", BarcodeSoundPlay.SOUND_ERROR));
+									break;
+								default:
+									GlobalData.getInstance().showMessageDialog(new ErpBarcodeException(-1, "프린터 상태를\n\r확인 하세요.", BarcodeSoundPlay.SOUND_ERROR));
+									break;
+							}
+						}
+					});
+
+			superAdapter = new SuperTreeViewAdapter(this,stvClickEvent);
+			expandableList = (ExpandableListView) BarcodeManagementLocActivity.this.findViewById(R.id.ExpandableListView02);
+
+			mCheckBox = (CheckBox)findViewById(R.id.repair_checkBox4);
+			mCheckBox.setTextColor(Color.RED);
+			mCheckBox.setOnTouchListener(
+					new OnTouchListener() {
+						@Override
+						public boolean onTouch(View v, MotionEvent event) {
+							switch(event.getAction()) {
+								case MotionEvent.ACTION_DOWN:
+									selectAll();
+									return true;
+							}
+							return true;
+						}
+					});
+
+//			mIsmRequestListAdapter = new IsmRequestListAdapter(this);
+//
+//			mBarcodeListView = (ListView) findViewById(R.id.ExpandableListView02);
+//			mBarcodeListView.setAdapter(mIsmRequestListAdapter);
+//			mBarcodeListView.setOnItemClickListener(new OnItemClickListener() {
+//				@Override
+//				public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+//					Log.d(TAG, "onItemClick   position==>" + position);
+//					mIsmRequestListAdapter.changeSelectedPosition(position);
+//				}
+//			});
+//
+//			mCheckBox = (CheckBox)findViewById(R.id.repair_checkBox2);
+//			mCheckBox.setTextColor(Color.RED);
+//			mCheckBox.setOnTouchListener(
+//					new OnTouchListener() {
+//						@Override
+//						public boolean onTouch(View v, MotionEvent event) {
+//							switch(event.getAction()) {
+//								case MotionEvent.ACTION_DOWN:
+//									selectAllSingle();
+//									return true;
+//							}
+//							return true;
+//						}
+//					});
+
+		}
         
         mBarcodeProgress = (RelativeLayout) findViewById(R.id.barcode_barcodeProgress);
         
@@ -1044,8 +1228,8 @@ public class BarcodeManagementLocActivity extends Activity {
 		List<IsmBarcodeInfo> _IsmBarcodeInfos;
 		
 		public FindLocRequestInTask(String locationCode, String boardId, String middleBmassId, String geoName, String bunji, String ho) {
-			_boardId = boardId;
-			_middleBmassId = middleBmassId;
+			_boardId = "00".equals(boardId) ? "" : boardId;
+			_middleBmassId = "00".equals(middleBmassId) ? "" : middleBmassId;
 			_geoName = geoName;
 			_locationCode = locationCode;
 			_bunji = bunji;

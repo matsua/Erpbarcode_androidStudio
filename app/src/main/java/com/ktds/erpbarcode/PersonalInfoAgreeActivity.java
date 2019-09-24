@@ -24,8 +24,12 @@ public class PersonalInfoAgreeActivity extends Activity{
 	private SettingPreferences mSharedSetting;
 	private Button mAgreeButton, mConfirm, mClose;
 	private CheckBox mAgreeCheck1, mAgreeCheck2, mAgreeCheck3, mAgreeCheck4;
-	
-	
+
+	//Add by sesang 20190819 정합성 작업대상 수량 체크
+	public static final String INPUT_CONSISTENCY_COUNT = "consistencyCount";
+	public int p_consistencyCount = 0;
+	// end sesang
+
 	@Override    
 	protected void onCreate(Bundle savedInstanceState) {
     	super.onCreate(savedInstanceState);
@@ -34,7 +38,10 @@ public class PersonalInfoAgreeActivity extends Activity{
     	
     	p_passwdUpdateYn = getIntent().getStringExtra(INPUT_PWUPDATE_YN);
     	p_passwdIsNotice = getIntent().getBooleanExtra(INPUT_NOTICE, false);
-    	
+		//Add by sesang 20190819 정합성 작업대상 수량 체크
+		p_consistencyCount = getIntent().getIntExtra(INPUT_CONSISTENCY_COUNT, 0);
+		// end
+
     	mSharedSetting = new SettingPreferences(getApplicationContext());
 		mAgreeCheck1 = (CheckBox) findViewById(R.id.checkBox1);
 		mAgreeCheck1.setChecked(mSharedSetting.getInfoAgree1());
@@ -92,6 +99,9 @@ public class PersonalInfoAgreeActivity extends Activity{
 		Intent intent = new Intent();
         intent.putExtra(INPUT_PWUPDATE_YN, p_passwdUpdateYn);
         intent.putExtra(INPUT_NOTICE, p_passwdIsNotice);
+		// Add by sesang 20190819 정합성 작업대상 수량 체크
+		intent.putExtra(INPUT_CONSISTENCY_COUNT, p_consistencyCount);
+		// end
 		setResult(Activity.RESULT_OK, intent);
 		finish();
 	}

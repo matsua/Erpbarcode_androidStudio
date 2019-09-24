@@ -20,6 +20,7 @@ public class LocListAdapter extends BaseAdapter {
 
     private List<LocBarcodeInfo> mLocBarcodeInfos = null;
     private LayoutInflater mInflater;
+    private boolean showRep = false;
     
     
     public LocListAdapter(Context context) {
@@ -27,7 +28,13 @@ public class LocListAdapter extends BaseAdapter {
     	mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
 
-    public void addItem(LocBarcodeInfo item) {
+	public LocListAdapter(Context context, boolean showRep) {
+		mLocBarcodeInfos = new ArrayList<LocBarcodeInfo>();
+		mInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+		this.showRep = showRep;
+	}
+
+	public void addItem(LocBarcodeInfo item) {
     	mLocBarcodeInfos.add(item);
     	notifyDataSetChanged();
     }
@@ -80,8 +87,14 @@ public class LocListAdapter extends BaseAdapter {
         	convertView = mInflater.inflate(R.layout.infosearch_selectloc_list_itemrow, null);
         	holder.locCdText = (TextView) convertView.findViewById(R.id.selectloc_list_locCd);
         	holder.locNameText = (TextView) convertView.findViewById(R.id.selectloc_list_locName);
-        	
-            convertView.setTag(holder);
+
+        	if (showRep) {
+				if (convertView.findViewById(R.id.selectloc_list_rep_locCd) != null)
+					holder.repLocCdText = (TextView) convertView.findViewById(R.id.selectloc_list_rep_locCd);
+				if (convertView.findViewById(R.id.selectloc_list_rep_locName) != null)
+					holder.repLocNameText = (TextView) convertView.findViewById(R.id.selectloc_list_rep_locName);
+			}
+			convertView.setTag(holder);
         } else {
             holder = (ViewHolder) convertView.getTag();
         }
@@ -91,12 +104,24 @@ public class LocListAdapter extends BaseAdapter {
         holder.locCdText.setText(model.getLocCd());
         holder.locNameText.setText(model.getLocName());
 
+        if (showRep) {
+			if (holder.repLocCdText != null) {
+				holder.repLocCdText.setVisibility(View.VISIBLE);
+				holder.repLocCdText.setText(model.getRepLocCd());
+			}
+			if (holder.repLocNameText != null) {
+				holder.repLocNameText.setVisibility(View.VISIBLE);
+				holder.repLocNameText.setText(model.getRepLocNm());
+			}
+		}
         return convertView;
 	}
 
 	public class ViewHolder {
 		public TextView locCdText;
 		public TextView locNameText;
-    }
+		public TextView repLocCdText;
+		public TextView repLocNameText;
+	}
 
 }

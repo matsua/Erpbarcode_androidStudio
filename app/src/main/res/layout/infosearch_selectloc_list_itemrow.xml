@@ -15,5 +15,15 @@
 	        android:id="@+id/selectloc_list_locName"
 	        android:layout_width="400dp"
 	        style="@style/Form.Styled.NormalTextView" />
+		<TextView
+			android:id="@+id/selectloc_list_rep_locCd"
+			android:layout_width="200dp"
+			android:visibility="gone"
+			style="@style/Form.Styled.NormalTextView" />
+		<TextView
+			android:id="@+id/selectloc_list_rep_locName"
+			android:layout_width="400dp"
+			android:visibility="gone"
+			style="@style/Form.Styled.NormalTextView" />
 	</LinearLayout>
 </LinearLayout>

@@ -58,7 +58,12 @@ public class InputParameter {
 			// DR-2014-37505 송부취소, 접수 시 1000건만 불러오기 - request by 박장수 2014.08.18 -> 2014.08.19 - 류성호
 			if (GlobalData.getInstance().getJobGubun().equals("송부취소(팀간)") || GlobalData.getInstance().getJobGubun().equals("접수(팀간)")) {
 				jsonHeader.put("currentPageNo", "1");
-				jsonHeader.put("currentPageCount", "1000");
+				if(GlobalData.getInstance().getJobGubun().equals("송부취소(팀간)")){
+					jsonHeader.put("currentPageCount", "1000");
+				}else{
+					jsonHeader.put("currentPageCount", "500");
+				}
+				
 				jsonHeader.put("pageUseYN", "Y");
 			}else if(GlobalData.getInstance().getJobGubun().startsWith("현장점검") && mPageUse){
 				jsonHeader.put("currentPageNo", mPage);

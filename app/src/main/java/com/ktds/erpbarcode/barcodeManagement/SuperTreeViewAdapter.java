@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import android.content.Context;
+import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -112,6 +113,7 @@ public class SuperTreeViewAdapter extends BaseExpandableListAdapter{
         AbsListView.LayoutParams lp = new AbsListView.LayoutParams(ViewGroup.LayoutParams.FILL_PARENT, TreeViewAdapter.ItemHeight);  
         ExpandableListView superTreeView = new ExpandableListView(parentContext);
         Drawable drawable = parentContext.getResources().getDrawable(R.drawable.style_expander_group);
+
         superTreeView.setGroupIndicator(drawable);
         superTreeView.setLayoutParams(lp);  
         return superTreeView;  
@@ -178,6 +180,10 @@ public class SuperTreeViewAdapter extends BaseExpandableListAdapter{
     		holder.item12 = (TextView) convertView.findViewById(R.id.loc_crm12);
     		holder.item13 = (TextView) convertView.findViewById(R.id.loc_crm13);
     		holder.item14 = (TextView) convertView.findViewById(R.id.loc_crm14);
+            // sesang 20190910 대표위치 정보 추가
+            holder.item15 = (TextView) convertView.findViewById(R.id.loc_crm15);
+            holder.item16 = (TextView) convertView.findViewById(R.id.loc_crm16);
+            // end sesang
     		convertView.setTag(holder);
         }else {
             holder = (ViewHolder) convertView.getTag();
@@ -201,7 +207,11 @@ public class SuperTreeViewAdapter extends BaseExpandableListAdapter{
 		holder.item12.setText(model.getSilKuksa());
 		holder.item13.setText(model.getSilKuksaName());
 		holder.item14.setText(model.getComment());
-        
+
+        // sesang 20190910 대표위치 정보 추가
+        if (holder.item15 != null) holder.item15.setText(model.getRepLocCd());
+        if (holder.item16 != null) holder.item16.setText(model.getRepLocNm());
+        // end sesang
         return convertView;  
     }
     
@@ -245,5 +255,9 @@ public class SuperTreeViewAdapter extends BaseExpandableListAdapter{
 		public TextView item12;
 		public TextView item13;
 		public TextView item14;
+        // sesang 20190910 대표위치 정보 추가
+        public TextView item15;
+        public TextView item16;
+        // end sesang
     }
 }

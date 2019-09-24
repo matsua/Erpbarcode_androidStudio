@@ -110,8 +110,8 @@ public final class ActivityCapture extends Activity implements SurfaceHolder.Cal
 
 		Window window = getWindow();
 		window.addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
-		setContentView(R.layout.capture);
-
+		
+		setContentView(R.layout.capture);		
 		int res = -1;
 
 		// register your copy of library with given user/password

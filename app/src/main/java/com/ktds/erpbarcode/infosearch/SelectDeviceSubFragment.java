@@ -154,7 +154,7 @@ public class SelectDeviceSubFragment extends Fragment {
 		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_deviceId)).setText(deviceInfo.getDeviceId());
 		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_deviceName)).setText(deviceInfo.getDeviceName());
 		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_projectNo)).setText(deviceInfo.getProjectNo());
-		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_wbsNo)).setText(deviceInfo.getWbsNo());
+		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_wbsNo)).setText(deviceInfo.getProjectCode());
 		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_operationSystemToken)).setText(deviceInfo.getOperationSystemTokenName());
 		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_operationSystemCode)).setText(deviceInfo.getOperationSystemCode());
 		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_locationIdToken)).setText(deviceInfo.getLocationIdToken());
@@ -170,6 +170,10 @@ public class SelectDeviceSubFragment extends Fragment {
 		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_standardServiceCode)).setText(deviceInfo.getStandardServiceCode());
 		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_standardServiceName)).setText(deviceInfo.getStandardServiceName());
 		// 위치 TAB2
+		// sesang 20190910 대표주소정보 추가
+		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_repLocationCode)).setText(deviceInfo.getRepLocationCode());
+		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_repLocationName)).setText(deviceInfo.getRepLocationName());
+		// end sesang
 		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_locationCode)).setText(deviceInfo.getLocationCode());
 		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_locationName)).setText(deviceInfo.getLocationName());
 		((EditText) getActivity().findViewById(R.id.selectdevice_device_info_detailAddress)).setText(deviceInfo.getDetailAddress());

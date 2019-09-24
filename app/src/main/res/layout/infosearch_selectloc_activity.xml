@@ -49,6 +49,14 @@
 			        style="@style/Form.Styled.LavelTextView"
 			        android:layout_width="400dp"
 				    android:text="위치바코드명" />
+				<TextView
+					style="@style/Form.Styled.LavelTextView"
+					android:layout_width="200dp"
+					android:text="대표주소코드" />
+				<TextView
+					style="@style/Form.Styled.LavelTextView"
+					android:layout_width="400dp"
+					android:text="대표주소명" />
 			</LinearLayout>
 			<LinearLayout
 			    android:layout_width="match_parent"

@@ -295,7 +295,25 @@ public class GlobalData {
 		return;
 	}
 	
+	/**
+     * 메세지 다이얼로그 
+     * Modify by sesang 20190425 리스 자산 처리 : 메세지박스 중복 노출 가능하도록 수정 
+     */
 	public void showMessageDialog(ErpBarcodeException erpbarException) {
+		
+		showMessageDialog(erpbarException, false);
+	}
+
+	public void showMessageDialog(ErpBarcodeException erpbarException, final DialogInterface.OnClickListener onClickListener) {
+
+		showMessageDialog(erpbarException, false, onClickListener);
+	}
+
+	public void showMessageDialog(ErpBarcodeException erpbarException, boolean duplicate) {
+		showMessageDialog(erpbarException, false, null);
+	}
+
+	public void showMessageDialog(ErpBarcodeException erpbarException, boolean duplicate, final DialogInterface.OnClickListener onClickListener) {
 		
 		if (mActivity == null) return;
 		
@@ -310,7 +328,8 @@ public class GlobalData {
 		//-----------------------------------------------------------
 		// 이미 AlertDialog가 열려있으면, 종료한다.
 		//-----------------------------------------------------------
-		if (GlobalData.getInstance().isGlobalAlertDialog()) return;
+		
+		if (!duplicate && GlobalData.getInstance().isGlobalAlertDialog()) return;
 		GlobalData.getInstance().setGlobalAlertDialog(true);
 		
 		
@@ -379,6 +398,9 @@ public class GlobalData {
             			&& GlobalData.getInstance().getJobActionManager().getWorkStatus() == JobActionManager.JOB_WORKING) {
             		GlobalData.getInstance().getJobActionManager().getJobStepManager().errorHandler();
             	}
+				if (onClickListener != null) {
+					onClickListener.onClick(dialog, which);
+				}
             }
         });
 		AlertDialog dialog = builder.create();

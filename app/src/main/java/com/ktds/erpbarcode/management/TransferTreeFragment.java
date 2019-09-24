@@ -506,6 +506,12 @@ public class TransferTreeFragment extends Fragment {
         String ZSETUP = firstBarcodeInfo.getZsetup();  //공사비
 
         if (mJobGubun.equals("인계") || mJobGubun.equals("인수")) {
+        	// Modify by sesang 20190525 리스자산 처리
+			if (mJobGubun.equals("인계") && firstBarcodeInfo.getZkequi().equals("L")) {
+				GlobalData.getInstance().showMessageDialog(new ErpBarcodeException(-1,"해당 설비바코드는 '리스자산'입니다.\n\r'실장'으로 처리 하시기 바랍니다."));
+				return;
+			}
+			// end
             if (O_DATA_C.equals("2")) {
 				GlobalData.getInstance().showMessageDialog(new ErpBarcodeException(-1, "해당 설비바코드는 '인계'\n\r대상이 아닙니다.\n\r'시설등록'으로 처리 하시기 바랍니다."));
                 return;
@@ -517,6 +523,12 @@ public class TransferTreeFragment extends Fragment {
             }
         }
         else if (mJobGubun.equals("시설등록")) {
+        	// Modify by sesang 20190525 리스자산 처리
+			if (firstBarcodeInfo.getZkequi().equals("L")) {
+				GlobalData.getInstance().showMessageDialog(new ErpBarcodeException(-1,"해당 설비바코드는 '리스자산'입니다.\n\r'실장'으로 처리 하시기 바랍니다."));
+				return;
+			}
+			// end
             if (O_DATA_C.equals("") || O_DATA_C.equals("1")) {
 				GlobalData.getInstance().showMessageDialog(new ErpBarcodeException(-1, "해당 설비바코드는 '시설등록'\n\r대상이 아닙니다.\n\r'인계'로 처리 하시기 바랍니다."));
                 return;

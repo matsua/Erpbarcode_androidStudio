@@ -187,9 +187,9 @@ import com.ktds.erpbarcode.common.media.BarcodeSoundPlay;
 	
 	private Runnable mStartActivityTask = new Runnable() {
 		public void run() {
-			Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
-			intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
-	        startActivity(intent);
+			if (checkPermission()) {
+				goLogin();
+			}
 		}
 	};
 	
@@ -197,4 +197,92 @@ import com.ktds.erpbarcode.common.media.BarcodeSoundPlay;
 		String versionInfo = GlobalData.getInstance().getAppVersionName();
 		mAppVersionText.setText(versionInfo);
 	}
+
+	private void goLogin() {
+
+		Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+		intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_NEW_TASK);
+		startActivity(intent);
+	}
+
+	public boolean checkPermission() {
+
+		if (Build.VERSION.SDK_INT >= 23) {
+			if (!checkPermission(Manifest.permission.READ_PHONE_STATE) ||
+					!checkPermission(Manifest.permission.CAMERA)) {
+				ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_PHONE_STATE, Manifest.permission.CAMERA},1000);
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public boolean checkPermission(String permission) {
+
+		if (Build.VERSION.SDK_INT >= 23) {
+			if (ContextCompat.checkSelfPermission(this, permission) != PackageManager.PERMISSION_GRANTED) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	@Override
+	public void onRequestPermissionsResult(int requestCode, String permissions[], int[] grantResults) {
+
+		switch (requestCode) {
+			case 1000: {
+
+				if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+					for( int result : grantResults) {
+						if (result != PackageManager.PERMISSION_GRANTED) {
+							processPermission(false);
+							return;
+						}
+					}
+					processPermission(true);
+				} else {
+					processPermission(false);
+				}
+				return;
+			}
+		}
+	}
+
+	private void processPermission(boolean granted) {
+
+		if (granted) {
+			goLogin();
+		} else {
+			String message = "필수 권한에 동의하지 않으면 앱을 사용할 수 없습니다.";
+
+			final Builder builder = new AlertDialog.Builder(this);
+			builder.setIcon(android.R.drawable.ic_menu_info_details);
+			builder.setTitle("알림");
+			TextView msgText = new TextView(this);
+			msgText.setPadding(10, 30, 10, 30);
+			msgText.setText(message);
+			msgText.setGravity(Gravity.CENTER);
+			msgText.setTextSize(TypedValue.COMPLEX_UNIT_SP, 15);
+			msgText.setTextColor(Color.BLACK);
+			builder.setView(msgText);
+			builder.setCancelable(false);
+			builder.setNegativeButton("닫기", new DialogInterface.OnClickListener() {
+				public void onClick(DialogInterface dialog, int which) {
+					androidKillProcess();
+					return;
+				}
+			});
+			AlertDialog dialog = builder.create();
+			dialog.show();
+		}
+	}
+
+	/**
+	 * 앱을 종료한다.
+	 */
+	private void androidKillProcess() {
+		android.os.Process.killProcess(android.os.Process.myPid());
+	}
+
 }

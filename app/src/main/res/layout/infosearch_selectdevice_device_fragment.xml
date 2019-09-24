@@ -238,7 +238,35 @@
 	        android:visibility="gone" >
 	            <LinearLayout
 		    		style="@style/Form.Styled.InputBar" >
+					<LinearLayout
+						style="@style/Form.Styled.InputBox" >
+						<TextView
+							style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="대표주소코드" />
+						<EditText
+							android:id="@+id/selectdevice_device_info_repLocationCode"
+							style="@style/Form.Styled.DisplayBoxTextView"
+							android:layout_width="0dp"
+							android:layout_weight="1" />
+					</LinearLayout>
 
+					<LinearLayout
+						style="@style/Form.Styled.InputBox"
+						android:layout_height="70dp" >
+						<TextView
+							style="@style/Form.Styled.LeftMiddleLavelTextView"
+							android:text="대표주소명" />
+						<EditText
+							android:id="@+id/selectdevice_device_info_repLocationName"
+							style="@style/Form.Styled.DisplayBoxTextView"
+							android:layout_width="0dp"
+							android:layout_weight="1"
+							android:layout_height="70dp"
+							android:singleLine="false"
+							android:gravity="top|left"
+							android:lines="3"
+							android:inputType="text|textMultiLine" />
+					</LinearLayout>
 	                <LinearLayout
 					    style="@style/Form.Styled.InputBox" >
 	                    <TextView

@@ -36,7 +36,40 @@ public class BarcodeHttpController {
 			throw new ErpBarcodeException(-1, "서버요청 주소가 유효하지 않습니다. ");
 		}
 	}
-	
+	/**
+	 * 장치바코드 정합성 조회
+	 *
+	 * @param deviceId
+	 * sesang 20190910 장치바코드 정합성 체크
+	 */
+	public boolean checkDeviceBarcodeData(String locationBarcode, String deviceBarcode) throws ErpBarcodeException {
+
+		choicePath(HttpAddressConfig.PATH_CHECK_CONSISTENCY);
+
+		InputParameter input = new InputParameter();
+		JSONArray jsonParamList = null;
+		try {
+			JSONObject jsonParam = new JSONObject();
+			jsonParam.put("locationCode", locationBarcode);
+			jsonParam.put("deviceId", deviceBarcode);
+
+			jsonParamList = new JSONArray();
+			jsonParamList.put(jsonParam);
+		} catch (JSONException e) {
+			throw new ErpBarcodeException(-1, "파라미터리스트 대입중 오류가 발생했습니다. ");
+		}
+		input.setSubParamList(jsonParamList);
+
+		HttpCommend httpCommend = new HttpCommend(mHttpAddress, input);
+		OutputParameter outputParameter = httpCommend.httpSend();
+
+		if (!outputParameter.isSuccess()) {
+			throw new ErpBarcodeException(outputParameter.getStatus(),
+					outputParameter.getOutMessage());
+		}
+		return true;
+	}
+
 	/**
 	 * 장치바코드 조회
 	 * 
@@ -121,7 +154,12 @@ public class BarcodeHttpController {
 			deviceInfo.setLevel3Name(jsonresult.getString("level3Name").trim());
 			deviceInfo.setLevel4Code(jsonresult.getString("level4").trim());
 			deviceInfo.setLevel4Name(jsonresult.getString("level4Name").trim());
-			
+
+			if (jsonresult.has("repLocCd")) deviceInfo.setRepLocationCode(jsonresult.getString("repLocCd").trim());
+			if (jsonresult.has("repLocNm")) deviceInfo.setRepLocationName(jsonresult.getString("repLocNm").trim());
+			if (jsonresult.has("projectCode")) deviceInfo.setProjectCode(jsonresult.getString("projectCode").trim());
+
+
 			if (deviceInfo.getOperationSystemToken().equals("02") && deviceInfo.getStandardServiceCode().equals("")) {
 				throw new ErpBarcodeException(-1, "장치아이디 '" + deviceBarcode + "' 는 \n\r운영시스템 구분자가 'ITAM' 이며\n\rIT표준서비스코드가 '없음' 이므로\n\r스캔이 불가합니다.\n\r전사기준정보관리시스템(MDM)에\n\r문의하세요.");
 			}

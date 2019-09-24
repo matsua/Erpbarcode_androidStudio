@@ -8,6 +8,7 @@ public class DeviceBarcodeInfo implements Serializable {
 	private String deviceId;
 	private String deviceName;
 	private String projectNo;
+	private String projectCode;
 	private String wbsNo;
 	private String operationSystemToken;
 	private String operationSystemTokenName;
@@ -26,6 +27,10 @@ public class DeviceBarcodeInfo implements Serializable {
 	private String standardServiceName;
 	private String locationCode;
 	private String locationName;
+	// sesang 20190910 대표주소 정보 추가
+	private String repLocationCode;
+	private String repLocationName;
+	// end sesang
 	private String locationShortName;
 	private String detailAddress;
 	private String operationOrgCode;
@@ -58,6 +63,12 @@ public class DeviceBarcodeInfo implements Serializable {
 	}
 	public void setProjectNo(String projectNo) {
 		this.projectNo = projectNo;
+	}
+	public String getProjectCode() {
+		return projectCode;
+	}
+	public void setProjectCode(String projectCode) {
+		this.projectCode = projectCode;
 	}
 	public String getWbsNo() {
 		return wbsNo;
@@ -167,6 +178,21 @@ public class DeviceBarcodeInfo implements Serializable {
 	public void setLocationName(String locationName) {
 		this.locationName = locationName;
 	}
+
+	// sesang 20190910 대표주소 정보 추가
+	public String getRepLocationCode() {
+		return repLocationCode;
+	}
+	public void setRepLocationCode(String repLocationCode) {
+		this.repLocationCode = repLocationCode;
+	}
+	public String getRepLocationName() {
+		return repLocationName;
+	}
+	public void setRepLocationName(String repLocationName) {
+		this.repLocationName = repLocationName;
+	}
+	// end sesang
 	public String getDetailAddress() {
 		return detailAddress;
 	}

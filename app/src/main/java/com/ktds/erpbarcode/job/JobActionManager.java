@@ -208,25 +208,114 @@ public class JobActionManager {
 		GlobalData.getInstance().setWorkId(workInfo.getId());
 	}
 	
+	// Add by sesang 20190620 전송 후 작업관리 저장 데이터 추가 
+	public void saveSendData(String traYn, String serverMsg, String locCd, String locName, String wbsNo, String deviceId, int itemCount, String offlineYn) throws ErpBarcodeException {
+		
+		if (mWorkId == 0) return;
+
+		//-----------------------------------------------------------
+		// Device의 현재일시
+		//-----------------------------------------------------------
+		String sysDateTime = SystemInfo.getNowDateTime();
+
+		mJobGubun = GlobalData.getInstance().getJobGubun();
+
+		Log.d(TAG, "saveWorkData : " + locCd + ", " + locName + ", " + deviceId);
+
+		WorkInfo workInfo = new WorkInfo();
+		try {
+			workInfo.setId(mWorkId);
+			workInfo.setWorkName(mJobGubun);
+			workInfo.setLocCd(locCd);
+			workInfo.setLocName(locName);
+			workInfo.setWbsNo(wbsNo);
+			workInfo.setDeviceId(deviceId);
+			workInfo.setInputTime(sysDateTime);
+			workInfo.setSrchYn("N");
+			workInfo.setItemCount(itemCount);
+			workInfo.setOfflineYn(offlineYn);
+			workInfo.setTranYn(traYn);
+			workInfo.setTranRslt(serverMsg);
+			workInfo.setTranTime(sysDateTime);
+
+		} catch (Exception e) {
+			throw new ErpBarcodeException(-1, "변수 대입중 오류가 발생했습니다. " + e.getMessage());
+		}
+
+
+		try {
+			if (workInfo.getId() == 0) {
+				workInfo = mWorkInfoQuery.createWorkInfo(workInfo);
+			} else {
+				WorkInfo tempWorkInfo = new WorkInfo();
+				tempWorkInfo = mWorkInfoQuery.getWorkInfoById(workInfo.getId());
+				if (tempWorkInfo == null)
+					throw new ErpBarcodeException(-1, "존재하지 않는 작업ID입니다. ", BarcodeSoundPlay.SOUND_NOTEXISTS);
+
+				workInfo = mWorkInfoQuery.updateWorkInfo(workInfo);
+			}
+		} catch (ErpBarcodeException e) {
+			throw e;
+		} catch (SQLiteException e) {
+			throw new ErpBarcodeException(-1, "작업인포 생성/수정중 오류가 발생했습니다. " + e.getMessage());
+		}
+
+		//-----------------------------------------------------------
+		// 등록한 순서로 처리하기 위해서..
+		//-----------------------------------------------------------
+		for (WorkItem workitem : mWorkDataList) {
+			try {
+				workitem.setId(0);
+				workitem.setWorkId(workInfo.getId());
+				//workitem.setJobType(jobKey);
+				//workitem.setJobData(jobJsonObject.toString());
+				workitem.setInputTime(sysDateTime);
+			} catch (Exception e) {
+				throw new ErpBarcodeException(-1, "변수 대입중 오류가 발생했습니다. " + e.getMessage());
+			}
+
+			try {
+				workitem = mWorkItemQuery.createWorkItem(workitem);
+			} catch (SQLiteException e) {
+				throw new ErpBarcodeException(-1, "작업아이템 생성중 오류가 발생했습니다. " + e.getMessage());
+			}
+		}
+
+		//-----------------------------------------------------------
+		// 등록후 작업변수 데이터는 삭제한다.
+		//-----------------------------------------------------------
+		mWorkId = workInfo.getId();
+		GlobalData.getInstance().setWorkId(workInfo.getId());
+
+		//-----------------------------------------------------------
+		// 등록후 작업변수 데이터는 삭제한다.
+		//-----------------------------------------------------------
+		mWorkId = 0;
+		GlobalData.getInstance().setWorkId(0);
+
+	}
+	// End sesang
+	
 	/**
 	 * 작업아이템들 모두 삭제한다.
-	 * 
+	 *
 	 * @param workId
 	 */
 	public void deleteWorkItemsByWorkId(int workId) {
 		mWorkItemQuery.deleteWorkItemsByWorkId(workId);
 	}
+
 	
 	public void saveSendData(String traYn, String serverMsg) throws ErpBarcodeException {
-		
+
 		if (mWorkId == 0) return;
-		
+
 		//-----------------------------------------------------------
 		// Device의 현재일시
 		//-----------------------------------------------------------
 		String sysDateTime = SystemInfo.getNowDateTime();
-		
-		
+
+
 		WorkInfo workInfo = new WorkInfo();
 		workInfo = mWorkInfoQuery.getWorkInfoById(mWorkId);
 		if (workInfo == null) {
@@ -240,13 +329,13 @@ public class JobActionManager {
 		} catch (Exception e) {
 			throw new ErpBarcodeException(-1, "변수 대입중 오류가 발생했습니다. " + e.getMessage());
 		}
-		
+
 		try {
 			workInfo = mWorkInfoQuery.updateWorkInfo(workInfo);
 		} catch (SQLiteException e) {
 			throw new ErpBarcodeException(-1, "작업인포 수정중 오류가 발생했습니다. " + e.getMessage());
 		}
-		
+
 		//-----------------------------------------------------------
 		// 등록후 작업변수 데이터는 삭제한다.
 		//-----------------------------------------------------------

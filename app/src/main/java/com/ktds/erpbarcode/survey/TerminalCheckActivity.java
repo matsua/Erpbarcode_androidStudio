@@ -1960,7 +1960,9 @@ public class TerminalCheckActivity extends Activity {
 		//-----------------------------------------------------------
 		// Activity종료시 작업ID는 초기화한다.
 		//-----------------------------------------------------------
-		GlobalData.getInstance().getJobActionManager().setJobWorkMode(JobActionManager.JOB_GENERAL);
+    	if(GlobalData.getInstance().getJobActionManager() != null){
+    		GlobalData.getInstance().getJobActionManager().setJobWorkMode(JobActionManager.JOB_GENERAL);
+    	}
 		
 		super.onDestroy();
 	}

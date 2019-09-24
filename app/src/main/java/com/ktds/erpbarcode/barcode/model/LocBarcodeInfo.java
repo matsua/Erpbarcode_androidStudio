@@ -23,7 +23,12 @@ public class LocBarcodeInfo implements Serializable {
 	private double latitude;              // 위도
 	private double longitude;             // 경도
 	private double diffTitude;            // 거리(Km)
-	
+
+	// sesang 20190910 대표위치 정보 추가
+	private String repLocCd;
+	private String repLocNm;
+	// end sesang
+
 	public LocBarcodeInfo() {
 		clear();
 	}
@@ -31,6 +36,8 @@ public class LocBarcodeInfo implements Serializable {
 	public void clear() {
 		setLocCd("");
 		setLocName("");
+		setRepLocCd("");
+		setRepLocNm("");
 		setDeviceId("");
 		setRoomTypeCode("");
 		setRoomTypeName("");
@@ -192,5 +199,20 @@ public class LocBarcodeInfo implements Serializable {
 	public void setDiffTitude(double diffTitude) {
 		this.diffTitude = diffTitude;
 	}
-	
+
+	public String getRepLocCd() {
+		return repLocCd;
+	}
+
+	public void setRepLocCd(String repLocCd) {
+		this.repLocCd = repLocCd;
+	}
+
+	public String getRepLocNm() {
+		return repLocNm;
+	}
+
+	public void setRepLocNm(String repLocNm) {
+		this.repLocNm = repLocNm;
+	}
 }

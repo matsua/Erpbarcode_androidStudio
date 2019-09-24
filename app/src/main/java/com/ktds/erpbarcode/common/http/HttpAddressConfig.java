@@ -172,6 +172,18 @@ public class HttpAddressConfig {
 	//형상구성 추가
 	public static final String PATH_POST_FORM_MAKE = "Post_FormMake";                 	// 형상구성(창고내)
 	public static final String PATH_POST_FORM_CLEAR = "Post_FormClear";                 // 형상해제(창고내)
+	
+	//베이스 추가
+	public static final String PATH_POST_BASE_MANAGEMENT = "Post_BaseManagement";                 // BASE OA,OE - 불용요청, 신규등록, 관리자 변경, 재물조사, 납품확인, 대여등록, 대여반납 
+	public static final String PATH_POST_BASE_SEARCH = "Post_BaseSearch";                 // BASE OA - OA연식조회, BASE OE - OE연식조회
+
+	// Add by sesang 20190819 정합성 작업대상 수량 체크
+	public static final String PATH_GET_CONSISTENCY_COUNT = "Get_Consistency_Count";                 // 장치 ID 정합성 조회
+	// end sesang
+
+	// sesang 20190910 장치아이디 정합성 체크
+	public static final String PATH_CHECK_CONSISTENCY = "Check_Device_Consistency";
+	// end sesang
 
 	private WebServer mServer;
 	private String mHost;
@@ -374,6 +386,16 @@ public class HttpAddressConfig {
 		mPathInfos.put(PATH_POST_FORM_MAKE, mProject + "/operation/mount/facility/formMake.json");		// 형상구성(창고내)
 		mPathInfos.put(PATH_POST_FORM_CLEAR, mProject + "/operation/mount/facility/formClear.json");	// 형상해제(창고내)
 		
+		mPathInfos.put(PATH_POST_BASE_MANAGEMENT, mProject + "/base/smart/management.json");		//BASE OA,OE - 불용요청, 신규등록, 관리자 변경, 재물조사, 납품확인, 대여등록, 대여반납
+		mPathInfos.put(PATH_POST_BASE_SEARCH, mProject + "/base/smart/itemSearch.json");	//BASE OA - OA연식조회, BASE OE - OE연식조회
+
+		// Add by sesang 20190819 정합성 작업대상 수량 체크
+		mPathInfos.put(PATH_GET_CONSISTENCY_COUNT, mProject + "/deviceId/consistency/get.json");
+		// end
+		// sesang 20190910 장치 아이디 정합성 체크
+		mPathInfos.put(PATH_CHECK_CONSISTENCY, mProject + "/deviceId/checkLocDevInfo/get.json");
+		// end
+
 	}
 	
 	private String getPathMap(String pathName) {

@@ -11,21 +11,7 @@
 	    android:layout_height="match_parent"
 	    android:background="#FFFFFF"
 	    android:orientation="vertical">
-	    <!-- 운용조직  -->
-	    <LinearLayout
-		    android:id="@+id/treescan_organization_inputbar"
-		    style="@style/Form.Styled.InputDisplayBox" >
-		    <TextView
-		        android:id="@+id/treescan_organization_orgCode_lavel"
-			    style="@style/Form.Styled.LeftLavelTextView"
-			    android:text="@string/treescan_organization_orgCode_lavel" />
-		    <EditText
-		        android:id="@+id/base_organization_orgCode"
-		        android:layout_width="0dp"
-				android:layout_height="wrap_content"
-				android:layout_weight="1"
-			    style="@style/Form.Styled.DisplayTextView" />
-		</LinearLayout>
+	    
 		<!-- 위치바코드  -->
 	    <LinearLayout
 		    android:id="@+id/locView"
@@ -44,7 +30,7 @@
 		    <Button android:id="@+id/locCdScan"            
 				android:layout_width="50dp"
 				android:layout_marginRight="5dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="32dp"
 		        android:layout_gravity="left"
 				android:text="scan"/>
 		</LinearLayout>
@@ -67,7 +53,30 @@
 			<Button android:id="@+id/facCdScan"            
 				android:layout_width="50dp"
 				android:layout_marginRight="5dp"
-		        android:layout_height="wrap_content"
+		        android:layout_height="32dp"
+		        android:layout_gravity="left"
+				android:text="scan"/>		    
+		</LinearLayout>
+		
+		<!-- S/N바코드 -->
+		<LinearLayout
+		    android:id="@+id/snView"
+		    style="@style/Form.Styled.InputBox" >
+		    <TextView
+		        android:id="@+id/treescan_sn_facCd_lavel"
+			    style="@style/Form.Styled.LeftLavelTextView"
+			    android:text="@string/ismrequest_manu_SN_lavel" />
+			<EditText
+			    android:id="@+id/scanview_snCd"
+			    android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:layout_marginRight="5dp"
+			    style="@style/Form.Styled.ScannableEditText" />
+			<Button android:id="@+id/snCdScan"            
+				android:layout_width="50dp"
+				android:layout_marginRight="5dp"
+		        android:layout_height="32dp"
 		        android:layout_gravity="left"
 				android:text="scan"/>		    
 		</LinearLayout>
@@ -89,11 +98,13 @@
 	                style="@style/Form.Styled.RedButton"
 	                android:layout_marginRight="4dp"
 	                android:text="@string/ismrequest_crud_search_lavel" />
+	            <!-- 
 	            <Button
 	                android:id="@+id/base_crud_save"
 	                style="@style/Form.Styled.RedButton"
 	                android:layout_marginRight="4dp"
 	                android:text="@string/treescan_crud_save_lavel" />
+	             -->
 	            <Button
 	                android:id="@+id/base_crud_send"
 	                style="@style/Form.Styled.RedButton"
@@ -101,17 +112,148 @@
 	        </LinearLayout>
 		</LinearLayout>
 		
-	     <!-- 웹뷰 -->
-		<LinearLayout
+	     <!-- 그리드뷰 -->
+		<GridLayout
+		    android:id="@+id/resultView"
 		    android:layout_width="match_parent"
 		    android:layout_height="fill_parent"
-		    android:gravity="center_vertical"
-		    android:orientation="vertical" >
-			<WebView
-		        android:layout_width="fill_parent"
-		        android:layout_height="fill_parent"
-		        android:id="@+id/webView"/>
-		</LinearLayout>
+		    android:columnCount="1">
+			
+		    <!-- 상태  -->
+		    <LinearLayout
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="상태" />
+			    <TextView
+				    android:id="@+id/gridValue1"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginRight="5dp"
+				    style="@string/treescan_location_locCd_lavel"/>
+			</LinearLayout>
+			
+		    <!-- 등록일자  -->
+		    <LinearLayout
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="등록일자" />
+			    <TextView
+				    android:id="@+id/gridValue2"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginRight="5dp"
+				    style="@string/treescan_location_locCd_lavel"/>
+			</LinearLayout>
+			
+		    <!-- 위치명  -->
+		    <LinearLayout
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="위치명" />
+			    <TextView
+				    android:id="@+id/gridValue3"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginRight="5dp"
+				    style="@string/treescan_location_locCd_lavel"/>
+			</LinearLayout>
+			
+		    <!-- 위치코드  -->
+		    <LinearLayout
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="위치코드" />
+			    <TextView
+				    android:id="@+id/gridValue4"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginRight="5dp"
+				    style="@string/treescan_location_locCd_lavel"/>
+			</LinearLayout>
+			
+		    <!-- 장비명  -->
+		    <LinearLayout
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="장비명" />
+			    <TextView
+				    android:id="@+id/gridValue5"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginRight="5dp"
+				    style="@string/treescan_location_locCd_lavel"/>
+			</LinearLayout>
+			
+		    <!-- 장비연식  -->
+		    <LinearLayout
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="장비연식" />
+			    <TextView
+				    android:id="@+id/gridValue6"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginRight="5dp"
+				    style="@string/treescan_location_locCd_lavel"/>
+			</LinearLayout>
+			
+		    <!-- 설비명  -->
+		    <LinearLayout
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="설비명" />
+			    <TextView
+				    android:id="@+id/gridValue7"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginRight="5dp"
+				    style="@string/treescan_location_locCd_lavel"/>
+			</LinearLayout>
+			
+		    <!-- 시리얼번호  -->
+		    <LinearLayout
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="시리얼번호" />
+			    <TextView
+				    android:id="@+id/gridValue8"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginRight="5dp"
+				    style="@string/treescan_location_locCd_lavel"/>
+			</LinearLayout>
+			
+		    <!-- 제조사  -->
+		    <LinearLayout
+			    style="@style/Form.Styled.InputBox" >
+			    <TextView
+				    style="@style/Form.Styled.LeftLavelTextView"
+				    android:text="제조사" />
+			    <TextView
+				    android:id="@+id/gridValue9"
+				    android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:layout_marginRight="5dp"
+				    style="@string/treescan_location_locCd_lavel"/>
+			</LinearLayout>
+		</GridLayout>
 	     
 	</LinearLayout>
 </FrameLayout>
