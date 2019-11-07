@@ -801,7 +801,7 @@ public class LoginActivity extends Activity {
 					// ---------------------------------------------------------
 					// 1일1회 마다 SMS 휴대폰 인증 여부 - 매접속시 개인인증으로 변경
 					// ---------------------------------------------------------
-					if (SessionUserData.getInstance().getConfirmationYn()
+					if (SessionUserData.getInstance().getConfirmationAdminYn()
 							.equals("Y")) {
 						is_auth_need = false;
 					}

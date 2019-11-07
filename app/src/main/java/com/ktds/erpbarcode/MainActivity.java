@@ -876,7 +876,9 @@ public class MainActivity extends Activity {
 					TextView textView = new TextView(getBaseContext());
 					textView.setLayoutParams(subimage_ly);
 					textView.setGravity(Gravity.CENTER);
-					textView.setText(childMenuItem.getChildName());
+					String childName = childMenuItem.getChildName();
+					if (childName.equals("기지국/중계기 위치바코드")) childName =childName.replace(" ", "\n");
+					textView.setText(childName);
 					textView.setTextSize(13);
 					textView.setTextColor(0xff827880);// 130, 120, 128
 					//imageView.setScaleType(ImageView.ScaleType.CENTER);

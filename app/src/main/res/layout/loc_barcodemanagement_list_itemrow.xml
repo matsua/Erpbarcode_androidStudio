@@ -42,15 +42,17 @@
 	        android:id="@+id/loc_crm3"
 	        android:layout_width="160dp"
 	        style="@style/Form.Styled.NormalTextView" />
-		<!-- 위치코드 -->
+		<!-- 대표주소코드 -->
 		<TextView
 			android:id="@+id/loc_crm15"
-			android:layout_width="250dp"
+			android:layout_width="160dp"
+			android:visibility="gone"
 			style="@style/Form.Styled.NormalTextView" />
-		<!-- 위치명 -->
+		<!-- 대표주소명 -->
 		<TextView
 			android:id="@+id/loc_crm16"
-			android:layout_width="160dp"
+			android:layout_width="240dp"
+			android:visibility="gone"
 			style="@style/Form.Styled.NormalTextView" />
 	    <!-- 실유형 -->
 	    <TextView
@@ -60,7 +62,7 @@
 	    <!-- 실명칭 -->
 	    <TextView
 	        android:id="@+id/loc_crm5"
-	        android:layout_width="100dp"
+	        android:layout_width="160dp"
 	        style="@style/Form.Styled.NormalTextView" />
 	    <!-- 상태 -->
 	    <TextView

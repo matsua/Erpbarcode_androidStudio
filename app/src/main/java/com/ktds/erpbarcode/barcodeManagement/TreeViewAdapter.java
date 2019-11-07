@@ -25,7 +25,8 @@ public class TreeViewAdapter extends BaseExpandableListAdapter{
     public static final int ItemHeight = 120;
     public static final int PaddingLeft = 36; 
     private int myPaddingLeft = 0;
-  
+    private boolean showRep = false;
+    
     static public class TreeNode{  
     	IsmBarcodeInfo parentObj; 
         List<IsmBarcodeInfo> childs = new ArrayList<IsmBarcodeInfo>();
@@ -34,10 +35,11 @@ public class TreeViewAdapter extends BaseExpandableListAdapter{
     List<TreeNode> treeNodes = new ArrayList<TreeNode>();  
     Context parentContext;  
     
-    public TreeViewAdapter(Context view,int myPaddingLeft)  
+    public TreeViewAdapter(Context view,int myPaddingLeft, boolean showRep)  
     {  
         parentContext = view;  
         this.myPaddingLeft = myPaddingLeft;  
+        this.showRep = showRep;
     }
     
     private final OnCheckedChangeListener onCheckedChange = new OnCheckedChangeListener() {
@@ -97,6 +99,12 @@ public class TreeViewAdapter extends BaseExpandableListAdapter{
     		holder.item12 = (TextView) convertView.findViewById(R.id.loc_crm12);
     		holder.item13 = (TextView) convertView.findViewById(R.id.loc_crm13);
     		holder.item14 = (TextView) convertView.findViewById(R.id.loc_crm14);
+    		// sesang 20190910 대표위치 정보 추가
+    		if (showRep) {
+    			if (convertView.findViewById(R.id.loc_crm15) != null) holder.item15 = (TextView) convertView.findViewById(R.id.loc_crm15);
+    			if (convertView.findViewById(R.id.loc_crm16) != null) holder.item16 = (TextView) convertView.findViewById(R.id.loc_crm16);
+    		}
+            // end sesang
     		convertView.setTag(holder);
         }else {
             holder = (ViewHolder) convertView.getTag();
@@ -120,7 +128,24 @@ public class TreeViewAdapter extends BaseExpandableListAdapter{
 		holder.item12.setText(model.getSilKuksa());
 		holder.item13.setText(model.getSilKuksaName());
 		holder.item14.setText(model.getComment());
-		
+		// sesang 20190910 대표위치 정보 추가
+		if (holder.item15 != null) {				
+			if (showRep) {
+				holder.item15.setVisibility(View.VISIBLE);
+				holder.item15.setText(model.getRepLocCd());
+			} else {
+				holder.item15.setVisibility(View.GONE);
+			}
+		}
+		if (holder.item16 != null) {
+			if (showRep) {
+				holder.item16.setVisibility(View.VISIBLE);
+				holder.item16.setText(model.getRepLocNm());
+			} else {
+				holder.item16.setVisibility(View.GONE);
+			}			
+		}
+        // end sesang
         return convertView;
     }  
   
@@ -148,6 +173,10 @@ public class TreeViewAdapter extends BaseExpandableListAdapter{
     		holder.item12 = (TextView) convertView.findViewById(R.id.loc_crm12);
     		holder.item13 = (TextView) convertView.findViewById(R.id.loc_crm13);
     		holder.item14 = (TextView) convertView.findViewById(R.id.loc_crm14);
+    		if (showRep) {
+    			if (convertView.findViewById(R.id.loc_crm15) != null) holder.item15 = (TextView) convertView.findViewById(R.id.loc_crm15);
+    			if (convertView.findViewById(R.id.loc_crm16) != null) holder.item16 = (TextView) convertView.findViewById(R.id.loc_crm16);
+    		}
     		convertView.setTag(holder);
         }else {
             holder = (ViewHolder) convertView.getTag();
@@ -171,6 +200,24 @@ public class TreeViewAdapter extends BaseExpandableListAdapter{
 		holder.item12.setText(model.getSilKuksa());
 		holder.item13.setText(model.getSilKuksaName());
 		holder.item14.setText(model.getComment());
+		// sesang 20190910 대표위치 정보 추가		
+		if (holder.item15 != null) {				
+			if (showRep) {
+				holder.item15.setVisibility(View.VISIBLE);
+				holder.item15.setText(model.getRepLocCd());
+			} else {
+				holder.item15.setVisibility(View.GONE);
+			}
+		}
+		if (holder.item16 != null) {
+			if (showRep) {
+				holder.item16.setVisibility(View.VISIBLE);
+				holder.item16.setText(model.getRepLocNm());
+			} else {
+				holder.item16.setVisibility(View.GONE);
+			}			
+		}		
+        // end sesang
 		
         return convertView;
     }  
@@ -215,5 +262,9 @@ public class TreeViewAdapter extends BaseExpandableListAdapter{
 		public TextView item12;
 		public TextView item13;
 		public TextView item14;
+		// sesang 20190910 대표위치 정보 추가
+        public TextView item15;
+        public TextView item16;
+        // end sesang
     }
 }  

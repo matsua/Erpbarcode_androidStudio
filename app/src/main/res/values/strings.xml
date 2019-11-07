@@ -317,6 +317,7 @@
     <string name="hello_world">Hello world!</string>
     
     <!-- oa.oe.scan barcode lib -->
+    <string name="ismrequest_manu_SN_lavel">제조사S/N</string>
     <string name="button_cancel">Cancel</string>
     <string name="button_ok">OK</string>
     <string name="button_open_mobi">Decoder</string>

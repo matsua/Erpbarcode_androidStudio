@@ -33,16 +33,18 @@ public class SuperTreeViewAdapter extends BaseExpandableListAdapter{
     }
     
     private static final String TAG = "SuperTreeViewAdapter";
-  
+    
     private List<SuperTreeNode> superTreeNodes = new ArrayList<SuperTreeNode>();  
     private Context parentContext;  
     private OnChildClickListener stvClickEvent;
+    private boolean showRep = false;
     
     private List<IsmBarcodeInfo> mIsmBarcodeInfos = new ArrayList<IsmBarcodeInfo>();
       
-    public SuperTreeViewAdapter(Context view,OnChildClickListener stvClickEvent) {  
+    public SuperTreeViewAdapter(Context view,OnChildClickListener stvClickEvent, boolean showRep) {  
         parentContext = view;  
         this.stvClickEvent=stvClickEvent;  
+        this.showRep = showRep;
     }
     
     private final OnCheckedChangeListener onCheckedChange = new OnCheckedChangeListener() {
@@ -121,7 +123,7 @@ public class SuperTreeViewAdapter extends BaseExpandableListAdapter{
   
     public View getChildView(int groupPosition, int childPosition, boolean isLastChild, View convertView, ViewGroup parent) {
         final ExpandableListView treeView = getExpandableListView();
-        final TreeViewAdapter treeViewAdapter = new TreeViewAdapter(this.parentContext,0);  
+        final TreeViewAdapter treeViewAdapter = new TreeViewAdapter(this.parentContext,0, showRep);  
         List<TreeNode> tmp = treeViewAdapter.GetTreeNode();
         final TreeNode treeNode = (TreeNode) getChild(groupPosition, childPosition);  
         
@@ -181,8 +183,10 @@ public class SuperTreeViewAdapter extends BaseExpandableListAdapter{
     		holder.item13 = (TextView) convertView.findViewById(R.id.loc_crm13);
     		holder.item14 = (TextView) convertView.findViewById(R.id.loc_crm14);
             // sesang 20190910 대표위치 정보 추가
-            holder.item15 = (TextView) convertView.findViewById(R.id.loc_crm15);
-            holder.item16 = (TextView) convertView.findViewById(R.id.loc_crm16);
+    		if (showRep) {
+    			if (convertView.findViewById(R.id.loc_crm15) != null) holder.item15 = (TextView) convertView.findViewById(R.id.loc_crm15);
+    			if (convertView.findViewById(R.id.loc_crm16) != null) holder.item16 = (TextView) convertView.findViewById(R.id.loc_crm16);
+    		}
             // end sesang
     		convertView.setTag(holder);
         }else {
@@ -209,8 +213,22 @@ public class SuperTreeViewAdapter extends BaseExpandableListAdapter{
 		holder.item14.setText(model.getComment());
 
         // sesang 20190910 대표위치 정보 추가
-        if (holder.item15 != null) holder.item15.setText(model.getRepLocCd());
-        if (holder.item16 != null) holder.item16.setText(model.getRepLocNm());
+		if (holder.item15 != null) {				
+			if (showRep) {
+				holder.item15.setVisibility(View.VISIBLE);
+				holder.item15.setText(model.getRepLocCd());
+			} else {
+				holder.item15.setVisibility(View.GONE);
+			}
+		}
+		if (holder.item16 != null) {
+			if (showRep) {
+				holder.item16.setVisibility(View.VISIBLE);
+				holder.item16.setText(model.getRepLocNm());
+			} else {
+				holder.item16.setVisibility(View.GONE);
+			}			
+		}
         // end sesang
         return convertView;  
     }

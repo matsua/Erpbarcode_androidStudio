@@ -22,39 +22,39 @@ import android.widget.TextView;
 import com.ktds.erpbarcode.common.media.BarcodeSoundPlay;
 
 @SuppressLint("Override") public class IntroActivity extends Activity {
-	
+
 	private static final String TAG = "IntroActivity";
-	
+
 	private final int PERMISSIONS_REQUEST_RESULT1 = 100;
 	private final int PERMISSIONS_REQUEST_RESULT2 = 200;
-	
-	
+
+
 	private Handler mTimerHandler = new Handler();
-	
+
 	private TextView mAppVersionText;
-	
+
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		//-----------------------------------------------------------
-	    // ActionBar를 hide처리한다.
-	    //----------------------------------------------------------- 
+		// ActionBar를 hide처리한다.
+		//-----------------------------------------------------------
 		getWindow().requestFeature(Window.FEATURE_NO_TITLE);
 		//-----------------------------------------------------------
-	    // ActionBar에 progress를 활성화 시킨다.
-	    //-----------------------------------------------------------
+		// ActionBar에 progress를 활성화 시킨다.
+		//-----------------------------------------------------------
 		requestWindowFeature(Window.FEATURE_INDETERMINATE_PROGRESS);
-		
+
 		super.onCreate(savedInstanceState);
-		
+
 		//-----------------------------------------------------------
 		// Open된 Activity를 Set한다.
-	    //-----------------------------------------------------------
+		//-----------------------------------------------------------
 		GlobalData.getInstance().setNowOpenActivity(this);
 		setContentView(R.layout.base_intro_activity);
 	}
-    
-    private void ScreenLoad(){
-    	//-----------------------------------------------------------
+
+	private void ScreenLoad(){
+		//-----------------------------------------------------------
 		// 화면을그린다.
 		//-----------------------------------------------------------
 		setLayout();
@@ -63,8 +63,8 @@ import com.ktds.erpbarcode.common.media.BarcodeSoundPlay;
 		// 2초후에 로그인엑티비티로 이동한다.
 		//-----------------------------------------------------------
 		mTimerHandler.postDelayed(mStartActivityTask, 2000);
-    }
-    
+	}
+
 //    //-----------------------------------------------------------
 //    // Permission check.
 //    //----------------------------------------------------------- 
@@ -158,15 +158,15 @@ import com.ktds.erpbarcode.common.media.BarcodeSoundPlay;
 //		dialog.show();
 //		return;
 //	}
-    
-	
+
+
 	private void setLayout() {
 		//-----------------------------------------------------------
 		// 앱 버젼
 		//-----------------------------------------------------------
 		mAppVersionText = (TextView) findViewById(R.id.intro_appversion);
 	}
-	
+
 	@Override
 	protected void onResume(){
 //		requestPermissionCheck();
@@ -178,13 +178,13 @@ import com.ktds.erpbarcode.common.media.BarcodeSoundPlay;
 		super.onStart();
 		ScreenLoad();
 	}
-	
+
 	@Override
 	protected void onDestroy() {
 		mTimerHandler.removeCallbacks(mStartActivityTask);
 		super.onDestroy();
 	}
-	
+
 	private Runnable mStartActivityTask = new Runnable() {
 		public void run() {
 			if (checkPermission()) {
@@ -192,7 +192,7 @@ import com.ktds.erpbarcode.common.media.BarcodeSoundPlay;
 			}
 		}
 	};
-	
+
 	private void initScreen() {
 		String versionInfo = GlobalData.getInstance().getAppVersionName();
 		mAppVersionText.setText(versionInfo);
@@ -209,8 +209,9 @@ import com.ktds.erpbarcode.common.media.BarcodeSoundPlay;
 
 		if (Build.VERSION.SDK_INT >= 23) {
 			if (!checkPermission(Manifest.permission.READ_PHONE_STATE) ||
-					!checkPermission(Manifest.permission.CAMERA)) {
-				ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_PHONE_STATE, Manifest.permission.CAMERA},1000);
+					!checkPermission(Manifest.permission.CAMERA) ||
+					!checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
+				ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_PHONE_STATE, Manifest.permission.CAMERA, Manifest.permission.WRITE_EXTERNAL_STORAGE},1000);
 				return false;
 			}
 		}

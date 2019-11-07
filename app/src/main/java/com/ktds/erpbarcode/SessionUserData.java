@@ -19,6 +19,7 @@ public class SessionUserData {
 	private String sessionId;
 	private String jobEqunr;
 	private String confirmationYn;
+	private String confirmationAminYn;
 	private String passwdUpdateYn;
 	private double latitude;            // device 위도.
 	private double longitude;           // device 경도.
@@ -48,6 +49,7 @@ public class SessionUserData {
 			instance.setSessionId("");
 			instance.setJobEqunr("");
 			instance.setConfirmationYn("");
+			instance.setConfirmationAdminYn("");
 			instance.setPasswdUpdateYn("");
 			instance.setLatitude(0L);
 			instance.setLongitude(0L);
@@ -194,11 +196,15 @@ public class SessionUserData {
 		return confirmationYn;
 	}
 
-
 	public void setConfirmationYn(String confirmationYn) {
 		this.confirmationYn = confirmationYn;
 	}
-	
+	public String getConfirmationAdminYn() {
+		return confirmationAminYn;
+	}
+	public void setConfirmationAdminYn(String confirmationAminYn) {
+		this.confirmationAminYn = confirmationAminYn;
+	}
 	public String getPasswdUpdateYn(){
 		return passwdUpdateYn;
 	}

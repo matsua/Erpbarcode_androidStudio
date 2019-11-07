@@ -254,7 +254,20 @@ public class IsmRequestListAdapter extends BaseAdapter {
         		holder.partKindName = (TextView) convertView.findViewById(R.id.sm_item5);
         		holder.productTypeName = (TextView) convertView.findViewById(R.id.sm_item6);
         		holder.comment = (TextView) convertView.findViewById(R.id.sm_item7);
-        	}else{
+        	}else if(jobGubun.equals("기지국/중계기 위치바코드")){
+				convertView = mInflater.inflate(R.layout.barcode_management_nms_loc_item, null);
+				holder.checked = (CheckBox) convertView.findViewById(R.id.device_isChecked);
+				holder.checked.setOnCheckedChangeListener(onCheckedChange);
+
+				holder.locCd = (TextView) convertView.findViewById(R.id.device_item1);
+				holder.locName = (TextView) convertView.findViewById(R.id.device_item2);
+				holder.repLocCd = (TextView) convertView.findViewById(R.id.device_item3);
+				holder.repLocName = (TextView) convertView.findViewById(R.id.device_item4);
+				holder.deviceId = (TextView) convertView.findViewById(R.id.device_item5);
+				holder.itemCode = (TextView) convertView.findViewById(R.id.device_item6);
+				holder.deviceName = (TextView) convertView.findViewById(R.id.device_item7);
+
+			}else{
         		convertView = mInflater.inflate(R.layout.ism_ismrequest_list_itemrow, null);
         		holder.checked = (CheckBox) convertView.findViewById(R.id.ismrequest_list_isChecked);
         		holder.checked.setOnCheckedChangeListener(onCheckedChange);
@@ -312,7 +325,7 @@ public class IsmRequestListAdapter extends BaseAdapter {
         	holder.deviceId.setText(model.getDeviceId());
     		holder.deviceName.setText(model.getItemName());
     		holder.projectNo.setText(model.getProductCode());
-    		holder.wbsCode.setText(model.getDevType());
+    		holder.wbsCode.setText(model.getWbsCode());
     		holder.operationSystemTokenName.setText(model.getOperationDeptCode());
     		holder.operationSystemCode.setText(model.getDevType());
     		holder.operationSystemName.setText(model.getDevTypeName());
@@ -350,7 +363,18 @@ public class IsmRequestListAdapter extends BaseAdapter {
     			convertView.setBackgroundColor(0xFFFFFFFF);
     			holder.checked.setEnabled(true);
     		}
-        }else{
+        }else if(jobGubun.equals("기지국/중계기 위치바코드")){
+			IsmBarcodeInfo model = getItem(position);
+			holder.checked.setTag(position);
+			holder.checked.setChecked(model.isChecked());
+			holder.locCd.setText(model.getLocCd());
+			holder.locName.setText(model.getLocName());
+			holder.repLocCd.setText(model.getRepLocCd());
+			holder.repLocName.setText(model.getRepLocNm());
+			holder.deviceId.setText(model.getDeviceId());
+			holder.itemCode.setText(model.getNmsDeviceId());
+			holder.deviceName.setText(model.getDeviceName());
+		}else{
     		IsmBarcodeInfo model = getItem(position);
     		holder.checked.setTag(position);
     		holder.checked.setChecked(model.isChecked());
@@ -439,6 +463,9 @@ public class IsmRequestListAdapter extends BaseAdapter {
 		public TextView itemName;
 		public TextView partKindName;
 		public TextView productTypeName;
+
+		public TextView repLocCd;
+		public TextView repLocName;
 		
     }
 }

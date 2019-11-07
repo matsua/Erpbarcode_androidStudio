@@ -82,6 +82,12 @@ public class IsmBarcodeInfo {
 	// sesang 20190910 대표위치 정보 추가
 	private String repLocCd;                 // 대표주소코드
 	private String repLocNm;                 // 대표위치명
+	private String locationCode;                 // 대표위치명
+	private String locationName;                 // 대표위치명
+	private String nmsDeviceId;                 // 대표위치명
+	private String deviceName;                 // 대표위치명
+	private String wbsCode;
+	
 	// end sesang
 
 	public boolean isChecked() {
@@ -518,17 +524,42 @@ public class IsmBarcodeInfo {
 	}
 
 	// sesang 20190910 대표위치 정보 추가
+	public String getLocationCode() { return locationCode;}
+	public void setLocationCode(String locationCode) {
+		this.locationCode = locationCode;
+	}
+
+	public String getLocationName() { return locationName; }
+	public void setLocationName(String locationName) {
+		this.locationName = locationName;
+	}
+
+	public String getNmsDeviceId() { return nmsDeviceId; }
+	public void setNmsDeviceId(String nmsDeviceId) {
+		this.nmsDeviceId = nmsDeviceId;
+	}
+	public String getDeviceName() { return deviceName; }
+	public void setDeviceName(String deviceName) {
+		this.deviceName = deviceName;
+	}
+
 	public String getRepLocCd() {
 		return repLocCd;
 	}
-	public void setRepLocCd(String locCd) {
+	public void setRepLocCd(String repLocCd) {
 		this.repLocCd = repLocCd;
 	}
 	public String getRepLocNm() {
 		return repLocNm;
 	}
-	public void setRepLocNm(String locName) {
+	public void setRepLocNm(String repLocNm) {
 		this.repLocNm = repLocNm;
+	}
+	public String getWbsCode() {
+		return wbsCode;
+	}
+	public void setWbsCode(String wbsCode) {
+		this.wbsCode = wbsCode;
 	}
 	// end sesang
 

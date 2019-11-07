@@ -185,6 +185,8 @@ public class HttpAddressConfig {
 	public static final String PATH_CHECK_CONSISTENCY = "Check_Device_Consistency";
 	// end sesang
 
+	public static final String PATH_POST_NMS_LOC_REQ = "Post_NmsLocRequest"; 		// 위치코드 - 검색
+
 	private WebServer mServer;
 	private String mHost;
 	private String mProject;
@@ -395,6 +397,7 @@ public class HttpAddressConfig {
 		// sesang 20190910 장치 아이디 정합성 체크
 		mPathInfos.put(PATH_CHECK_CONSISTENCY, mProject + "/deviceId/checkLocDevInfo/get.json");
 		// end
+		mPathInfos.put(PATH_POST_NMS_LOC_REQ, mProject + "/based/location/nmsDevLocationInfo/list/get.json");
 
 	}
 	

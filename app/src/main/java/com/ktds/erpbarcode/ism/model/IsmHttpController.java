@@ -609,8 +609,10 @@ public class IsmHttpController {
 		barcodeInfo.setLocCd(jsonobj.getString("locationCode").trim());					//위치바코드
 		barcodeInfo.setLocLevel(jsonobj.getString("locationLevel").trim());				//레벨 
 		barcodeInfo.setLocName(jsonobj.getString("locationName").trim());				//위치명 
-		barcodeInfo.setSilType(jsonobj.getString("roomTypeCode").trim());				//실유형 
-		barcodeInfo.setSilName(jsonobj.getString("roomTypeName").trim());				//실명칭 
+		//barcodeInfo.setSilType(jsonobj.getString("roomTypeCode").trim());				//실유형
+		//barcodeInfo.setSilName(jsonobj.getString("roomTypeName").trim());				//실명칭
+		barcodeInfo.setSilType(jsonobj.getString("roomTypeName").trim());				//실유형
+		barcodeInfo.setSilName(jsonobj.getString("subLocationName").trim());				//실명칭
 		barcodeInfo.setSilStatus(jsonobj.getString("sttus").trim());					//상태 
 		barcodeInfo.setSilGubun(jsonobj.getString("subLocationTypeName").trim());		//실층구분
 		barcodeInfo.setSilAddress(jsonobj.getString("geoName").trim());					//주소
@@ -705,7 +707,7 @@ public class IsmHttpController {
 		barcodeInfo.setDeviceId(jsonobj.getString("deviceId").trim());							//장치ID
 		barcodeInfo.setItemName(jsonobj.getString("deviceName").trim());						//장치명 
 		barcodeInfo.setProductCode(jsonobj.getString("projectNo").trim());						//프로젝트번호 
-		barcodeInfo.setDevType(jsonobj.getString("wbsCode").trim());							//WBS
+		barcodeInfo.setWbsCode(jsonobj.getString("wbsCode").trim());							//WBS
 		barcodeInfo.setOperationDeptCode(jsonobj.getString("operationSystemTokenName").trim());	//운용시스템구분자
 		barcodeInfo.setDevType(jsonobj.getString("operationSystemCode").trim());				//장비ID코드
 		barcodeInfo.setDevTypeName(jsonobj.getString("operationSystemName").trim());			//장비ID명 
@@ -801,6 +803,98 @@ public class IsmHttpController {
 		barcodeInfo.setSilStatus(jsonobj.getString("etc").trim());								//출력상태 
 		barcodeInfo.setComment("");																//비고 
 		barcodeInfo.setChecked(false);
+		return barcodeInfo;
+	}
+
+
+	/**
+	 * 기지국/중계기 위치 바코드관리 검색
+	 *
+	 * @param type
+	 * @throws ErpBarcodeException
+	 * @throws JSONException
+	 * sesang 20190919
+	 */
+
+	public List<IsmBarcodeInfo> getNmsToLocBarcodeInfos(String deviceId, String nmsDeviceId) throws ErpBarcodeException, JSONException{
+
+		JSONArray ismResults = getNmsLocBarcodeRequest(deviceId, nmsDeviceId);
+
+		List<IsmBarcodeInfo> barcodeInfos = new ArrayList<IsmBarcodeInfo>();
+		for (int i=0;i<ismResults.length();i++) {
+			try {
+				JSONObject jsonObj = ismResults.getJSONObject(i);
+
+				IsmBarcodeInfo barcodeInfo = jsonNmsToLocBarcodeInfo(jsonObj);
+
+				barcodeInfos.add(barcodeInfo);
+			} catch (JSONException e) {
+				throw new ErpBarcodeException(-1, e.getMessage());
+			}
+		}
+
+		return barcodeInfos;
+	}
+
+	public JSONArray getNmsLocBarcodeRequest(String deviceId, String nmsDeviceId) throws ErpBarcodeException, JSONException {
+		choicePath(HttpAddressConfig.PATH_POST_NMS_LOC_REQ);
+		InputParameter input = new InputParameter();
+		JSONObject jsonParam = new JSONObject();
+
+		try {
+			if(deviceId.length() > 0) jsonParam.put("deviceId", deviceId);
+			if(nmsDeviceId.length() > 0) jsonParam.put("nmsDeviceId", nmsDeviceId);
+		} catch (JSONException e) {
+			throw new ErpBarcodeException(-1, "파라미터리스트 대입중 오류가 발생했습니다. ");
+		}
+
+		try {
+			input.setNobodyParam(jsonParam);
+		} catch (JSONException e) {
+			throw new ErpBarcodeException(-1, "파라미터리스트 대입중 오류가 발생했습니다. ");
+		}
+
+		HttpCommend httpCommend = new HttpCommend(mHttpAddress, input);
+		OutputParameter outputParameter = httpCommend.httpSend();
+
+		if (!outputParameter.isSuccess()) {
+			throw new ErpBarcodeException(outputParameter.getStatus(), outputParameter.getOutMessage());
+		}
+
+		JSONArray jsonresults = outputParameter.getBodyResults();
+		if (jsonresults == null) {
+			throw new ErpBarcodeException(-1, "유효하지 않은 위치바코드 정보입니다. ");
+		}
+		Log.i(TAG, "위치바코드 관리 결과건수 ==>"+jsonresults.length());
+
+		return jsonresults;
+
+	}
+
+	/**
+	 * 위치바코드 관리에서 JSONObject 형태의 데이터를 IsmBarcodeInfo Class로 변환한다.
+	 *
+	 * @param jsonobj
+	 */
+	private IsmBarcodeInfo jsonNmsToLocBarcodeInfo(JSONObject jsonobj) throws JSONException {
+
+		IsmBarcodeInfo barcodeInfo = new IsmBarcodeInfo();
+
+		barcodeInfo.setLocCd(jsonobj.getString("locationCode").trim());					//위치바코드
+		barcodeInfo.setLocName(jsonobj.getString("locationName").trim());				//위치명
+		barcodeInfo.setRepLocCd(jsonobj.getString("repLocCd").trim());					//대표주소코드
+		barcodeInfo.setRepLocNm(jsonobj.getString("repLocNm").trim());					//대표주소명 
+
+		barcodeInfo.setDeviceId(jsonobj.getString("deviceId").trim());					//장치아이디 
+		barcodeInfo.setNmsDeviceId(jsonobj.getString("nmsDeviceId").trim());			//장비
+		barcodeInfo.setDeviceName(jsonobj.getString("deviceName").trim());				//장치(장비)
+		
+		barcodeInfo.setSilName(jsonobj.getString("subLocationName").trim());			//실명칭 
+		
+//		String geoName = jsonobj.has("geoName") ? jsonobj.getString("geoName").trim() : "";
+//		if (geoName.length() == 0) geoName = jsonobj.getString("repLocNm").trim();
+//		barcodeInfo.setSilAddress(geoName);	
+		
 		return barcodeInfo;
 	}
 

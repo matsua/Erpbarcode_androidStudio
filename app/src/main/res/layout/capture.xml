@@ -17,7 +17,6 @@
  A Derivative Work, changed by Manatee Works, Inc.
 -->
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res/com.manateeworks.cameraDemo"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent" >
     

@@ -153,7 +153,7 @@ public class SelectLocActivity extends Activity {
 					}
 				});
 
-        mLocListAdapter = new LocListAdapter(getApplicationContext(), true);
+        mLocListAdapter = new LocListAdapter(getApplicationContext(), false);
 		
 		mLocBarcodeListView = (ListView) findViewById(R.id.selectloc_listView);
 		mLocBarcodeListView.setAdapter(mLocListAdapter);

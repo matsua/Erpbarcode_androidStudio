@@ -109,6 +109,8 @@ public class SignHttpController {
 			sessionData.setOrgTypeCode(jsonHeader.getString("orgTypeCode"));
 			sessionData.setSessionId(jsonHeader.getString("sessionId"));
 			sessionData.setConfirmationYn(jsonHeader.getString("confirmationYn"));
+			sessionData.setConfirmationAdminYn(jsonHeader.getString("confirmationAdminYn"));
+
 			// Modify by sesang 20190729 비밀번호 변경 로직 삭제
 			//sessionData.setPasswdUpdateYn(jsonHeader.getString("passwdUpdateYn"));
 			sessionData.setPasswdUpdateYn("N");
@@ -290,8 +292,7 @@ public class SignHttpController {
 	}
 
 	public String getAndroidOsVersion(){
-		String osVer = String.valueOf(android.os.Build.VERSION.SDK_INT);
-
+		String osVer = String.valueOf(android.os.Build.VERSION.SDK_INT);		
 		switch (Integer.parseInt(osVer)) {
 			case 23:
 				osVer = "Android 6.0";
@@ -336,7 +337,8 @@ public class SignHttpController {
 				osVer = "Android 2.3.3";
 				break;
 			default:
-				osVer = "ANDROID";
+				//osVer = "ANDROID";
+				osVer = "Android " + android.os.Build.VERSION.RELEASE;
 				break;
 		}
 		return osVer;

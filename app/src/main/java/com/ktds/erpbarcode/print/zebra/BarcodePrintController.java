@@ -223,8 +223,8 @@ public class BarcodePrintController {
 			if(mTouchLbtCode == 7){
 				barcode = sendIsmBarcodeInfo.getLocCd();
 				barcodeLabel = sendIsmBarcodeInfo.getLocCd();
-				barcodeSubTitle1 = sendIsmBarcodeInfo.getSilAddress();
-				barcodeSubTitle2 = sendIsmBarcodeInfo.getLocName();
+				barcodeSubTitle1 = sendIsmBarcodeInfo.getLocName();
+				barcodeSubTitle2 = sendIsmBarcodeInfo.getSilName();				
 			}else{
 				barcode = sendIsmBarcodeInfo.getNewBarcode();
 				barcodeLabel = sendIsmBarcodeInfo.getNewBarcode();
